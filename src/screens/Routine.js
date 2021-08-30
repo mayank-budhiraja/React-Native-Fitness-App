@@ -19,7 +19,7 @@ export default class Routine extends React.Component {
           title="Go to two"
           onPress={() => this.props.navigation.navigate(screenNames.EXERCISE)}
         />
-        <FastImage source={items} style={{width: 200, height: 200}} />
+        <FastImage source={item} style={{width: 200, height: 200}} />
       </View>
     );
   }

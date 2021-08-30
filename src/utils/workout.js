@@ -1,5 +1,5 @@
 const chestWorkout = {
-    bulgarian_pushup : '../assets/Chest/bulgarian-push-ups.gif'
+    bulgarian_pushup: require('../assets/Chest/bulgarian-push-ups.gif'),
 }
 
 export default chestWorkout;

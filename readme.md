@@ -35,18 +35,33 @@ Restarted project after long time
     - added constant files for screenNames - Done
 - Add redux properly - Done
 
-# Current
-- Test photos for the app 
+
+- Test photos for the app - seems to be working fine
     - Group photos
         - based on muscle group
         - based on a routine 
 
+- Setup a JSON file to send parameters - Done
+# Current
+- HomeScreen 
+    - Create card for workout routine
+
+- RoutineScreen 
+    - Create view which will contain list of views
+
+- ExerciseScreen
+    - Display the GIF
+
+- Overall functions
+    - Start a specific routine
+    - Create a next workout after each workout
+    - Drag & Drop exercises from the list
+    - Global settings
 # Next
-- Setup a JSON file to send parameters
+
 - Figure how to design components - custom design through files
-    - Style Components or React-Native Custom?
-    - will one component for exercise
-- check non tech tasks
+    - Style Components or React-Native Custom? - Custom Cards
+- check non tech tasks - waiting for all designs
 # Non - tech 
 - Shortlist content
     - Number of exercises - Done
