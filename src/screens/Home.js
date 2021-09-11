@@ -19,7 +19,7 @@ class Home extends React.PureComponent {
     super(props);
   }
 
-  renderItem = ({item}) => <Card image={item.image} />;
+  renderItem = ({item}) => <Card image={item.image} navigation={this.props.navigation} routineName={item.routine_name} />;
 
   render() {
     return (

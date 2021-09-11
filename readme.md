@@ -42,21 +42,26 @@ Restarted project after long time
         - based on a routine 
 
 - Setup a JSON file to send parameters - Done
-# Current
+
 - HomeScreen 
-    - Create card for workout routine
+    - Create card for workout routine - Done
 
 - RoutineScreen 
-    - Create view which will contain list of views
+    - Create view which will contain list of views - Done
 
 - ExerciseScreen
-    - Display the GIF
+    - Create view for this screen - Done
+    - Display the GIF - Done
+
+
+# Current
 
 - Overall functions
     - Start a specific routine
     - Create a next workout after each workout
     - Drag & Drop exercises from the list
     - Global settings
+
 # Next
 
 - Figure how to design components - custom design through files
