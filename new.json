@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "image": 3,
+    "routineDescription": "This is a sample description for the exercise",
+    "routineName": "Chest 1"
+  },
+  {
+    "id": "2",
+    "image": 4,
+    "routineDescription": "This is a sample description for the you must follow this to get maximum benefit",
+    "routineName": "Chest 2"
+  },
+  {
+    "id": "3",
+    "image": 5,
+    "routineDescription": "This is a sample description for the exercise",
+    "routineName": "Chest 3"
+  }
+]

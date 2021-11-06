@@ -12,6 +12,7 @@ import Routine from './src/screens/Routine';
 import Exercise from './src/screens/Exercise';
 import Home from './src/screens/Home';
 import Settings from './src/screens/Settings';
+import RoutinePlaylist from './src/screens/RoutinePlaylist';
 
 import screenNames from './src/constants/navigation';
 
@@ -41,6 +42,7 @@ function HomeStack() {
       <Stack.Screen name={screenNames.HOME} component={Home} />
       <Stack.Screen name={screenNames.ROUTINE} component={Routine} />
       <Stack.Screen name={screenNames.EXERCISE} component={Exercise} />
+      <Stack.Screen name={screenNames.ROUTINEPLAYLIST} component={RoutinePlaylist} />
     </Stack.Navigator>
   );
 }
