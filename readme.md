@@ -54,22 +54,42 @@ Restarted project after long time
     - Display the GIF - Done
 
 
-# Current
+# Later on
 
 - Overall functions
-    - Start a specific routine
-    - Create a next workout after each workout
-    - Drag & Drop exercises from the list
-    - Global settings
+    - Start a specific routine - done
 
-# Next
+        - Stop and Pause
+        - Add breaks in between
+        - Drag & Drop exercises from the list
 
+    - Create a next workout after each workout - done
+
+
+# Current
 - Figure how to design components - custom design through files
     - Style Components or React-Native Custom? - Custom Cards
+
 - check non tech tasks - waiting for all designs
+
+- Sign up for Play Store
+
+
+
+# Next
+- Global Settings
+    - Light & Dark Theme
+    - Break Time
+    - Notifications
+        - 3 4 or 5 days
+        - 
+    - Sound on/off
+
 # Non - tech 
 - Shortlist content
     - Number of exercises - Done
     - Number of images required - In process by Rohit
     - Number of levels - Afterwards
     - Check all the exercises
+    - Get google developer account
+    

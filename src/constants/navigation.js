@@ -4,6 +4,7 @@ const screenNames = {
     EXERCISE: 'EXERCISE',
     SETTINGS: 'SETTINGS',
     HOMESTACK: 'HOMESTACK',
+    ROUTINEPLAYLIST: 'ROUTINEPLAYLIST'
 };
 
 export default screenNames
