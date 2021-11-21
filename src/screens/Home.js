@@ -14,6 +14,11 @@ import chestWorkout from '../utils/workout';
 import Card from '../components/Card';
 import assets from '../assets/assets-constants';
 import homeData from '../assets/data/homeData';
+import Header from '../components/Header';
+import SubHeader from '../components/SubHeader';
+import subCategories from '../assets/Home/subCategories';
+import defaultUser from '../assets/defaults/user.png';
+
 class Home extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -24,6 +29,8 @@ class Home extends React.PureComponent {
   render() {
     return (
       <SafeAreaView>
+        <Header userImage={defaultUser} userName={'New User'}/>
+        <SubHeader data={subCategories}/>
         <View>
           <FlatList
             data={homeData}

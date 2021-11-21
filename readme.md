@@ -22,8 +22,8 @@ git commit -m "myFit-01May2021: your-messasge"
         - Reports (Bottom Tab)
         - Settings (Bottom Tab)
 
-
 --- Back to the project ---
+
 # Last
 - Setup Tab Navigation - Done
 - Fix the errors - Done
@@ -53,6 +53,18 @@ Restarted project after long time
     - Create view for this screen - Done
     - Display the GIF - Done
 
+- Sign up for Play Store - Done
+
+# Current
+
+- Get a UI design - Done
+
+- Implement design 
+    - Sub category header to sort out routines
+    - Implement the sub-category using redux
+    
+
+- check non tech tasks - waiting for all designs
 
 # Later on
 
@@ -66,17 +78,13 @@ Restarted project after long time
     - Create a next workout after each workout - done
 
 
-# Current
-- Figure how to design components - custom design through files
-    - Style Components or React-Native Custom? - Custom Cards
-
-- check non tech tasks - waiting for all designs
-
-- Sign up for Play Store
-
-
-
 # Next
+- Setting UI for home screen
+    - creating a horizontal category
+    - filter the routines from categories
+
+- Introduce redux
+
 - Global Settings
     - Light & Dark Theme
     - Break Time
