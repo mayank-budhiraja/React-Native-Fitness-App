@@ -55,14 +55,19 @@ Restarted project after long time
 
 - Sign up for Play Store - Done
 
-# Current
-
 - Get a UI design - Done
 
+# Current
 - Implement design 
-    - Sub category header to sort out routines
-    - Implement the sub-category using redux
+    - Sub-category
+        - redux added - done
+        - implement selection function
+
+- Implement skeleton UI design 
+    - Routine
+    - Exercise
     
+- Finish UI home design
 
 - check non tech tasks - waiting for all designs
 
