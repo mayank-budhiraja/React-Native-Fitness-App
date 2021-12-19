@@ -7,11 +7,15 @@ import home from '../store/actions/home';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const SubHeader = ({subData, selectID, setHomeData, resetCategoryData}) => {
-  console.log(subData);
+  console.log('findThis', subData);
   renderItem = ({item}) => {
     return (
       <View
-        style={item.selected ? styles.selectedContainer : styles.itemContainer}>
+        style={
+          item.selected && selectID != 0
+            ? styles.selectedContainer
+            : styles.itemContainer
+        }>
         <TouchableOpacity
           onPress={() => setHomeData(item.id, item.routineDifficulty)}>
           <Text>{item.title}</Text>
@@ -27,7 +31,7 @@ const SubHeader = ({subData, selectID, setHomeData, resetCategoryData}) => {
         <TouchableOpacity
           onPress={() => resetCategoryData()}
           style={[
-            selectID === 0 ? styles.selectedContainer : styles.itemContainer,
+            selectID == 0 ? styles.selectedContainer : styles.itemContainer,
             styles.resetButton,
           ]}>
           <Text style={styles.containerText}>All</Text>

@@ -12,24 +12,25 @@ const getFeedData = (data) => {
 
 const setHomeData = (selectID, routineDifficulty) => {
   return async (dispatch, getState) => {
-    let filterFeedData = homeData.filter(
-      (item) => item.routineDifficulty == routineDifficulty,
+    const filterFeedData = homeData.filter(
+      (item) => item.routineDifficulty === routineDifficulty,
     );
+
     const subDataState = getState().home.subData;
-    let filterSubData = subDataState.map((element) => {
+
+    const filterSubData = subDataState.map((element) => {
       if (element.id == selectID) {
-        element.selected = 'true';
+        return {...element, selected: true};
       } else {
-        element.selected = 'false';
+        return {...element, selected: false};
       }
     });
-    console.log(filterFeedData)
+
     dispatch(getFeedData(filterFeedData));
     dispatch({
-      type: actions.SET_HOME_DATA,
-      payload: routineDifficulty,
+      type: actions.SET_SUBCATEGORY_DATA,
+      payload: filterSubData,
     });
-    
     dispatch({
       type: actions.SET_SELECT_ID,
       payload: selectID,
@@ -40,7 +41,7 @@ const setHomeData = (selectID, routineDifficulty) => {
 const resetCategoryData = () => {
   return async (dispatch) => {
     dispatch({
-      type: actions.SET_SUBCATEGORY_DATA,
+      type: actions.SET_SELECT_ID,
       payload: 0,
     });
     dispatch({

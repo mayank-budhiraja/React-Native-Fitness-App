@@ -83,15 +83,17 @@ Restarted project after long time
     - Create a next workout after each workout - done
 
 
-# Next
-- Setting UI for home screen
-    - creating a horizontal category
-    - filter the routines from categories
 
-- Introduce redux
+- Setting UI for home screen
+    - creating a horizontal category - done
+    - filter the routines from categories - done
+
+- Introduce redux - done
+
+# Next
 
 - Global Settings
-    - Light & Dark Theme
+    - Light & Dark Theme - removed - only one theme
     - Break Time
     - Notifications
         - 3 4 or 5 days
