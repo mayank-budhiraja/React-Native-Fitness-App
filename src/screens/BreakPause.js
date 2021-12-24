@@ -4,23 +4,23 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import FastImage from 'react-native-fast-image';
 import screenNames from '../constants/navigation';
 import colors from '../constants/colors';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-const Exercise = ({navigation, route}) => {
-  const {exName, exDescription, exImage} = route.params;
+const BreakPause = ({navigation, route}) => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <FastImage source={exImage} style={styles.imageContainer} resizeMode='contain'/>
+        <Icon name="checkmark-circle-sharp" size={24} />
       </View>
       <View style={[styles.container]}>
-        <Text style={styles.textContainer}>{exName}</Text>
-        <Text style={styles.paraContainer}>{exDescription}</Text>
+        <Text style={styles.textContainer}>BREAK!</Text>
+        <Text style={styles.paraContainer}>This will be the break</Text>
       </View>
     </SafeAreaView>
   );
-}
+};
 
-export default Exercise;
+export default BreakPause;
 
 const styles = StyleSheet.create({
   container: {
@@ -36,10 +36,10 @@ const styles = StyleSheet.create({
     color: colors.heading,
     fontSize: 32,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   paraContainer: {
     color: colors.description,
     fontSize: 20,
-  }
+  },
 });

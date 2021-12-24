@@ -7,7 +7,6 @@ import home from '../store/actions/home';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const SubHeader = ({subData, selectID, setHomeData, resetCategoryData}) => {
-  console.log('findThis', subData);
   renderItem = ({item}) => {
     return (
       <View
