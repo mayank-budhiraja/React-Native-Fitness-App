@@ -4,12 +4,12 @@ import routines from '../assets/Routine/routines';
 import RoutineCard from '../components/RoutineCard';
 import screenNames from '../constants/navigation';
 
-function Routine({navigation, route}) {
+const Routine = ({navigation, route}) => {
   const {routineType} = route.params;
   //based on routineType. information should be extracted - done
-  //create card component for Routine screen
+  //create card component for Routine screen - done
 
-  //create data for all routineType
+  //create data for all routineType - done
 
   renderItem = ({item}) => {
     return item[routineType].map((x, index) => {
@@ -26,13 +26,13 @@ function Routine({navigation, route}) {
   };
 
   const startRoutine = () => {
-    const selectedRoutine = routines[0][routineType]
-    navigation.navigate(screenNames.ROUTINEPLAYLIST, {data: selectedRoutine})
-    
+    const selectedRoutine = routines[0][routineType];
+    navigation.navigate(screenNames.ROUTINEPLAYLIST, {data: selectedRoutine});
+
     // from here we will send the array to start the function
-      // push a screen
-      // start the exercise 
-      // Next button - to go to next exercise
+    // push a screen
+    // start the exercise
+    // Next button - to go to next exercise
   };
 
   return (

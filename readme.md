@@ -71,34 +71,34 @@ Restarted project after long time
 
 - check non tech tasks - waiting for all designs
 
-# Later on
-
-- Overall functions
-    - Start a specific routine - done
-
-        - Stop and Pause
-        - Add breaks in between
-        - Drag & Drop exercises from the list
-
-    - Create a next workout after each workout - done
-
-
-
-- Setting UI for home screen
+- Setting UI for home screen - done
     - creating a horizontal category - done
     - filter the routines from categories - done
 
 - Introduce redux - done
 
+- Create a next workout after each workout - done
+
 # Next
+- Fix Home screen scrolling 
+
+- Overall functions
+    - Start a specific routine - done
+        - Stop, Pause or Exit - done
+        - Add breaks in between - done
+        - check RoutinePlaylist - done
 
 - Global Settings
-    - Light & Dark Theme - removed - only one theme
     - Break Time
-    - Notifications
+    - User Profile
+        - based on weigh, height and goal
         - 3 4 or 5 days
-        - 
     - Sound on/off
+    - Theme - only one theme
+
+# Later on
+- Notifications - send notifications - will do in the end 
+- Fix images and data
 
 # Non - tech 
 - Shortlist content

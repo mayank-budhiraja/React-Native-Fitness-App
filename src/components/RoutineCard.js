@@ -22,7 +22,11 @@ const RoutineCard = ({
             exImage: image,
           })
         }>
-        <FastImage source={image} style={styles.imageContainer}  resizeMode='contain' />
+        <FastImage
+          source={image}
+          style={styles.imageContainer}
+          resizeMode="contain"
+        />
         <View style={styles.textContainer}>
           <Text style={styles.headContainer}>{exerciseName}</Text>
           <Text
