@@ -6,6 +6,7 @@ import {
   FlatList,
   StyleSheet,
   Button,
+  Alert,
 } from 'react-native';
 
 import ExerciseCard from '../components/ExerciseCard';
@@ -49,14 +50,27 @@ const RoutinePlaylist = ({navigation, route}) => {
   };
 
   quitWorkout = () => {
-    navigation.reset({
-      routes: [{name: screenNames.HOME}],
-    });
+    Alert.alert('Hold on!', 'Are you sure you want to quit?', [
+      {
+        text: 'Cancel',
+        onPress: () => console.log('Cancel Pressed'),
+        style: 'cancel',
+      },
+      {
+        text: 'OK',
+        onPress: () =>
+          navigation.reset({
+            routes: [{name: screenNames.HOME}],
+          }),
+      },
+    ]);
   };
-  console.log(currentIndex, delayExercise)
+  console.log(currentIndex, delayExercise);
   return (
     <SafeAreaView>
-      {!delayExercise && currentIndex > 0 ?  <Button title='Quit workout' onPress={() => quitWorkout()}/> : null}
+      {!delayExercise && currentIndex > 0 ? (
+        <Button title="Quit workout" onPress={() => quitWorkout()} />
+      ) : null}
       <View>
         {delayExercise || currentIndex == 0 ? (
           <BreakPause />
