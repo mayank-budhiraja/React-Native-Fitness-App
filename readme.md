@@ -84,7 +84,9 @@ Restarted project after long time
 
 - Overall functions
     - Start a specific routine - done
-        - Stop, Pause or Exit - done
+
+        - Stop, Pause or Exit - On THIS --
+
         - Add breaks in between - done
         - check RoutinePlaylist - done
 

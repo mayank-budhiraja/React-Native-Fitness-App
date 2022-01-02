@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import FastImage from 'react-native-fast-image';
 import screenNames from '../constants/navigation';
@@ -7,6 +7,11 @@ import colors from '../constants/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const CompleteExercise = ({navigation, route}) => {
+  backHome = () => {
+    navigation.reset({
+      routes: [{name: screenNames.HOME}],
+    });
+  };
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -15,6 +20,7 @@ const CompleteExercise = ({navigation, route}) => {
       <View style={[styles.container]}>
         <Text style={styles.textContainer}>Exercises Completed!</Text>
       </View>
+      <Button title="Go to home" onPress={() => backHome()} />
     </SafeAreaView>
   );
 };

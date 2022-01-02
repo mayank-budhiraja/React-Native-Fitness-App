@@ -6,14 +6,14 @@ import screenNames from '../constants/navigation';
 import colors from '../constants/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-const BreakPause = ({navigation, route}) => {
+const BreakPause = ({navigation, route, currentIndex}) => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
         <Icon name="checkmark-circle-sharp" size={24} />
       </View>
       <View style={[styles.container]}>
-        <Text style={styles.textContainer}>BREAK!</Text>
+        <Text style={styles.textContainer}>{currentIndex === 0 ? 'Begin' : 'BREAK!'}</Text>
         <Text style={styles.paraContainer}>This will be the break</Text>
       </View>
     </SafeAreaView>
