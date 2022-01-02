@@ -80,11 +80,13 @@ Restarted project after long time
 - Create a next workout after each workout - done
 
 # Next
+- Fix Home screen scrolling 
+
 - Overall functions
     - Start a specific routine - done
-        - Stop and Pause
-        - Add breaks in between - on this
-        - check RoutinePlaylist
+        - Stop, Pause or Exit - done
+        - Add breaks in between - done
+        - check RoutinePlaylist - done
 
 - Global Settings
     - Break Time

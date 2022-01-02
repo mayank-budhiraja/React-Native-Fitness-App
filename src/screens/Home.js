@@ -27,10 +27,10 @@ class Home extends React.PureComponent {
 
   render() {
     return (
-      <SafeAreaView>
+      <SafeAreaView style={{flex: 1}}>
         <Header userImage={defaultUser} userName={'New User'}/>
         <SubHeader data={subCategories}/>
-        <View>
+        <View style={{flex: 1}}>
           <FlatList
             data={this.props.feedData}
             renderItem={this.renderItem}
@@ -44,7 +44,9 @@ class Home extends React.PureComponent {
 }
 
 const styles = StyleSheet.create({
-  flatListContainer: {},
+  flatListContainer: {
+    
+  },
 });
 
 const mapStateToProps = (state) => {
