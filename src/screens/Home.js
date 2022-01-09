@@ -27,7 +27,7 @@ class Home extends React.PureComponent {
 
   render() {
     return (
-      <SafeAreaView style={{flex: 1}}>
+      <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
         <Header userImage={defaultUser} userName={'New User'}/>
         <SubHeader data={subCategories}/>
         <View style={{flex: 1}}>

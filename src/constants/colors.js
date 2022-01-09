@@ -4,6 +4,7 @@ const colors = {
     app_color_primary: 'blue',
     app_color_secondary: 'grey',
     app_Tint: '#006600',
+    primary_button: '#1da6e0'
     
 
 }
