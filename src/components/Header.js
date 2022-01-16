@@ -1,18 +1,21 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
-import FastImage from 'react-native-fast-image';
-import screenNames from '../constants/navigation';
+import Icon from 'react-native-vector-icons/AntDesign';
 
-const Header = ({userName, userImage}) => {
-  //navigation must have data for the routine
+const Header = ({userName, userImage, subTitle}) => {
   return (
-    <View style={styles.container}>
-      <View>
-        <Text>Welcome {userName}</Text>
-        <Text>Don't miss the fitness</Text>
+    <View style={{flexDirection: 'column', margin: 10}}>
+      <View style={styles.container}>
+        <View>
+          <Text style={styles.userText}>Hello {userName}</Text>
+          <Text>{subTitle}</Text>
+        </View>
+        <View style={styles.user}>
+          <Icon name="user" size={30} color={'gray'} />
+        </View>
       </View>
-      <View>
-        <Image source={userImage} style={styles.imageContainer} />
+      <View style={styles.subTitle}>
+        <Text>Don't Miss the Fitness</Text>
       </View>
     </View>
   );
@@ -20,16 +23,26 @@ const Header = ({userName, userImage}) => {
 export default Header;
 
 const styles = StyleSheet.create({
+  subTitle: {
+    flexDirection: 'row',
+    marginHorizontal: 20,
+    top: -20,
+  },
+  user: {
+    borderRadius: 35,
+    borderWidth: 2,
+    borderColor: 'gray',
+    padding: 12,
+  },
+  userText: {
+    fontSize: 22,
+    fontWeight: '700',
+  },
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginHorizontal: 20,
     marginTop: 10,
-  },
-  imageContainer: {
-    height: 50,
-    width: 50,
-    borderWidth: 2,
   },
   cardContainer: {
     borderRadius: 10,

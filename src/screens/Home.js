@@ -1,64 +1,61 @@
-import React from 'react';
-import {
-  Text,
-  TouchableOpacity,
-  View,
-  FlatList,
-  StyleSheet,
-  SafeAreaView,
-} from 'react-native';
-import {connect} from 'react-redux';
-import {home} from '../store/actions';
-import screenNames from '../constants/navigation';
-import chestWorkout from '../utils/workout';
+import React, {useState, useEffect} from 'react';
+import {Text, View, FlatList, StyleSheet} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {useDispatch, useSelector} from 'react-redux';
 import Card from '../components/Card';
-import assets from '../assets/assets-constants';
 import Header from '../components/Header';
 import SubHeader from '../components/SubHeader';
 import subCategories from '../assets/data/subCategories';
 import defaultUser from '../assets/defaults/user.png';
 
-class Home extends React.PureComponent {
-  constructor(props) {
-    super(props);
-  }
+const Home = ({navigation}) => {
+  const home = useSelector((state) => state.home);
+  const [currenDate, setDate] = useState('');
 
-  renderItem = ({item}) => <Card image={item.image} navigation={this.props.navigation} routineName={item.routine_name} />;
+  useEffect(() => {
+    /*const date = new Date();
+    const subTitle =
+      date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    setDate(subTitle);
+    */
+  }, []);
 
-  render() {
-    return (
-      <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
-        <Header userImage={defaultUser} userName={'New User'}/>
-        <SubHeader data={subCategories}/>
-        <View style={{flex: 1}}>
-          <FlatList
-            data={this.props.feedData}
-            renderItem={this.renderItem}
-            keyExtractor={(item) => item.id}
-            style={styles.flatListContainer}
-          />
-        </View>
-      </SafeAreaView>
-    );
-  }
-}
+  renderItem = ({item}) => (
+    <Card
+      image={item.image}
+      navigation={navigation}
+      routineData={item.routineData}
+      cardColor={item.color}
+    />
+  );
+
+  return (
+    <SafeAreaProvider style={{flex: 1, backgroundColor: 'white'}}>
+      <View style={{marginBottom: 30}}>
+        <Header
+          userImage={defaultUser}
+          userName={'New User'}
+          subTitle={currenDate}
+        />
+      </View>
+      <View style={{margin: 10, marginTop: -20}}>
+        <SubHeader data={subCategories} />
+      </View>
+
+      <View style={{flex: 1, marginTop: -10}}>
+        <FlatList
+          data={home.feedData}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+          style={styles.flatListContainer}
+        />
+      </View>
+    </SafeAreaProvider>
+  );
+};
 
 const styles = StyleSheet.create({
-  flatListContainer: {
-    
-  },
+  flatListContainer: {},
 });
 
-const mapStateToProps = (state) => {
-  return {
-    feedData: state.home.feedData,
-  };
-};
-
-const mapDispatchToProps = {
-  getFeedData: home.getFeedData,
-};
-
-const HomeWrapper = connect(mapStateToProps, mapDispatchToProps)(Home);
-
-export default HomeWrapper;
+export default Home;
