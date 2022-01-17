@@ -115,8 +115,8 @@ Restarted project after long time
   
 - Finalize - Theme
   - Homepage
-    - Header - Done
-    - Card - Done
+    - Add images
+    
   - RoutinePlaylist
     - Exercise Card
   - Exercise Screen
