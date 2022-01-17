@@ -3,33 +3,50 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import screenNames from '../constants/navigation';
 
-const Card = ({image, navigation, routineName}) => {
-
-  //navigation must have data for the routine
+const Card = ({image, navigation, routineData, cardColor}) => {
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.cardContainer}
-        onPress={() => navigation.navigate(screenNames.ROUTINE, {routineType: routineName})}>
-        <FastImage source={image} style={styles.imageContainer} />
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity
+      style={[styles.cardContainer, {backgroundColor: cardColor}]}
+      onPress={() =>
+        navigation.navigate(screenNames.ROUTINE, {routineType: routineData.routine_name})
+      }>
+      <View style={styles.container}>
+        <Text style={[styles.textContainer, {fontWeight: '700'}]}> {routineData.routine_name} </Text>
+        <Text style={[styles.textContainer, {fontWeight: '400'}]}> {routineData.routine_level} </Text>
+        <Text style={[styles.textContainer, {fontWeight: '200'}]}> {routineData.routine_time} </Text>
+      </View>
+      <View style={styles.container}>
+        <FastImage style={styles.imageContainer}/>
+      </View>
+    </TouchableOpacity>
   );
-}
+};
 export default Card;
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    marginVertical: 20,
-    marginHorizontal: 50,
+    flex: 1,
+    flexDirection: 'column',
+  },
+
+  cardContainer: {
+    marginTop: 20,
+    marginHorizontal: 25, 
+    borderRadius: 40,
+    flexDirection: 'row',
+    height: 170, 
+  },
+  textContainer: {
+    top: 30,
+    left: 30,
+    marginTop: 10,
   },
   imageContainer: {
-    width: 375,
-    height: 175,
-    borderRadius: 20,
-  },
-  cardContainer: {
-    borderRadius: 10,
-  },
+    top: 30,
+    right: 20,  
+    borderWidth: 2,
+    borderColor: 'white',
+    minHeight: 100, 
+    maxHeight: 200
+  }
 });

@@ -38,7 +38,7 @@ const App = () => {
                   name={screenNames.HOMESTACK}
                   component={HomeStack}
                   options={{
-                    tabBarLabel: 'Home',
+                    tabBarLabel: '',
                     tabBarOptions: {
                       activeTintColor: colors.app_Tint,
                     },
@@ -46,12 +46,13 @@ const App = () => {
                       return (
                         <Icon
                           name="home"
-                          size={24}
+                          size={36}
                           color={
                             tabInfo.focused
-                              ? colors.app_color_primary
+                              ? colors.app_Tint
                               : colors.app_color_secondary
                           }
+                          style={{top: 10}}
                         />
                       );
                     },
@@ -61,20 +62,21 @@ const App = () => {
                   name={screenNames.SETTINGS}
                   component={Settings}
                   options={{
-                    tabBarLabel: 'Settings',
+                    tabBarLabel: '',
                     tabBarOptions: {
                       activeTintColor: colors.app_Tint,
                     },
                     tabBarIcon: (tabInfo) => {
                       return (
                         <Icon
-                          name="remove-circle-outline"
-                          size={24}
+                          name="settings-sharp"
+                          size={36}
                           color={
                             tabInfo.focused
-                              ? colors.app_color_primary
+                              ? colors.app_Tint
                               : colors.app_color_secondary
                           }
+                          style={{top: 10}}
                         />
                       );
                     },

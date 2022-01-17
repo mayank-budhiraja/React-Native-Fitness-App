@@ -51,7 +51,7 @@ const resetCategoryData = () => {
   };
 };
 
-export default {
+export const homeActions = {
   getFeedData,
   setHomeData,
   resetCategoryData,

@@ -108,8 +108,21 @@ Restarted project after long time
   - Sound on/off - done
 
 # Current
-- Finalize - Theme - only one theme
+- First open
+  - User Name
+  - Age
+  - How many time user works out in a week?
+  
+- Finalize - Theme
+  - Homepage
+    - Header - Done
+    - Card - Done
+  - RoutinePlaylist
+    - Exercise Card
+  - Exercise Screen
+
 - Check for screen size whether everything is rendering inside or not
+
 - Fix images and data
 
 # Next iteration
