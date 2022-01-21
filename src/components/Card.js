@@ -12,8 +12,8 @@ const Card = ({image, navigation, routineData, cardColor}) => {
       }>
       <View style={styles.container}>
         <Text style={[styles.textContainer, {fontWeight: '700'}]}> {routineData.routine_name} </Text>
-        <Text style={[styles.textContainer, {fontWeight: '400'}]}> {routineData.routine_level} </Text>
-        <Text style={[styles.textContainer, {fontWeight: '200'}]}> {routineData.routine_time} </Text>
+        <Text style={[styles.textContainer, {fontWeight: '400'}]}> {routineData.routine_level} Level </Text>
+        <Text style={[styles.textContainer, {fontWeight: '200'}]}> {routineData.routine_time} mins</Text>
       </View>
       <View style={styles.container}>
         <FastImage style={styles.imageContainer}/>

@@ -66,7 +66,6 @@ Restarted project after long time
 
 - Get a UI design - Done
 
-# Current
 
 - Implement design
 
@@ -115,14 +114,12 @@ Restarted project after long time
   
 - Finalize - Theme
   - Homepage
-    - Header - Done
-    - Card - Done
-  - RoutinePlaylist
+    - Add images
+  - RoutinePlaylist - start here
     - Exercise Card
   - Exercise Screen
 
 - Check for screen size whether everything is rendering inside or not
-
 - Fix images and data
 
 # Next iteration

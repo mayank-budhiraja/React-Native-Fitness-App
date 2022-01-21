@@ -1,12 +1,13 @@
 const colors = {
-    heading: 'black',
-    description: 'black',
-    app_color_primary: 'blue',
+    heading: '#8f909c',
+    description: '#433835',
+    app_color_primary: '#4f536c',
     app_color_secondary: 'grey',
-    app_Tint: '#ffb742',
+    app_Tint: '#f8a26a',
     primary_button: '#1da6e0',
-    subcategory_button: '#ffb742',
+    subcategory_button: '#f8a26a',
     subcat_button_text: 'white',
+    solidWhite: 'white'
 }
 
 export default colors

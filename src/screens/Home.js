@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Text, View, FlatList, StyleSheet} from 'react-native';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {useDispatch, useSelector} from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
@@ -30,7 +30,7 @@ const Home = ({navigation}) => {
   );
 
   return (
-    <SafeAreaProvider style={{flex: 1, backgroundColor: 'white'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
       <View style={{marginBottom: 30}}>
         <Header
           userImage={defaultUser}
@@ -50,7 +50,7 @@ const Home = ({navigation}) => {
           style={styles.flatListContainer}
         />
       </View>
-    </SafeAreaProvider>
+    </SafeAreaView>
   );
 };
 

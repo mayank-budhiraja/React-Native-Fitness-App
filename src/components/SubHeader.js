@@ -85,6 +85,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     marginLeft: 10,
+    color: colors.app_color_primary
   },
   itemContainer: {
     borderWidth: 1.5,

@@ -5,6 +5,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import PauseTime from '../components/PauseTime';
 import Sound from '../components/Sound';
 import settings from '../store/actions/settings';
+import colors from '../constants/colors';
 
 class Settings extends React.Component {
   constructor(props) {
@@ -65,6 +66,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 40,
     fontWeight: '600',
+    color: colors.app_color_primary
   },
 });
 

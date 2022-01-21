@@ -5,7 +5,7 @@ import {PersistGate} from 'redux-persist/es/integration/react';
 import {Provider} from 'react-redux';
 import {store, persistor} from './src/store';
 
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -30,8 +30,7 @@ const App = () => {
     <>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <StatusBar backgroundColor={'white'}/>
-          <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+          <SafeAreaProvider style={{flex: 1, height: 2}}>
             <NavigationContainer>
               <Tab.Navigator>
                 <Tab.Screen
@@ -84,14 +83,14 @@ const App = () => {
                 />
               </Tab.Navigator>
             </NavigationContainer>
-          </SafeAreaView>
+          </SafeAreaProvider>
         </PersistGate>
       </Provider>
     </>
   );
 };
 
-function HomeStack() {
+const HomeStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name={screenNames.HOME} component={Home} />
