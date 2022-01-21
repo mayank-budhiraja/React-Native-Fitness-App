@@ -1,49 +1,50 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
+import React, {useEffect, useState} from 'react';
+import {connect, useDispatch, useSelector} from 'react-redux';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {View, Text, StyleSheet} from 'react-native';
 import PauseTime from '../components/PauseTime';
 import Sound from '../components/Sound';
 import settings from '../store/actions/settings';
 import colors from '../constants/colors';
 
-class Settings extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Settings = () => {
+  
+  const settingState = useSelector((state) => state.settings);
+  const dispatch = useDispatch();
+
+  const [pauseTimeOptions, setOptions] = useState(settingState.pauseTimeOptions);
+  const [soundInfo, setSound] = useState(settingState.soundInfo);
 
   updatePauseTime = () => {
-    this.props.setPauseTime(data);
+    setPauseTime(data);
   };
 
-  updateSound = (data) => {
-    this.props.toggleSound(data);
-  };
-
-  render() {
-    return (
-      <SafeAreaProvider style={{flex: 1, backgroundColor: 'white'}}>
-        <View style={styles.container}>
-          <View style={styles.headerContainer}>
-            <Text style={styles.header}>Settings</Text>
-          </View>
-          <View style={styles.subContainer}>
-            <PauseTime
-              buttonsData={this.props.pauseTimeOptions}
-              onClick={this.updatePauseTime}
-            />
-          </View>
-          <View style={styles.soundContainer}>
-            <Sound
-              soundInfo={this.props.soundInfo}
-              toggleSound={this.updateSound}
-            />
-          </View>
-        </View>
-      </SafeAreaProvider>
-    );
+  updateSound = () => {
+    const data = !soundInfo
+    setSound(data)
+    dispatch(settings.toggleSound(data))
   }
-}
+
+  useEffect(() => {
+
+  },[pauseTimeOptions, soundInfo])
+
+  return (
+    <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+      <View style={styles.container}>
+        <View style={styles.headerContainer}>
+          <Text style={styles.header}>Settings</Text>
+        </View>
+        <View style={styles.subContainer}>
+          <PauseTime buttonsData={pauseTimeOptions} onClick={updatePauseTime} />
+        </View>
+        <View style={styles.soundContainer}>
+          <Sound soundInfo={soundInfo} toggleSound={updateSound} />
+        </View>
+      </View>
+    </SafeAreaView>
+  );
+};
 
 const styles = StyleSheet.create({
   subContainer: {
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 40,
     fontWeight: '600',
-    color: colors.app_color_primary
+    color: colors.app_color_primary,
   },
 });
 

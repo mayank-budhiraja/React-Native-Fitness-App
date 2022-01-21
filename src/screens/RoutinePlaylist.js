@@ -13,6 +13,10 @@ import ExerciseCard from '../components/ExerciseCard';
 import BreakPause from './BreakPause';
 import BeginExercise from './BeginExercise';
 import screenNames from '../constants/navigation';
+import NativeButton from '../components/NativeButton';
+import {TouchableHighlight} from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Ionicons';
+import ExerciseHeader from '../components/ExerciseHeader';
 
 const RoutinePlaylist = ({navigation, route}) => {
   const {data} = route.params; // to-do state management
@@ -65,11 +69,15 @@ const RoutinePlaylist = ({navigation, route}) => {
       },
     ]);
   };
-  
+
   return (
-    <SafeAreaView style={{flex:1, backgroundColor: 'white'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
       {!delayExercise && currentIndex > 0 ? (
-        <Button title="Quit workout" onPress={() => quitWorkout()} />
+        <ExerciseHeader
+          goBack={() => navigation.goBack()}
+          quit={quitWorkout}
+          exerciseGroup={name}
+        />
       ) : null}
       <View>
         {delayExercise || currentIndex == 0 ? (
@@ -83,10 +91,25 @@ const RoutinePlaylist = ({navigation, route}) => {
         )}
       </View>
       {delayExercise ? null : (
-        <Button title="Next" onPress={() => onClickNext()}></Button>
+        <View style={styles.buttonContainer}>
+          <NativeButton
+            textName="Next"
+            onClick={() => onClickNext()}
+            buttonWidth={'30%'}
+          />
+        </View>
       )}
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 export default RoutinePlaylist;

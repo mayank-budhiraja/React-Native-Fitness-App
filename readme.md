@@ -66,7 +66,6 @@ Restarted project after long time
 
 - Get a UI design - Done
 
-
 - Implement design
 
   - Sub-category
@@ -107,19 +106,26 @@ Restarted project after long time
   - Sound on/off - done
 
 # Current
+
 - First open
+
   - User Name
   - Age
   - How many time user works out in a week?
-  
-- Finalize - Theme
+
+- Remaining theme related work
+
   - Homepage
     - Add images
   - RoutinePlaylist - start here
-    - Exercise Card
+    - Add images
   - Exercise Screen
+    - Add timer to screen
+  - Break Pause Screen
+    - Add timer
 
 - Check for screen size whether everything is rendering inside or not
+
 - Fix images and data
 
 # Next iteration
