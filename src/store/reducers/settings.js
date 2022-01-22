@@ -4,6 +4,9 @@ import buttonsData from '../../assets/data/settings';
 const INITIAL_STATE = {
   soundInfo: true,
   pauseTimeOptions: buttonsData,
+  userName: '',
+  userAge: 18,
+  userActive: 3,
 };
 
 const settings = (state = INITIAL_STATE, action) => {

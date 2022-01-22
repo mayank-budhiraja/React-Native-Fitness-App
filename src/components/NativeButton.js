@@ -33,6 +33,5 @@ const styles = StyleSheet.create({
     borderColor: colors.app_Tint,
     backgroundColor: colors.app_Tint,
     justifyContent: 'center',
-    marginBottom: 10,
   },
 });

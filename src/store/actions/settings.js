@@ -2,6 +2,7 @@ import actions from '../constants';
 
 const toggleSound = (data) => {
   return async (dispatch) => {
+    console.log('findThis', data)
     dispatch({
       type: actions.SET_SOUND,
       payload: data,

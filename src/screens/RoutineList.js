@@ -64,7 +64,7 @@ const Routine = ({navigation, route}) => {
           <NativeButton
             textName="Start Routine"
             onClick={() => startRoutine()}
-            buttonWidth={"60%"}
+            buttonWidth={'60%'}
           />
         </View>
       </View>
@@ -75,7 +75,8 @@ const Routine = ({navigation, route}) => {
 const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginBottom: 100,
   },
   header: {
     fontSize: 30,
@@ -86,15 +87,15 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: colors.solidWhite,
-    height: hp('60%'),
+    height: hp('65%'),
     width: wp('100%'),
     borderTopRightRadius: 80,
     borderTopLeftRadius: 80,
+    marginTop: 300,
   },
   mainContainer: {
-    flex: 1,
     backgroundColor: colors.app_Tint,
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'flex-end',
   },
   flatListContainer: {
