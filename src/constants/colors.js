@@ -7,6 +7,7 @@ const colors = {
     primary_button: '#1da6e0',
     subcategory_button: '#f8a26a',
     subcat_button_text: 'white',
+    solidWhite: 'white'
 }
 
 export default colors

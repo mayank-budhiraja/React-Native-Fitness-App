@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import FastImage from 'react-native-fast-image';
+import colors from '../constants/colors';
 import screenNames from '../constants/navigation';
 
 const RoutineCard = ({
@@ -12,7 +13,7 @@ const RoutineCard = ({
   //navigation must have data for the routine
 
   return (
-    <View>
+    <View style={{marginHorizontal: 15}}>
       <TouchableOpacity
         style={styles.cardContainer}
         onPress={() =>
@@ -56,10 +57,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   headContainer: {
+    fontWeight: '700',
+    color: colors.app_color_primary,
     marginTop: 20,
     marginLeft: 20,
   },
   paraContainer: {
+    fontWeight: '400',
+    color: colors.app_color_primary,
     marginTop: 5,
     paddingLeft: 20,
   },

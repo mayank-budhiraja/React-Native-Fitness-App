@@ -65,9 +65,9 @@ const RoutinePlaylist = ({navigation, route}) => {
       },
     ]);
   };
-  console.log(currentIndex, delayExercise);
+  
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1, backgroundColor: 'white'}}>
       {!delayExercise && currentIndex > 0 ? (
         <Button title="Quit workout" onPress={() => quitWorkout()} />
       ) : null}
