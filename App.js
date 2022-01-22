@@ -1,6 +1,5 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {StatusBar} from 'react-native';
 import {PersistGate} from 'redux-persist/es/integration/react';
 import {Provider} from 'react-redux';
 import {store, persistor} from './src/store';
@@ -23,7 +22,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import colors from './src/constants/colors';
 import Splash from './src/screens/Splash';
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import UserContainer from './src/screens/UserContainer';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -50,6 +49,7 @@ const HomeStack = () => {
       screenOptions={{headerShown: false}}
       initialRouteName={screenNames.SPLASH_SCREEN}>
       <Stack.Screen name={screenNames.SPLASH_SCREEN} component={Splash} />
+      <Stack.Screen name={screenNames.USER_CONTAINER} component={UserContainer} />
       <Stack.Screen name={screenNames.HOME} component={TabNav} />
       <Stack.Screen name={screenNames.ROUTINE} component={Routine} />
       <Stack.Screen name={screenNames.EXERCISE} component={Exercise} />
