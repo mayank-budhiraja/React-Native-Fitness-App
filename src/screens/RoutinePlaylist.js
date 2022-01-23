@@ -17,6 +17,7 @@ import NativeButton from '../components/NativeButton';
 import {TouchableHighlight} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ExerciseHeader from '../components/ExerciseHeader';
+import CompleteExercise from './CompleteExercise';
 
 const RoutinePlaylist = ({navigation, route}) => {
   const {data} = route.params; // to-do state management
@@ -26,6 +27,8 @@ const RoutinePlaylist = ({navigation, route}) => {
   const [description, setDescription] = useState(data[0].routineDescription);
 
   const [delayExercise, setDelay] = useState(false);
+
+  const [completeEx, setComplete] = useState(false);
 
   useEffect(() => {}, [currentIndex, delayExercise]);
 
@@ -45,12 +48,12 @@ const RoutinePlaylist = ({navigation, route}) => {
     }
 
     if (currentIndex === data.length) {
-      navigation.navigate(screenNames.EXERCISE_COMPLETED);
+      setComplete(true);
     }
   };
 
   manageBreak = () => {
-    setTimeout(() => setDelay(!!delayExercise), 2000);
+    setTimeout(() => setDelay(!!delayExercise), 5000);
   };
 
   quitWorkout = () => {
@@ -70,37 +73,41 @@ const RoutinePlaylist = ({navigation, route}) => {
     ]);
   };
 
-  return (
-    <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
-      {!delayExercise && currentIndex > 0 ? (
-        <ExerciseHeader
-          goBack={() => navigation.goBack()}
-          quit={quitWorkout}
-          exerciseGroup={name}
-        />
-      ) : null}
-      <View>
-        {delayExercise || currentIndex == 0 ? (
-          <BreakPause />
-        ) : (
-          <ExerciseCard
-            exImage={image}
-            exName={name}
-            exDescription={description}
+  renderComponent = () => {
+    return (
+      <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+        {!delayExercise && currentIndex > 0 ? (
+          <ExerciseHeader
+            goBack={() => navigation.goBack()}
+            quit={quitWorkout}
+            exerciseGroup={name}
           />
-        )}
-      </View>
-      {delayExercise ? null : (
-        <View style={styles.buttonContainer}>
-          <NativeButton
-            textName="Next"
-            onClick={() => onClickNext()}
-            buttonWidth={'30%'}
-          />
+        ) : null}
+        <View>
+          {delayExercise || currentIndex == 0 ? (
+            <BreakPause currentIndex={currentIndex} />
+          ) : (
+            <ExerciseCard
+              exImage={image}
+              exName={name}
+              exDescription={description}
+            />
+          )}
         </View>
-      )}
-    </SafeAreaView>
-  );
+        {delayExercise ? null : (
+          <View style={styles.buttonContainer}>
+            <NativeButton
+              textName="Next"
+              onClick={() => onClickNext()}
+              buttonWidth={'30%'}
+            />
+          </View>
+        )}
+      </SafeAreaView>
+    );
+  };
+
+  return !completeEx ? renderComponent() : <CompleteExercise navigation={navigation}/>;
 };
 
 const styles = StyleSheet.create({

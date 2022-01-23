@@ -10,7 +10,6 @@ import defaultUser from '../assets/defaults/user.png';
 
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
-  const [currenDate, setDate] = useState('');
 
   useEffect(() => {
     /*const date = new Date();
@@ -18,7 +17,7 @@ const Home = ({navigation}) => {
       date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
     setDate(subTitle);
     */
-  }, []);
+  }, [navigation]);
 
   renderItem = ({item}) => (
     <Card
@@ -34,8 +33,7 @@ const Home = ({navigation}) => {
       <View style={{marginBottom: 30}}>
         <Header
           userImage={defaultUser}
-          userName={'New User'}
-          subTitle={currenDate}
+          userName={home.userData.userName || 'User'}
         />
       </View>
       <View style={{margin: 10, marginTop: -20}}>

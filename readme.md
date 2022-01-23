@@ -110,16 +110,11 @@ Restarted project after long time
   - User Name
   - Age
 
+- Redux 
+  - Add username  & age
+  - show on homepage
+
 # Current
-
-- Remaining theme related work
-
-- Timer related
-
-  - Exercise Screen
-    - Add timer to screen
-  - Break Pause Screen
-    - Add timer
 
 - Fix images and data
 
@@ -131,6 +126,8 @@ Restarted project after long time
     - Add images
   - UserContainer
     - Add Images
+  - Begin Screen
+    - add Images
 
 - Check for screen size whether everything is rendering inside or not
 
@@ -140,6 +137,12 @@ Restarted project after long time
 
 # Next iteration
 
+- Add timer
+  - Timer related
+  - Exercise Screen
+    - Add timer to screen
+  - Break Pause Screen
+    - Add timer
 - User Profile
   - How many time user works out in a week?
   - based on weigh, height and goal

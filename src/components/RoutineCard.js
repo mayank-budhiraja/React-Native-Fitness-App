@@ -9,6 +9,7 @@ const RoutineCard = ({
   navigation,
   exerciseName,
   exerciseDescription,
+  exerciseRep
 }) => {
   //navigation must have data for the routine
 
@@ -21,6 +22,7 @@ const RoutineCard = ({
             exName: exerciseName,
             exDescription: exerciseDescription,
             exImage: image,
+            exReps: exerciseRep
           })
         }>
         <FastImage

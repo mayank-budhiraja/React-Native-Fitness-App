@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {View, Text, StyleSheet, TextInput, Alert} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {
@@ -8,19 +8,33 @@ import {
 import NativeButton from '../components/NativeButton';
 import colors from '../constants/colors';
 import screenNames from '../constants/navigation';
+import {useDispatch} from 'react-redux';
+import {homeActions} from '../store/actions/home';
 
 const UserContainer = ({navigation}) => {
+  const [user, setUser] = useState('');
+  const [age, setAge] = useState('');
 
-    const [user, setUser] = useState('');
-    const [age, setAge] = useState('');
+  const dispatch = useDispatch();
 
-    const onNext = () => {
-        if(user !== '' && age !== ''){
-            navigation.navigate(screenNames.HOME)
-        }
-        Alert.alert('Please fill the required details', 'Check the name')
-        // to-do improve info here
+  const onNext = () => {
+    const validate = new RegExp('^\\w[\\w.]{2,18}\\w$'); //validate user-name
+
+    if (user.match(validate)) {
+      const data = {
+        userName: user,
+      };
+      dispatch(homeActions.setUserData(data));
+      navigation.navigate(screenNames.HOME);
+    } else {
+      Alert.alert(
+        'Please fill the required details',
+        'Username should be between 4 to 20 characters',
+      );
     }
+
+    // to-do improve info here
+  };
   return (
     <SafeAreaView style={styles.mainContainer}>
       <View style={styles.container}>
@@ -28,9 +42,13 @@ const UserContainer = ({navigation}) => {
           <Text style={styles.header}>Hello User</Text>
         </View>
         <View style={styles.subHeader}>
-            <Text>Please enter your name and age</Text>
-            <TextInput placeholder=" Full Name" style={styles.userInput} />
-            <TextInput placeholder=" Age " style={styles.userInput}/>
+          <Text>Please enter your name</Text>
+          <TextInput
+            placeholder=" Full Name"
+            style={styles.userInput}
+            onChangeText={(text) => setUser(text)}
+            value={user}
+          />
         </View>
         <View style={styles.buttonContainer}>
           <NativeButton
@@ -76,10 +94,10 @@ const styles = StyleSheet.create({
     marginTop: hp('10%'),
   },
   userInput: {
-      marginTop: 20, 
-      borderColor: colors.app_color_secondary,
-      borderWidth: 1,
-      height: hp('5%'),
-  }
+    marginTop: 20,
+    borderColor: colors.app_color_secondary,
+    borderWidth: 1,
+    height: hp('5%'),
+  },
 });
 export default UserContainer;
