@@ -10,6 +10,15 @@ const getFeedData = (data) => {
   };
 };
 
+const setUserData = (data) => {
+  return async (dispatch) => {
+    dispatch({
+      type: actions.SET_USER_DATA,
+      payload: data,
+    });
+  };
+};
+
 const setHomeData = (selectID, routineDifficulty) => {
   return async (dispatch, getState) => {
     const filterFeedData = homeData.filter(
@@ -55,4 +64,5 @@ export const homeActions = {
   getFeedData,
   setHomeData,
   resetCategoryData,
+  setUserData,
 };

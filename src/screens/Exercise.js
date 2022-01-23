@@ -6,13 +6,14 @@ import colors from '../constants/colors';
 import ExerciseCard from '../components/ExerciseCard';
 
 const Exercise = ({route}) => {
-  const {exName, exDescription, exImage} = route.params;
+  const {exName, exDescription, exImage, exReps} = route.params;
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
       <ExerciseCard
         exImage={exImage}
         exName={exName}
         exDescription={exDescription}
+        exReps={exReps}
       />
     </SafeAreaView>
   );

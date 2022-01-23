@@ -5,7 +5,7 @@ const homeData = [
     routineData: {
       routine_name: 'Chest',
       routine_level: 'Beginner',
-      routine_time: '15'
+      routine_time: '15',
     },
     image: require('../../assets/Home/Extra.jpg'),
     color: '#dfdefa'

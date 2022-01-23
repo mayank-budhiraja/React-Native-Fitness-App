@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 100,
+    marginBottom: hp('3%'),
   },
   header: {
     fontSize: 30,
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     width: wp('100%'),
     borderTopRightRadius: 80,
     borderTopLeftRadius: 80,
-    marginTop: 300,
+    marginTop: hp('35%'),
   },
   mainContainer: {
     backgroundColor: colors.app_Tint,

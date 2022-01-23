@@ -8,11 +8,12 @@ import settings from '../store/actions/settings';
 import colors from '../constants/colors';
 
 const Settings = () => {
-  
   const settingState = useSelector((state) => state.settings);
   const dispatch = useDispatch();
 
-  const [pauseTimeOptions, setOptions] = useState(settingState.pauseTimeOptions);
+  const [pauseTimeOptions, setOptions] = useState(
+    settingState.pauseTimeOptions,
+  );
   const [soundInfo, setSound] = useState(settingState.soundInfo);
 
   updatePauseTime = () => {
@@ -20,14 +21,12 @@ const Settings = () => {
   };
 
   updateSound = () => {
-    const data = !soundInfo
-    setSound(data)
-    dispatch(settings.toggleSound(data))
-  }
+    const data = !soundInfo;
+    setSound(data);
+    dispatch(settings.toggleSound(data));
+  };
 
-  useEffect(() => {
-
-  },[pauseTimeOptions, soundInfo])
+  useEffect(() => {}, [pauseTimeOptions, soundInfo]);
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
