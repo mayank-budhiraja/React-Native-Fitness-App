@@ -102,44 +102,49 @@ Restarted project after long time
     - check RoutinePlaylist - done
 
 - Global Settings - done
+
   - Break Time - done
   - Sound on/off - done
 
-# Current
-
-- First open
-
+- First open - Done
   - User Name
   - Age
-  - How many time user works out in a week?
 
-- Remaining theme related work
+- Redux 
+  - Add username  & age
+  - show on homepage
+
+# Current
+
+- Fix images and data
+
+- Images Remaining
 
   - Homepage
     - Add images
   - RoutinePlaylist - start here
     - Add images
+  - UserContainer
+    - Add Images
+  - Begin Screen
+    - add Images
+
+- Check for screen size whether everything is rendering inside or not
+
+- Number of levels - Afterwards
+
+- Launch
+
+# Next iteration
+
+- Add timer
+  - Timer related
   - Exercise Screen
     - Add timer to screen
   - Break Pause Screen
     - Add timer
-
-- Check for screen size whether everything is rendering inside or not
-
-- Fix images and data
-
-# Next iteration
-
 - User Profile
+  - How many time user works out in a week?
   - based on weigh, height and goal
   - 3 4 or 5 days
 - Notifications - send notifications - will do in the end
-
-# Non - tech
-
-- Shortlist content
-  - Number of exercises - Done
-  - Number of images required - In process by Rohit
-  - Number of levels - Afterwards
-  - Check all the exercises
-  - Get google developer account

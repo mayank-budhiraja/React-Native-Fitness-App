@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
 import {TouchableHighlight} from 'react-native-gesture-handler';
 import colors from '../constants/colors';
 import {
@@ -7,10 +7,10 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const NativeButton = ({textName, onClick, buttonWidth}) => {
+const NativeButton = ({textName, onClick, buttonWidth, bgColor}) => {
   return (
     <TouchableHighlight
-      style={[styles.cardContainer, {width: wp(buttonWidth)}]}
+      style={[styles.cardContainer, {width: wp(buttonWidth), backgroundColor: bgColor || colors.app_Tint, borderColor: bgColor || colors.app_Tint}]}
       onPress={onClick}
       underlayColor={colors.app_color_primary}>
       <Text style={styles.text}> {textName} </Text>

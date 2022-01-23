@@ -7,7 +7,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const ExerciseCard = ({exImage, exName, exDescription}) => {
+const ExerciseCard = ({exImage, exName, exDescription, exReps}) => {
   return (
     <>
       <View style={styles.container}>
@@ -17,8 +17,9 @@ const ExerciseCard = ({exImage, exName, exDescription}) => {
           resizeMode="contain"
         />
       </View>
-      <View style={[styles.container, {marginHorizontal: 40}]}>
+      <View style={[styles.container, {marginHorizontal: 40, top: -40}]}>
         <Text style={styles.textContainer}>{exName}</Text>
+        <Text style={styles.repsContainer}>{exReps}</Text>
         <Text style={styles.paraContainer}>{exDescription}</Text>
       </View>
     </>
@@ -39,12 +40,10 @@ const styles = StyleSheet.create({
     color: colors.app_color_primary,
   },
   container: {
-    marginTop: 40,
     marginHorizontal: 20,
+    alignItems: 'center'
   },
   imageContainer: {
-    width: 375,
-    height: 175,
     borderRadius: 20,
   },
   textContainer: {
@@ -52,10 +51,17 @@ const styles = StyleSheet.create({
     fontSize: 32,
     alignItems: 'center',
     justifyContent: 'center',
+    fontWeight: '700'
   },
   paraContainer: {
     color: colors.description,
     fontSize: 20,
     marginTop: 10,
+  },
+  repsContainer: {
+    color: colors.description,
+    fontSize: 20,
+    marginTop: 10,
+    fontWeight: '500'
   },
 });

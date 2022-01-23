@@ -8,7 +8,8 @@ const Sound = ({soundInfo, toggleSound}) => {
     <View style={styles.itemContainer}>
       <Text style={styles.textContainer}>Sound On/Off</Text>
       <View style={styles.radioContainer}>
-        <Switch onValueChange={() => toggleSound(!soundInfo)} value={soundInfo} trackColor={{true: colors.subcategory_button, false: 'grey'}} />
+        <Switch onValueChange={() => toggleSound(!soundInfo)}
+        thumbColor={colors.app_color_secondary} value={soundInfo} trackColor={{true: colors.subcategory_button, false: 'grey'}} />
       </View>
     </View>
   );
