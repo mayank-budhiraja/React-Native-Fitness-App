@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TextInput, Alert} from 'react-native';
+import {View, Text, StyleSheet, TextInput, Alert, Platform, StatusBar} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   widthPercentageToDP as wp,
@@ -13,7 +13,6 @@ import {homeActions} from '../store/actions/home';
 
 const UserContainer = ({navigation}) => {
   const [user, setUser] = useState('');
-  const [age, setAge] = useState('');
 
   const dispatch = useDispatch();
 

@@ -4,6 +4,8 @@ import {PersistGate} from 'redux-persist/es/integration/react';
 import {Provider} from 'react-redux';
 import {store, persistor} from './src/store';
 
+import {Platform, StatusBar} from 'react-native';
+
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import {NavigationContainer} from '@react-navigation/native';
@@ -30,6 +32,9 @@ const Tab = createBottomTabNavigator();
 const App = () => {
   return (
     <>
+      {Platform.OS === 'android' ? (
+        <StatusBar backgroundColor={colors.app_Tint} />
+      ) : null}
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <SafeAreaProvider style={{flex: 1}}>
@@ -49,7 +54,10 @@ const HomeStack = () => {
       screenOptions={{headerShown: false}}
       initialRouteName={screenNames.SPLASH_SCREEN}>
       <Stack.Screen name={screenNames.SPLASH_SCREEN} component={Splash} />
-      <Stack.Screen name={screenNames.USER_CONTAINER} component={UserContainer} />
+      <Stack.Screen
+        name={screenNames.USER_CONTAINER}
+        component={UserContainer}
+      />
       <Stack.Screen name={screenNames.HOME} component={TabNav} />
       <Stack.Screen name={screenNames.ROUTINE} component={Routine} />
       <Stack.Screen name={screenNames.EXERCISE} component={Exercise} />
