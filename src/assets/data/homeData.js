@@ -1,48 +1,59 @@
 const homeData = [
   {
     id: '0',
-    routineDifficulty: 'beginner',
+    routineDifficulty: 'advance',
     routineData: {
-      routine_name: 'Chest',
-      routine_level: 'Beginner',
-      routine_time: '15',
+      routine_name: 'Get on the Rings',
+      routine_level: 'Advance',
+      routine_time: '40',
     },
-    image: require('../../assets/Home/Extra.jpg'),
-    color: '#dfdefa'
+    image: require('../images/Home/rings-1.png'),
+    color: '#e6f4fa',
   },
   {
     id: '1',
-    routineDifficulty: 'moderate',
+    routineDifficulty: 'beginner',
     routineData: {
-      routine_name: 'Back and Shoulder',
+      routine_name: 'Full Body Dips',
       routine_level: 'Beginner',
-      routine_time: '15'
+      routine_time: '20',
     },
-    image: require('../../assets/Home/Medium.jpg'),
-    color: '#def4fa'
+    image: require('../images/Home/chest.png'),
+    color: '#f7ebe1',
   },
   {
     id: '2',
-    routineDifficulty: 'beginner',
+    routineDifficulty: 'moderate',
     routineData: {
-      routine_name: 'Legs',
-      routine_level: 'Beginner',
-      routine_time: '15'
+      routine_name: 'Power Planches',
+      routine_level: 'Moderate',
+      routine_time: '30',
     },
-    image: require('../../assets/Home/Hard.jpg'),
-    color: '#edfade'
+    image: require('../images/Home/back.png'),
+    color: '#e3e5e6',
   },
   {
     id: '3',
+    routineDifficulty: 'beginner',
+    routineData: {
+      routine_name: 'Iron Legs',
+      routine_level: 'Beginner',
+      routine_time: '20',
+    },
+    image: require('../images/Home/legs.png'),
+    color: '#f7ebe1',
+  },
+  {
+    id: '4',
     routineDifficulty: 'advance',
     routineData: {
-      routine_name: 'Cardio',
-      routine_level: 'Beginner',
-      routine_time: '15'
+      routine_name: 'Increase Mobility',
+      routine_level: 'Advance',
+      routine_time: '40',
     },
-    image: require('../../assets/Home/Begin.jpg'),
-    color: '#fadede'
+    image: require('../images/Home/cardio.png'),
+    color: '#e6f4fa',
   },
 ];
 
-export default homeData
+export default homeData;

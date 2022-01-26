@@ -60,13 +60,15 @@ const styles = StyleSheet.create({
   },
   headContainer: {
     fontWeight: '700',
+    fontSize: 20,
     color: colors.app_color_primary,
     marginTop: 20,
     marginLeft: 20,
   },
   paraContainer: {
     fontWeight: '400',
-    color: colors.app_color_primary,
+    color: colors.app_color_secondary,
+    fontSize: 16, 
     marginTop: 5,
     paddingLeft: 20,
   },

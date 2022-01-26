@@ -11,24 +11,27 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-import Begin from '../assets/Home/Begin.jpg';
+import Begin from '../assets/images/Home/chest.png';
+import { useSelector } from 'react-redux';
 
 const BreakPause = ({currentIndex}) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
+
+  const selector = useSelector( state => state.settings)
+
   return (
     <SafeAreaView>
       {currentIndex === 0 ? (
         <View style={styles.container}>
           <View style={styles.imageContainer}>
             <FastImage
-              source={Begin}
               style={{width: wp('80%'), height: hp('40%')}}
             />
           </View>
           <View style={styles.info}>
             <Text style={styles.textContainer}>Let's Begin</Text>
             <Text style={styles.paraContainer}>
-              Press start to begin the routine
+              Press next to begin the routine
             </Text>
           </View>
         </View>
@@ -37,7 +40,7 @@ const BreakPause = ({currentIndex}) => {
           <View style={styles.container}>
             <CountdownCircleTimer
               isPlaying={isPlaying}
-              duration={5}
+              duration={selector.breakTime}
               colors={colors.app_Tint}
               colorsTime={[10, 6, 3, 0]}
               strokeWidth={15}

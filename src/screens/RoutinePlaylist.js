@@ -18,6 +18,7 @@ import {TouchableHighlight} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ExerciseHeader from '../components/ExerciseHeader';
 import CompleteExercise from './CompleteExercise';
+import { useSelector } from 'react-redux';
 
 const RoutinePlaylist = ({navigation, route}) => {
   const {data} = route.params; // to-do state management
@@ -29,6 +30,8 @@ const RoutinePlaylist = ({navigation, route}) => {
   const [delayExercise, setDelay] = useState(false);
 
   const [completeEx, setComplete] = useState(false);
+
+  const settingSelector = useSelector( state => state.settings)
 
   useEffect(() => {}, [currentIndex, delayExercise]);
 
@@ -53,7 +56,7 @@ const RoutinePlaylist = ({navigation, route}) => {
   };
 
   manageBreak = () => {
-    setTimeout(() => setDelay(!!delayExercise), 5000);
+    setTimeout(() => setDelay(!!delayExercise), settingSelector.breakTime * 1000);
   };
 
   quitWorkout = () => {
@@ -107,7 +110,11 @@ const RoutinePlaylist = ({navigation, route}) => {
     );
   };
 
-  return !completeEx ? renderComponent() : <CompleteExercise navigation={navigation}/>;
+  return !completeEx ? (
+    renderComponent()
+  ) : (
+    <CompleteExercise navigation={navigation} />
+  );
 };
 
 const styles = StyleSheet.create({

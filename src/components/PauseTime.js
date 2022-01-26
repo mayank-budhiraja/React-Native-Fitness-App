@@ -4,14 +4,13 @@ import RadioGroup from 'react-native-radio-buttons-group';
 import colors from '../constants/colors';
 
 const PauseTime = ({onClick, buttonsData}) => {
-  //to-do change radio button colour
   return (
     <View style={styles.itemContainer}>
       <Text style={styles.textContainer}>Pause Time</Text>
       <View style={styles.radioContainer}>
         <RadioGroup
           radioButtons={buttonsData}
-          onPress={() => onClick}
+          onPress={onClick}
           layout="row"
           size="18"
         />

@@ -2,6 +2,10 @@ import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import screenNames from '../constants/navigation';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const Card = ({image, navigation, routineData, cardColor}) => {
   return (
@@ -16,7 +20,7 @@ const Card = ({image, navigation, routineData, cardColor}) => {
         <Text style={[styles.textContainer, {fontWeight: '200'}]}> {routineData.routine_time} mins</Text>
       </View>
       <View style={styles.container}>
-        <FastImage style={styles.imageContainer}/>
+        <FastImage source={image} style={[styles.imageContainer, {width: wp('50%'), height: hp('20%')}]}/>
       </View>
     </TouchableOpacity>
   );
@@ -42,11 +46,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   imageContainer: {
-    top: 30,
-    right: 20,  
-    borderWidth: 2,
-    borderColor: 'white',
-    minHeight: 100, 
-    maxHeight: 200
+    right: 40,  
+    maxHeight: hp('20%'),
+    bottom: 10
   }
 });
