@@ -1,4 +1,4 @@
-package com.projectthree;
+package com.shifucalisthenics;
 
 import com.facebook.react.ReactActivity;
 
