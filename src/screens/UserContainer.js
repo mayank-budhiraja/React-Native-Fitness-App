@@ -1,5 +1,15 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TextInput, Alert, Platform, StatusBar} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  Alert,
+  Platform,
+  Keyboard,
+  TouchableWithoutFeedback,
+  KeyboardAvoidingView
+} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {
   widthPercentageToDP as wp,
@@ -36,27 +46,34 @@ const UserContainer = ({navigation}) => {
   };
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <View style={styles.container}>
-        <View>
-          <Text style={styles.header}>Hello User</Text>
-        </View>
-        <View style={styles.subHeader}>
-          <Text>Please enter your name</Text>
-          <TextInput
-            placeholder=" Full Name"
-            style={styles.userInput}
-            onChangeText={(text) => setUser(text)}
-            value={user}
-          />
-        </View>
-        <View style={styles.buttonContainer}>
-          <NativeButton
-            textName="Next"
-            onClick={() => onNext()}
-            buttonWidth={'60%'}
-          />
-        </View>
-      </View>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'position'}
+        style={{flex:1}}
+        >
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+          <View style={styles.container}>
+            <View>
+              <Text style={styles.header}>Hello User</Text>
+            </View>
+            <View style={styles.subHeader}>
+              <Text>Please enter your name</Text>
+              <TextInput
+                placeholder=" Full Name"
+                style={styles.userInput}
+                onChangeText={(text) => setUser(text)}
+                value={user}
+              />
+            </View>
+            <View style={styles.buttonContainer}>
+              <NativeButton
+                textName="Next"
+                onClick={() => onNext()}
+                buttonWidth={'60%'}
+              />
+            </View>
+          </View>
+        </TouchableWithoutFeedback>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 };
@@ -84,6 +101,7 @@ const styles = StyleSheet.create({
     marginTop: 300,
   },
   mainContainer: {
+    flex:1, 
     backgroundColor: colors.app_Tint,
     flexDirection: 'column',
     alignItems: 'flex-end',

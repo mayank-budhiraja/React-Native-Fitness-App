@@ -17,7 +17,7 @@ const ExerciseCard = ({exImage, exName, exDescription, exReps}) => {
           resizeMode="contain"
         />
       </View>
-      <View style={[styles.container, {marginHorizontal: 40, top: -40}]}>
+      <View style={[styles.subContainer, {marginHorizontal: 40, top: -40}]}>
         <Text style={styles.textContainer}>{exName}</Text>
         <Text style={styles.paraContainer}>{exDescription}</Text>
       </View>
@@ -39,7 +39,12 @@ const styles = StyleSheet.create({
     color: colors.app_color_primary,
   },
   container: {
+    margin: 30, 
+    height: hp('60%'), 
     marginHorizontal: 20,
+    alignItems: 'center'
+  },
+  subContainer: {
     alignItems: 'center'
   },
   imageContainer: {
