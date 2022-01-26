@@ -14,9 +14,21 @@ I wanted to help fitness industry to come up with great apps whether it is relat
 - Due to the lack of time I am looking for community help to improve the project. 
 
 ## Improvements
-- Improve styling, add shadows
+- Improve styling 
+    - Poor horizontal margin at Home Screen
+    - Poor flatlist render
+    - Add shadows
+    - Poor button render at RountineList Screen
+    - Exercise Screen
+        - Remove header
+        - Make header responsive
+
 - Screen responsive testing
 - Add sound (after exercise and routine is completed)
+
+## Issues
+- Home - Exit app at backhandler
+- 
 
 ## Contribution
 I am not following any specific pattern for PR, just follow the basics. 
