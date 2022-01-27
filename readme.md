@@ -13,5 +13,10 @@ I wanted to help fitness industry to come up with great apps whether it is relat
 - May be my code haven't been up not to the mark or missed some obvious cases as I had very less time. 
 - Due to the lack of time I am looking for community help to improve the project. 
 
+## Improvements
+- Improve styling, add shadows
+- Screen responsive testing
+- Add sound (after exercise and routine is completed)
+
 ## Contribution
 I am not following any specific pattern for PR, just follow the basics. 
