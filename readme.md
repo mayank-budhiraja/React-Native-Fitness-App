@@ -116,22 +116,13 @@ Restarted project after long time
 
 # Current
 
-- Fix images and data
-
-- Images Remaining
-
-  - Homepage
-    - Add images
-  - RoutinePlaylist - start here
-    - Add images
-  - UserContainer
-    - Add Images
-  - Begin Screen
-    - add Images
+- Redux link break/pause time
 
 - Check for screen size whether everything is rendering inside or not
 
-- Number of levels - Afterwards
+- Improve styling - add shadows
+
+- Fix readme documentation
 
 - Launch
 

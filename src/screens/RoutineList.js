@@ -6,8 +6,9 @@ import {
   FlatList,
   StyleSheet,
   View,
+  Platform,
 } from 'react-native';
-import routines from '../assets/Routine/routines';
+import routines from '../assets/data/routines';
 import RoutineCard from '../components/RoutineCard';
 import colors from '../constants/colors';
 import screenNames from '../constants/navigation';
@@ -19,10 +20,6 @@ import NativeButton from '../components/NativeButton';
 
 const Routine = ({navigation, route}) => {
   const {routineType} = route.params;
-  //based on routineType. information should be extracted - done
-  //create card component for Routine screen - done
-
-  //create data for all routineType - done
 
   renderItem = ({item}) => {
     return item[routineType].map((x, index) => {
@@ -41,11 +38,6 @@ const Routine = ({navigation, route}) => {
   const startRoutine = () => {
     const selectedRoutine = routines[0][routineType];
     navigation.navigate(screenNames.ROUTINEPLAYLIST, {data: selectedRoutine});
-
-    // from here we will send the array to start the function
-    // push a screen
-    // start the exercise
-    // Next button - to go to next exercise
   };
 
   return (
@@ -76,7 +68,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: hp('3%'),
+    marginBottom: Platform.OS === 'android' ? hp('3%') : hp('12%'),
   },
   header: {
     fontSize: 30,

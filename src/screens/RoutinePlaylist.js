@@ -107,7 +107,11 @@ const RoutinePlaylist = ({navigation, route}) => {
     );
   };
 
-  return !completeEx ? renderComponent() : <CompleteExercise navigation={navigation}/>;
+  return !completeEx ? (
+    renderComponent()
+  ) : (
+    <CompleteExercise navigation={navigation} />
+  );
 };
 
 const styles = StyleSheet.create({

@@ -11,7 +11,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-import Begin from '../assets/Home/Begin.jpg';
+import Begin from '../assets/images/Home/chest.png';
 
 const BreakPause = ({currentIndex}) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
@@ -21,14 +21,14 @@ const BreakPause = ({currentIndex}) => {
         <View style={styles.container}>
           <View style={styles.imageContainer}>
             <FastImage
-              source={Begin}
+              
               style={{width: wp('80%'), height: hp('40%')}}
             />
           </View>
           <View style={styles.info}>
             <Text style={styles.textContainer}>Let's Begin</Text>
             <Text style={styles.paraContainer}>
-              Press start to begin the routine
+              Press next to begin the routine
             </Text>
           </View>
         </View>

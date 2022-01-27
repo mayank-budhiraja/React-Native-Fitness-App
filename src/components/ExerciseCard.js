@@ -13,13 +13,12 @@ const ExerciseCard = ({exImage, exName, exDescription, exReps}) => {
       <View style={styles.container}>
         <FastImage
           source={exImage}
-          style={[styles.imageContainer, {width: wp('90%'), height: hp('50%')}]}
+          style={[styles.imageContainer, {width: wp('90%'), height: hp('60%')}]}
           resizeMode="contain"
         />
       </View>
       <View style={[styles.container, {marginHorizontal: 40, top: -40}]}>
         <Text style={styles.textContainer}>{exName}</Text>
-        <Text style={styles.repsContainer}>{exReps}</Text>
         <Text style={styles.paraContainer}>{exDescription}</Text>
       </View>
     </>
@@ -47,16 +46,17 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   textContainer: {
-    color: colors.heading,
-    fontSize: 32,
+    color: colors.app_color_primary,
+    fontSize: 28,
     alignItems: 'center',
     justifyContent: 'center',
     fontWeight: '700'
   },
   paraContainer: {
-    color: colors.description,
+    color: colors.app_color_secondary,
     fontSize: 20,
     marginTop: 10,
+    fontWeight: '500'
   },
   repsContainer: {
     color: colors.description,

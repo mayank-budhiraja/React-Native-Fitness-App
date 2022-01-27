@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View, FlatList, StyleSheet} from 'react-native';
+import {Text, View, FlatList, StyleSheet, Platform} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {useDispatch, useSelector} from 'react-redux';
 import Card from '../components/Card';
@@ -12,11 +12,7 @@ const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
 
   useEffect(() => {
-    /*const date = new Date();
-    const subTitle =
-      date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
-    setDate(subTitle);
-    */
+    
   }, [navigation]);
 
   renderItem = ({item}) => (
@@ -30,30 +26,32 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+      
       <View style={{marginBottom: 30}}>
         <Header
           userImage={defaultUser}
           userName={home.userData.userName || 'User'}
         />
       </View>
+
       <View style={{margin: 10, marginTop: -20}}>
         <SubHeader data={subCategories} />
       </View>
 
-      <View style={{flex: 1, marginTop: -10}}>
-        <FlatList
-          data={home.feedData}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          style={styles.flatListContainer}
-        />
-      </View>
+      <FlatList
+        data={home.feedData}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.id}
+        style={styles.flatListContainer}
+      />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  flatListContainer: {},
+  flatListContainer: {
+    paddingBottom: Platform.OS === 'ios' ? 560 : 0
+  },
 });
 
 export default Home;
