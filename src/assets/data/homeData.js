@@ -8,7 +8,7 @@ const homeData = [
       routine_time: '40',
     },
     image: require('../images/Home/rings-1.png'),
-    color: '#faf0de',
+    color: '#e6f4fa',
   },
   {
     id: '1',
@@ -19,7 +19,7 @@ const homeData = [
       routine_time: '20',
     },
     image: require('../images/Home/chest.png'),
-    color: '#dfdefa',
+    color: '#f7ebe1',
   },
   {
     id: '2',
@@ -30,7 +30,7 @@ const homeData = [
       routine_time: '30',
     },
     image: require('../images/Home/back.png'),
-    color: '#def4fa',
+    color: '#e3e5e6',
   },
   {
     id: '3',
@@ -41,7 +41,7 @@ const homeData = [
       routine_time: '20',
     },
     image: require('../images/Home/legs.png'),
-    color: '#edfade',
+    color: '#f7ebe1',
   },
   {
     id: '4',
@@ -52,7 +52,7 @@ const homeData = [
       routine_time: '40',
     },
     image: require('../images/Home/cardio.png'),
-    color: '#fadede',
+    color: '#e6f4fa',
   },
 ];
 

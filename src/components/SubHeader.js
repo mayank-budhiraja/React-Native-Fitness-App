@@ -22,7 +22,7 @@ const SubHeader = () => {
           onPress={() =>
             dispatch(homeActions.setHomeData(item.id, item.routineDifficulty))
           }>
-          <Text style={[ selected != 0 ? {color: colors.subcat_button_text} : {}, styles.subcategoryText]}>{item.title}</Text>
+          <Text style={[ selected != 0 ? {color: colors.subcat_button_text} : {color: colors.app_color_primary, fontWeight: '900'}, styles.subcategoryText]}>{item.title}</Text>
         </TouchableOpacity>
       </View>
     );
@@ -40,7 +40,7 @@ const SubHeader = () => {
               : styles.itemContainer,
             styles.resetButton,
           ]}>
-          <Text style={[ home.selectID == 0 ? styles.containerText : {color: 'black', fontWeight: '500'}]}>All</Text>
+          <Text style={[ home.selectID == 0 ? styles.containerText : {color: colors.app_color_primary, fontWeight: '600'}]}>All</Text>
         </TouchableOpacity>
         <FlatList
           data={home.subData}
@@ -58,7 +58,7 @@ export default SubHeader;
 
 const styles = StyleSheet.create({
   subcategoryText: {
-    fontWeight: '500'
+    fontWeight: '500',
   },
   containerText: {
     color: 'white',
