@@ -11,8 +11,6 @@ const RoutineCard = ({
   exerciseDescription,
   exerciseRep
 }) => {
-  //navigation must have data for the routine
-
   return (
     <View style={{marginHorizontal: 15}}>
       <TouchableOpacity
