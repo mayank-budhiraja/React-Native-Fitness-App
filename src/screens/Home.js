@@ -1,19 +1,48 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View, FlatList, StyleSheet, Platform} from 'react-native';
-import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
-import {useDispatch, useSelector} from 'react-redux';
+import {
+  Text,
+  View,
+  FlatList,
+  StyleSheet,
+  Platform,
+  BackHandler,
+  Alert,
+} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {useSelector} from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import SubHeader from '../components/SubHeader';
 import subCategories from '../assets/data/subCategories';
 import defaultUser from '../assets/defaults/user.png';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
 
   useEffect(() => {
-    
-  }, [navigation]);
+    const backAction = () => {
+      Alert.alert('Hold on!', 'Are you sure you want to go back?', [
+        {
+          text: 'Cancel',
+          onPress: () => null,
+          style: 'cancel',
+        },
+        {text: 'YES', onPress: () => BackHandler.exitApp()},
+      ]);
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      backAction,
+    );
+
+    return () => backHandler.remove();
+  }, []);
 
   renderItem = ({item}) => (
     <Card
@@ -25,8 +54,7 @@ const Home = ({navigation}) => {
   );
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
-      
+    <SafeAreaView style={{ height: hp('95%'),backgroundColor: 'white'}}>
       <View style={{marginBottom: 30}}>
         <Header
           userImage={defaultUser}
@@ -34,7 +62,7 @@ const Home = ({navigation}) => {
         />
       </View>
 
-      <View style={{margin: 10, marginTop: -20}}>
+      <View style={{margin: 5, marginTop: -20}}>
         <SubHeader data={subCategories} />
       </View>
 
@@ -50,7 +78,6 @@ const Home = ({navigation}) => {
 
 const styles = StyleSheet.create({
   flatListContainer: {
-    paddingBottom: Platform.OS === 'ios' ? 560 : 0
   },
 });
 

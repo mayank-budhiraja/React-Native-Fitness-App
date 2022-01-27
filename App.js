@@ -58,7 +58,7 @@ const HomeStack = () => {
         name={screenNames.USER_CONTAINER}
         component={UserContainer}
       />
-      <Stack.Screen name={screenNames.HOME} component={TabNav} />
+      <Stack.Screen name={screenNames.HOME} component={TabNav} options={Platform.OS === 'ios' ? {gestureEnabled: false} : {}}/>
       <Stack.Screen name={screenNames.ROUTINE} component={Routine} />
       <Stack.Screen name={screenNames.EXERCISE} component={Exercise} />
       <Stack.Screen

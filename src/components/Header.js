@@ -5,7 +5,7 @@ import colors from '../constants/colors';
 
 const Header = ({userName, userImage, subTitle}) => {
   return (
-    <View style={{flexDirection: 'column', marginTop: 10, marginHorizontal: 16}}>
+    <View style={{flexDirection: 'column', marginTop: 10, marginHorizontal: 7}}>
       <View style={styles.container}>
         <View>
           <Text style={styles.userText}>Hello {userName}</Text>
