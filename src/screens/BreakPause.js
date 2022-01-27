@@ -12,16 +12,19 @@ import {
 } from 'react-native-responsive-screen';
 
 import Begin from '../assets/images/Home/chest.png';
+import { useSelector } from 'react-redux';
 
 const BreakPause = ({currentIndex}) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
+
+  const selector = useSelector( state => state.settings)
+
   return (
     <SafeAreaView>
       {currentIndex === 0 ? (
         <View style={styles.container}>
           <View style={styles.imageContainer}>
             <FastImage
-              
               style={{width: wp('80%'), height: hp('40%')}}
             />
           </View>
@@ -37,7 +40,7 @@ const BreakPause = ({currentIndex}) => {
           <View style={styles.container}>
             <CountdownCircleTimer
               isPlaying={isPlaying}
-              duration={5}
+              duration={selector.breakTime}
               colors={colors.app_Tint}
               colorsTime={[10, 6, 3, 0]}
               strokeWidth={15}

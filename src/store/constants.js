@@ -6,7 +6,8 @@ const actions = {
   RESET_FEED_DATA: 'RESET_FEED_DATA',
   SET_PAUSE_TIME: 'SET_PAUSE_TIME',
   SET_SOUND: 'SET_SOUND',
-  SET_USER_DATA: 'SET_USER_DATA'
+  SET_USER_DATA: 'SET_USER_DATA',
+  BREAK_TIME: 'BREAK_TIME'
 };
 
 export default actions;

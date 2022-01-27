@@ -17,7 +17,8 @@ const Settings = () => {
   const [soundInfo, setSound] = useState(settingState.soundInfo);
 
   updatePauseTime = () => {
-    setPauseTime(data);
+    const data = settingState.pauseTimeOptions.filter(i => i.selected)
+    dispatch(settings.setBreakTime(data[0].value))
   };
 
   updateSound = () => {
@@ -70,18 +71,4 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStateToProps = (state) => {
-  return {
-    soundInfo: state.settings.soundInfo,
-    pauseTimeOptions: state.settings.pauseTimeOptions,
-  };
-};
-
-const mapDispatchToProps = {
-  toggleSound: settings.toggleSound,
-  setPauseTime: settings.setPauseTime,
-};
-
-const SettingsWrapper = connect(mapStateToProps, mapDispatchToProps)(Settings);
-
-export default SettingsWrapper;
+export default Settings;

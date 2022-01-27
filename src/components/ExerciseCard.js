@@ -13,7 +13,7 @@ const ExerciseCard = ({exImage, exName, exDescription, exReps}) => {
       <View style={styles.container}>
         <FastImage
           source={exImage}
-          style={[styles.imageContainer, {width: wp('90%'), height: hp('60%')}]}
+          style={[styles.imageContainer, {width: wp('90%'), height: hp('50%')}]}
           resizeMode="contain"
         />
       </View>
