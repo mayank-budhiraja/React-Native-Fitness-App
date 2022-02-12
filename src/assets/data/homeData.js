@@ -36,7 +36,7 @@ const homeData = [
     id: '3',
     routineDifficulty: 'beginner',
     routineData: {
-      routine_name: 'Iron Legs',
+      routine_name: 'Legs of Iron',
       routine_level: 'Beginner',
       routine_time: '20',
     },
