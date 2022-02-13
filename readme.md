@@ -15,12 +15,17 @@ I wanted to help fitness industry to come up with great apps whether it is relat
 
 ## Improvements
 - Improve styling 
-    - Poor horizontal margin at Home Screen
-    - Poor flatlist render
-    - Add shadows
+    - Poor horizontal margin at Home Screen - Done
+    - Poor flatlist render - done
+    - Find a UI Design for Homepage
+        - Select a color paletter
+        - Keep it simple
+        - Add drop shadow to buttons
+        - Add linear gradient to buttons
     - Poor button render at RountineList Screen
+    - Improve color scheme
     - Exercise Screen
-        - Remove header
+        - Remove header - Done
         - Make header responsive
 
 - Screen responsive testing

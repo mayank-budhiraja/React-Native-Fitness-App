@@ -4,12 +4,11 @@ import {
   View,
   FlatList,
   StyleSheet,
-  Platform,
   BackHandler,
   Alert,
-  ImageBackground,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import { useFocusEffect } from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
@@ -26,26 +25,27 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
 
-  useEffect(() => {
-    const backAction = () => {
-      Alert.alert('Hold on!', 'Are you sure you want to go back?', [
-        {
-          text: 'Cancel',
-          onPress: () => null,
-          style: 'cancel',
-        },
-        {text: 'YES', onPress: () => BackHandler.exitApp()},
-      ]);
-      return true;
-    };
+  useFocusEffect(
+    React.useCallback(() => {
+      BackHandler.addEventListener('hardwareBackPress', backAction);
 
-    const backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
-      backAction,
-    );
+      return () =>
+        BackHandler.removeEventListener('hardwareBackPress', backAction);
+    }, []),
+  );
 
-    return () => backHandler.remove();
-  }, []);
+  const backAction = () => {
+    Alert.alert('Hold on!', 'Are you sure you want to go back?', [
+      {
+        text: 'Cancel',
+        onPress: () => null,
+        style: 'cancel',
+      },
+      {text: 'YES', onPress: () => BackHandler.exitApp()},
+    ]);
+
+    return true;
+  };
 
   renderItem = ({item}) => (
     <Card
@@ -73,9 +73,11 @@ const Home = ({navigation}) => {
         />
       </View>
 
-      <View style={{margin: 5, marginTop: -20}}>
+      <View style={{marginTop: -20}}>
         <SubHeader data={subCategories} />
       </View>
+
+      {/* <Text style={{fontSize: 20, marginHorizontal: 20, fontWeight: '700'}}> Practice </Text> */}
 
       <FlatList
         data={home.feedData}
@@ -83,7 +85,6 @@ const Home = ({navigation}) => {
         keyExtractor={(item) => item.id}
         style={styles.flatListContainer}
         numColumns={2}
-        viewabilityConfig={70}
       />
 
       <View style={styles.container}></View>
@@ -94,14 +95,14 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
   mainImage: {
     position: 'absolute',
-    top: -100
+    top: -100,
   },
   flatListContainer: {
    
   },
   mainContainer: {
     backgroundColor: colors.app_Tint,
-    flexDirection: 'column',
+    flex: 1,
   },
   container: {
     backgroundColor: '#F8F8F8',

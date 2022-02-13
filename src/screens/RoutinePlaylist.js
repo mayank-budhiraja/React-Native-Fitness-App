@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Button,
   Alert,
+  BackHandler
 } from 'react-native';
 
 import ExerciseCard from '../components/ExerciseCard';
@@ -18,7 +19,7 @@ import {TouchableHighlight} from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ExerciseHeader from '../components/ExerciseHeader';
 import CompleteExercise from './CompleteExercise';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 
 const RoutinePlaylist = ({navigation, route}) => {
   const {data} = route.params; // to-do state management
@@ -31,9 +32,15 @@ const RoutinePlaylist = ({navigation, route}) => {
 
   const [completeEx, setComplete] = useState(false);
 
-  const settingSelector = useSelector( state => state.settings)
+  const settingSelector = useSelector((state) => state.settings);
 
-  useEffect(() => {}, [currentIndex, delayExercise]);
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      quitWorkout,
+    );
+    return () => backHandler.remove();
+  }, [currentIndex, delayExercise]);
 
   onClickNext = () => {
     if (currentIndex < data.length) {
@@ -56,7 +63,10 @@ const RoutinePlaylist = ({navigation, route}) => {
   };
 
   manageBreak = () => {
-    setTimeout(() => setDelay(!!delayExercise), settingSelector.breakTime * 1000);
+    setTimeout(
+      () => setDelay(!!delayExercise),
+      settingSelector.breakTime * 1000,
+    );
   };
 
   quitWorkout = () => {
@@ -123,7 +133,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    bottom: 30
+    bottom: 30,
   },
 });
 

@@ -33,7 +33,7 @@ const App = () => {
   return (
     <>
       {Platform.OS === 'android' ? (
-        <StatusBar backgroundColor={colors.app_Tint} />
+        <StatusBar backgroundColor={colors.borderColor} />
       ) : null}
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>

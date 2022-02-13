@@ -2,10 +2,15 @@ import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import colors from '../constants/colors';
+import SubHeader from '../components/SubHeader';
 
-const Header = ({userName, userImage, subTitle}) => {
+const Header = ({userName, userImage, subTitle, subCategories}) => {
   return (
-    <View style={{flexDirection: 'column', marginTop: 10, marginHorizontal: 1}}>
+    <View
+      style={{
+        flexDirection: 'column',
+        marginHorizontal: 1,
+      }}>
       <View style={styles.container}>
         <View>
           <Text style={styles.userText}>Hello {userName}</Text>
@@ -25,7 +30,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   subTitle: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     marginHorizontal: 20,
     top: -20,
     color: colors.solidWhite,

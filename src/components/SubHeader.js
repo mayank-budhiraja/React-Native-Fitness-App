@@ -33,8 +33,13 @@ const SubHeader = () => {
   };
 
   return (
-    <View style={{marginHorizontal: 10}}>
-      <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 30}}>
+    <View style={{marginHorizontal: 15}}>
+      <View
+        style={{
+          flexDirection: 'row',
+          jstifyContent: 'space-between',
+          marginBottom: 30,
+        }}>
         <Text style={styles.textContainer}> Categories </Text>
         <Text
           style={{
@@ -43,8 +48,7 @@ const SubHeader = () => {
             color: 'white',
             marginRight: 10,
           }}>
-          {' '}
-          All{' '}
+          All
         </Text>
       </View>
 
@@ -66,6 +70,8 @@ const SubHeader = () => {
             All
           </Text>
         </TouchableOpacity>
+      </View>
+      {/* <View style={styles.container}>
         <FlatList
           data={home.subData}
           renderItem={renderItem}
@@ -91,20 +97,28 @@ const styles = StyleSheet.create({
   selectedContainer: {
     borderWidth: 1,
     backgroundColor: colors.subcategory_button,
-    borderColor: colors.subcategory_button,
-    borderRadius: 15,
-    marginRight: 10,
-    padding: 10,
+    borderColor: colors.app_Tint,
+    borderRadius: 20,
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+    marginLeft: 5,
+  },
+  itemContainer: {
+    borderRadius: 20,
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+    marginLeft: 5,
+    backgroundColor: '#fff5ed',
   },
   container: {
     flexDirection: 'row',
   },
   resetButton: {
-    margin: 15,
+    paddingHorizontal: 30,
+    fontSize: 20,
+    color: colors.app_color_primary,
   },
-  flatListContainer: {
-    margin: 15,
-  },
+  flatListContainer: {},
   textContainer: {
     fontSize: 24,
     fontWeight: '700',

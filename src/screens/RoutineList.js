@@ -66,9 +66,12 @@ const Routine = ({navigation, route}) => {
 
 const styles = StyleSheet.create({
   buttonContainer: {
+    borderColor: colors.borderColor,
+    borderTopWidth: 1.5, 
+    paddingTop: 20,
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: Platform.OS === 'android' ? hp('3%') : hp('12%'),
+    marginBottom: Platform.OS === 'android' ? hp('2%') : hp('12%'),
   },
   header: {
     fontSize: 30,
@@ -79,11 +82,11 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: colors.solidWhite,
-    height: hp('65%'),
+    height: hp('80%'),
     width: wp('100%'),
     borderTopRightRadius: 80,
     borderTopLeftRadius: 80,
-    marginTop: hp('35%'),
+    marginTop: hp('20%'),
   },
   mainContainer: {
     backgroundColor: colors.app_Tint,

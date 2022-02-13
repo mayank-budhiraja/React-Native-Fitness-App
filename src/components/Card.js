@@ -6,7 +6,6 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import {color} from 'react-native-reanimated';
 import colors from '../constants/colors';
 
 const Card = ({image, navigation, routineData, cardColor}) => {
@@ -40,6 +39,19 @@ const Card = ({image, navigation, routineData, cardColor}) => {
 export default Card;
 
 const styles = StyleSheet.create({
+  buttonContainer: {
+    flexDirection: 'row',
+    paddingVertical: 8,
+    borderRadius: 20,
+    borderRadius: 20,
+    backgroundColor: colors.cardButton,
+    marginTop: hp('7%'),
+    maxWidth: wp('30%'),
+  },
+  mainContainer: {
+    flex: 1,
+    flexDirection: 'column',
+  },
   container: {
     flex: 1,
     flexDirection: 'row',
