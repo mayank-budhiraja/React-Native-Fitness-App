@@ -7,9 +7,9 @@ import {
   StyleSheet,
   Button,
   Alert,
-  BackHandler
+  BackHandler,
 } from 'react-native';
-
+import {useFocusEffect} from '@react-navigation/native';
 import ExerciseCard from '../components/ExerciseCard';
 import BreakPause from './BreakPause';
 import BeginExercise from './BeginExercise';
@@ -34,13 +34,14 @@ const RoutinePlaylist = ({navigation, route}) => {
 
   const settingSelector = useSelector((state) => state.settings);
 
-  useEffect(() => {
-    const backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
-      quitWorkout,
-    );
-    return () => backHandler.remove();
-  }, [currentIndex, delayExercise]);
+  useFocusEffect(
+    React.useCallback(() => {
+      BackHandler.addEventListener('hardwareBackPress', quitWorkout);
+
+      return () =>
+        BackHandler.removeEventListener('hardwareBackPress', quitWorkout);
+    }, [currentIndex, delayExercise]),
+  );
 
   onClickNext = () => {
     if (currentIndex < data.length) {
@@ -69,7 +70,7 @@ const RoutinePlaylist = ({navigation, route}) => {
     );
   };
 
-  quitWorkout = () => {
+  const quitWorkout = () => {
     Alert.alert('Hold on!', 'Are you sure you want to quit?', [
       {
         text: 'Cancel',
@@ -84,6 +85,7 @@ const RoutinePlaylist = ({navigation, route}) => {
           }),
       },
     ]);
+    return true;
   };
 
   renderComponent = () => {

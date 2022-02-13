@@ -8,6 +8,7 @@ const colors = {
     subcategory_button: 'white',
     subcat_button_text: 'white',
     solidWhite: 'white',
+    secondary_container: '#F8F8F8',
     cardBG: 'rgba(245, 126, 122, 0.1)'
 }
 

@@ -37,7 +37,7 @@ const SubHeader = () => {
       <View
         style={{
           flexDirection: 'row',
-          jstifyContent: 'space-between',
+          justifyContent: 'space-between',
           marginBottom: 30,
         }}>
         <Text style={styles.textContainer}> Categories </Text>
@@ -46,7 +46,7 @@ const SubHeader = () => {
             fontSize: 24,
             fontWeight: '700',
             color: 'white',
-            marginRight: 10,
+            right: 10,
           }}>
           All
         </Text>

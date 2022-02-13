@@ -25,15 +25,23 @@ import colors from './src/constants/colors';
 import Splash from './src/screens/Splash';
 
 import UserContainer from './src/screens/UserContainer';
+import ListExercise from './src/screens/ListExercise';
+
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+import Analysis from './src/screens/Analysis';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+const iconSize = 30;
 
 const App = () => {
   return (
     <>
       {Platform.OS === 'android' ? (
-        <StatusBar backgroundColor={colors.borderColor} />
+        <StatusBar backgroundColor={colors.app_Tint} />
       ) : null}
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
@@ -58,7 +66,11 @@ const HomeStack = () => {
         name={screenNames.USER_CONTAINER}
         component={UserContainer}
       />
-      <Stack.Screen name={screenNames.HOME} component={TabNav} options={Platform.OS === 'ios' ? {gestureEnabled: false} : {}}/>
+      <Stack.Screen
+        name={screenNames.HOME}
+        component={TabNav}
+        options={Platform.OS === 'ios' ? {gestureEnabled: false} : {}}
+      />
       <Stack.Screen name={screenNames.ROUTINE} component={Routine} />
       <Stack.Screen name={screenNames.EXERCISE} component={Exercise} />
       <Stack.Screen
@@ -75,7 +87,13 @@ const HomeStack = () => {
 
 const TabNav = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      tabBarOptions={{
+        style: {
+          height: hp('7%'),
+          backgroundColor: colors.secondary_container,
+        },
+      }}>
       <Tab.Screen
         name={screenNames.HOME}
         component={Home}
@@ -88,7 +106,51 @@ const TabNav = () => {
             return (
               <Icon
                 name="home"
-                size={36}
+                size={iconSize}
+                color={
+                  tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
+                }
+                style={{top: 10}}
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name={screenNames.LIST_EXERCISE}
+        component={ListExercise}
+        options={{
+          tabBarLabel: '',
+          tabBarOptions: {
+            activeTintColor: colors.app_Tint,
+          },
+          tabBarIcon: (tabInfo) => {
+            return (
+              <Icon
+                name="md-calendar-outline"
+                size={iconSize}
+                color={
+                  tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
+                }
+                style={{top: 10}}
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name={screenNames.ANALYSIS}
+        component={Analysis}
+        options={{
+          tabBarLabel: '',
+          tabBarOptions: {
+            activeTintColor: colors.app_Tint,
+          },
+          tabBarIcon: (tabInfo) => {
+            return (
+              <Icon
+                name="stats-chart-outline"
+                size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
                 }
@@ -109,8 +171,8 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="settings-sharp"
-                size={36}
+                name="options-outline"
+                size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
                 }

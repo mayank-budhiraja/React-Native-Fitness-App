@@ -8,7 +8,7 @@ import {
   Alert,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import { useFocusEffect } from '@react-navigation/native';
+import {useFocusEffect} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
@@ -21,6 +21,7 @@ import {
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
@@ -58,11 +59,11 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <View opacity={0.1}>
+      <View opacity={0.2}>
         <Icon
           name="cloudy-night"
-          size={25}
-          color={"#F5CBB4"}
+          size={250}
+          color={'#F5CBB4'}
           style={styles.mainImage}
         />
       </View>
@@ -95,17 +96,14 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
   mainImage: {
     position: 'absolute',
-    top: -100,
   },
-  flatListContainer: {
-   
-  },
+  flatListContainer: {},
   mainContainer: {
     backgroundColor: colors.app_Tint,
     flex: 1,
   },
   container: {
-    backgroundColor: '#F8F8F8',
+    backgroundColor: colors.secondary_container,
     height: hp('65%'),
     width: wp('100%'),
     marginTop: hp('35%'),
