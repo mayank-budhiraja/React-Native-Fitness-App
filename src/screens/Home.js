@@ -6,6 +6,7 @@ import {
   StyleSheet,
   BackHandler,
   Alert,
+  TouchableOpacity,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useFocusEffect} from '@react-navigation/native';
@@ -20,8 +21,10 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
+import FastImage from 'react-native-fast-image';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+import {color} from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+import MainCard from '../components/MainCard';
 
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
@@ -59,47 +62,39 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <View opacity={0.2}>
-        <Icon
-          name="cloudy-night"
-          size={250}
-          color={'#F5CBB4'}
-          style={styles.mainImage}
-        />
-      </View>
-      <View style={{marginBottom: 30}}>
-        <Header
-          userImage={defaultUser}
-          userName={home.userData.userName || 'User'}
-        />
-      </View>
-
-      <View style={{marginTop: -20}}>
-        <SubHeader data={subCategories} />
-      </View>
-
-      {/* <Text style={{fontSize: 20, marginHorizontal: 20, fontWeight: '700'}}> Practice </Text> */}
+      <Header userName={'User'} subTitle={' Personal Fitness'} />
+      <MainCard
+        image={require('../assets/images/Home/legs.png')}
+        headerText={'Full Body Workout'}
+        subHeaderText={'Intermediate'}
+        timeText={'20 mins'}
+      />
 
       <FlatList
         data={home.feedData}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         style={styles.flatListContainer}
-        numColumns={2}
+        horizontal
       />
-
-      <View style={styles.container}></View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+  homeCard: {
+    marginHorizontal: 20,
+    borderWidth: 2,
+    marginTop: 50,
+  },
   mainImage: {
     position: 'absolute',
   },
-  flatListContainer: {},
+  flatListContainer: {
+    marginTop: 50,
+  },
   mainContainer: {
-    backgroundColor: colors.app_Tint,
+    backgroundColor: colors.solidWhite,
     flex: 1,
   },
   container: {
