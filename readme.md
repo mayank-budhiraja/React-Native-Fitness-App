@@ -14,14 +14,10 @@ I wanted to help fitness industry to come up with great apps whether it is relat
 - Due to the lack of time I am looking for community help to improve the project. 
 
 ## Improvements
-- Improve styling 
-    - Poor horizontal margin at Home Screen
-    - Poor flatlist render
-    - Add shadows
-    - Poor button render at RountineList Screen
-    - Exercise Screen
-        - Remove header
-        - Make header responsive
+- Categories
+    - Implement dropdown list
+
+- Correct user-name
 
 - Screen responsive testing
 - Add sound (after exercise and routine is completed)

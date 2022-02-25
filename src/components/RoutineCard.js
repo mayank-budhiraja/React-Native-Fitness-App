@@ -3,16 +3,24 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import colors from '../constants/colors';
 import screenNames from '../constants/navigation';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const RoutineCard = ({
   image,
   navigation,
   exerciseName,
   exerciseDescription,
-  exerciseRep
+  exerciseRep,
 }) => {
   return (
-    <View style={{marginHorizontal: 15}}>
+    <View
+      style={{
+        marginHorizontal: 5,
+        marginVertical: 8,
+      }}>
       <TouchableOpacity
         style={styles.cardContainer}
         onPress={() =>
@@ -20,13 +28,17 @@ const RoutineCard = ({
             exName: exerciseName,
             exDescription: exerciseDescription,
             exImage: image,
-            exReps: exerciseRep
+            exReps: exerciseRep,
           })
         }>
         <FastImage
           source={image}
-          style={styles.imageContainer}
-          resizeMode="contain"
+          style={[
+            styles.imageContainer,
+            styles.shadowContainer,
+            {width: wp('24%'), height: hp('12%')},
+          ]}
+          resizeMode="stretch"
         />
         <View style={styles.textContainer}>
           <Text style={styles.headContainer}>{exerciseName}</Text>
@@ -48,9 +60,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
   },
   imageContainer: {
-    width: 100,
-    height: 100,
     borderRadius: 20,
+    backgroundColor: colors.borderLight
   },
   cardContainer: {
     borderRadius: 10,
@@ -60,18 +71,23 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 20,
     color: colors.app_color_primary,
-    marginTop: 20,
     marginLeft: 20,
   },
   paraContainer: {
     fontWeight: '400',
     color: colors.app_color_secondary,
-    fontSize: 16, 
+    fontSize: 16,
     marginTop: 5,
     paddingLeft: 20,
   },
   textContainer: {
     flex: 1,
     flexDirection: 'column',
+    //borderWidth: 2,
+    alignContent: 'center'
+  },
+  shadowContainer: {
+    borderRadius: 20,
+    //borderWidth: 2,
   },
 });

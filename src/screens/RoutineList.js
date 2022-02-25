@@ -65,11 +65,6 @@ const Routine = ({navigation, route}) => {
 };
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginBottom: Platform.OS === 'android' ? hp('3%') : hp('12%'),
-  },
   header: {
     fontSize: 30,
     fontWeight: '700',
@@ -79,11 +74,11 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: colors.solidWhite,
-    height: hp('65%'),
+    height: hp('80%'),
     width: wp('100%'),
     borderTopRightRadius: 80,
     borderTopLeftRadius: 80,
-    marginTop: hp('35%'),
+    marginTop: hp('20%'),
   },
   mainContainer: {
     backgroundColor: colors.app_Tint,
@@ -93,6 +88,17 @@ const styles = StyleSheet.create({
   flatListContainer: {
     marginHorizontal: 15,
     marginTop: 60,
+  },
+
+  buttonContainer: {
+    position: 'absolute',
+    backgroundColor: 'transparent',
+    borderColor: colors.borderColor,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    height: Platform.OS === 'android' ? hp('16%') : hp('14%'),
+    marginTop: hp('69%'),
+    marginLeft: wp('18%'),
   },
 });
 

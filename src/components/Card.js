@@ -6,39 +6,31 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import colors from '../constants/colors';
 
 const Card = ({image, navigation, routineData, cardColor}) => {
   return (
     <View style={{alignItems: 'center'}}>
       <TouchableOpacity
-        style={[styles.cardContainer, {backgroundColor: cardColor}]}
+        style={[styles.cardContainer, {backgroundColor: 'white'}]}
         onPress={() =>
           navigation.navigate(screenNames.ROUTINE, {
             routineType: routineData.routine_name,
           })
         }>
         <View style={styles.container}>
-          <Text style={[styles.textContainer, {fontWeight: '700'}]}>
-            {' '}
-            {routineData.routine_name}{' '}
-          </Text>
-          <Text style={[styles.textContainer, {fontWeight: '400'}]}>
-            {' '}
-            {routineData.routine_level} Level{' '}
-          </Text>
-          <Text style={[styles.textContainer, {fontWeight: '200'}]}>
-            {' '}
-            {routineData.routine_time} mins
-          </Text>
-        </View>
-        <View style={styles.container}>
           <FastImage
             source={image}
             style={[
               styles.imageContainer,
-              {width: wp('50%'), height: hp('20%')},
+              {width: wp('35%'), height: hp('15%')},
             ]}
           />
+        </View>
+        <View style={styles.mainContainer}>
+          <Text style={[styles.textContainer, {fontWeight: '700'}]}>
+            {routineData.routine_name}
+          </Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -47,27 +39,56 @@ const Card = ({image, navigation, routineData, cardColor}) => {
 export default Card;
 
 const styles = StyleSheet.create({
-  container: {
+  buttonContainer: {
+    flexDirection: 'row',
+    paddingVertical: 8,
+    borderRadius: 20,
+    borderRadius: 20,
+    backgroundColor: colors.cardButton,
+    marginTop: hp('7%'),
+    maxWidth: wp('30%'),
+  },
+  mainContainer: {
     flex: 1,
     flexDirection: 'column',
   },
-
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  mainContainer: {
+    marginTop: 140,
+    right: 40,
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
   cardContainer: {
     marginBottom: 20,
-    borderRadius: 40,
+    marginLeft: 20,
+    borderRadius: 10,
     flexDirection: 'row',
-    height: hp('20%'),
-    width: wp('90%'),
+    height: hp('28%'),
+    width: wp('43%'),
     alignContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+    elevation: 3,
   },
   textContainer: {
-    top: 30,
-    left: 30,
     marginTop: 10,
+    color: colors.app_color_primary,
+    alignSelf: 'center',
   },
   imageContainer: {
-    right: 40,
-    maxHeight: hp('20%'),
     bottom: 10,
+    marginTop: hp('5%'),
+    marginHorizontal: 15,
+    backgroundColor: colors.cardBG,
+    borderRadius: 20,
   },
 });
