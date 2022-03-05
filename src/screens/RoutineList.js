@@ -92,13 +92,14 @@ const styles = StyleSheet.create({
 
   buttonContainer: {
     position: 'absolute',
-    backgroundColor: 'transparent',
+    // backgroundColor: 'rgba(240, 240, 240, 0.8)',
     borderColor: colors.borderColor,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    height: Platform.OS === 'android' ? hp('16%') : hp('14%'),
+    flex: 1,
+    padding: 20,
+    width: '100%',
     marginTop: hp('69%'),
-    marginLeft: wp('18%'),
+    justifyContent: 'center',
+    flexDirection: 'row',
   },
 });
 

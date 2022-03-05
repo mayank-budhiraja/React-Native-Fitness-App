@@ -92,6 +92,8 @@ const TabNav = () => {
         style: {
           height: hp('7%'),
           backgroundColor: colors.secondary_container,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
         },
       }}>
       <Tab.Screen

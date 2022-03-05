@@ -6,7 +6,7 @@ import {
   StyleSheet,
   BackHandler,
   Alert,
-  TouchableOpacity,
+  ScrollView,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useFocusEffect} from '@react-navigation/native';
@@ -62,6 +62,7 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
+      <ScrollView style={styles.scrollView}>
       <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
         <Header userName={'User'} subTitle={'Personal Fitness'} />
         <MainCard
@@ -71,7 +72,7 @@ const Home = ({navigation}) => {
           timeText={'20 mins'}
         />
       </View>
-      <View style={{backgroundColor: colors.solidWhite, marginTop: 10}}>
+      <View style={{backgroundColor: colors.solidWhite, marginTop: 10, marginBottom: 20}}>
         <Text style={styles.routinesHeader}>Workout Routines</Text>
         <FlatList
           data={home.feedData}
@@ -81,6 +82,7 @@ const Home = ({navigation}) => {
           horizontal
         />
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -92,7 +94,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     marginTop: 20,
     marginLeft: 20,
-    letterSpacing: 1
+    letterSpacing: 1,
   },
   homeCard: {
     marginHorizontal: 20,

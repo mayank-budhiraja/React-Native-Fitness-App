@@ -4,6 +4,7 @@ const colors = {
     app_color_primary: '#4f536c',
     app_color_secondary: 'grey',
     app_Tint: '#DE5D58',
+    app_Tint_dark: '#f79a97',
     primary_button: '#1da6e0',
     subcategory_button: 'white',
     subcat_button_text: 'white',

@@ -9,9 +9,10 @@ const Header = () => {
         style={{
           flexDirection: 'row',
           marginHorizontal: 1,
+          marginBottom: 20,
           justifyContent: 'center',
         }}>
-        <Text style={styles.userText}>My Fit App</Text>
+        <Text style={styles.userText}>Shifu Training</Text>
       </View>
       <Text style={styles.subTitle}>Personal Fitness Plan</Text>
     </>
