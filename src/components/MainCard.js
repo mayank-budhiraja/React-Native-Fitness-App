@@ -6,6 +6,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
+import LottieView from 'lottie-react-native';
 
 const MainCard = ({image, headerText, subHeaderText, timeText}) => {
   return (
@@ -29,9 +30,11 @@ const MainCard = ({image, headerText, subHeaderText, timeText}) => {
           <FastImage source={image} style={styles.imageContainer} />
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.startContainer}>START</Text>
-          </TouchableOpacity>
+          <LottieView
+            source={require('../assets/animations/lottieStart.json')}
+            autoPlay
+            loop
+          />
         </View>
       </View>
     </View>
@@ -65,20 +68,12 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-evenly',
   },
-  button: {
-    borderRadius: 30,
-    height: 40,
-    width: 120,
-    borderColor: colors.app_Tint,
-    backgroundColor: colors.app_Tint,
-    justifyContent: 'center',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
   buttonContainer: {
-    justifyContent: 'flex-end',
-    bottom: 20,
-    left: 10,
+    height: hp('10%'),
+    width: wp('50%'),
+    position: 'absolute',
+    bottom: 1,
+    right: -20
   },
   cardContainer: {
     flexDirection: 'row',
@@ -90,7 +85,7 @@ const styles = StyleSheet.create({
     height: hp('35%'),
   },
   imageContainer: {
-    bottom: 20,
+    bottom: 40,
     height: hp('30%'),
     width: wp('35%'),
   },
