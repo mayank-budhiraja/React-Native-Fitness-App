@@ -25,7 +25,7 @@ import colors from './src/constants/colors';
 import Splash from './src/screens/Splash';
 
 import UserContainer from './src/screens/UserContainer';
-import ListExercise from './src/screens/ListExercise';
+import ListExercise from './src/screens/ExerciseLibrary';
 
 import {
   widthPercentageToDP as wp,

@@ -34,7 +34,6 @@ const RoutineCard = ({
         <FastImage
           source={image}
           style={[styles.imageContainer, {width: wp('24%'), height: hp('12%')}]}
-          resizeMode="stretch"
         />
         <View style={styles.textContainer}>
           <Text style={styles.headContainer}>{exerciseName}</Text>
