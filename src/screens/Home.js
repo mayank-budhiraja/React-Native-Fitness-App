@@ -62,26 +62,38 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <Header userName={'User'} subTitle={' Personal Fitness'} />
-      <MainCard
-        image={require('../assets/images/Home/legs.png')}
-        headerText={'Full Body Workout'}
-        subHeaderText={'Intermediate'}
-        timeText={'20 mins'}
-      />
-
-      <FlatList
-        data={home.feedData}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-        style={styles.flatListContainer}
-        horizontal
-      />
+      <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
+        <Header userName={'User'} subTitle={'Personal Fitness'} />
+        <MainCard
+          image={require('../assets/images/Home/legs.png')}
+          headerText={'Full Body Workout'}
+          subHeaderText={'Intermediate'}
+          timeText={'20 mins'}
+        />
+      </View>
+      <View style={{backgroundColor: colors.solidWhite, marginTop: 10}}>
+        <Text style={styles.routinesHeader}>Workout Routines</Text>
+        <FlatList
+          data={home.feedData}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+          style={styles.flatListContainer}
+          horizontal
+        />
+      </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+  routinesHeader: {
+    color: colors.description,
+    fontSize: 20,
+    fontWeight: '700',
+    marginTop: 20,
+    marginLeft: 20,
+    letterSpacing: 1
+  },
   homeCard: {
     marginHorizontal: 20,
     borderWidth: 2,
@@ -91,10 +103,10 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   flatListContainer: {
-    marginTop: 50,
+    marginTop: 20,
   },
   mainContainer: {
-    backgroundColor: colors.solidWhite,
+    backgroundColor: colors.homeBG,
     flex: 1,
   },
   container: {

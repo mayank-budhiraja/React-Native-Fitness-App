@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     marginLeft: 20,
     marginTop: 20,
-    letterSpacing: 2
+    letterSpacing: 1
   },
   userText: {
     fontSize: 24,
     fontWeight: '700',
     color: colors.app_color_primary,
-    letterSpacing: 2
+    letterSpacing: 1
   },
 });
