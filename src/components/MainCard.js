@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     marginTop: 15,
     borderRadius: 30,
-    backgroundColor: '#cce8ff',
+    backgroundColor: 'rgba(204, 232, 255, 0.7)',
     justifyContent: 'center',
     height: hp('35%'),
   },

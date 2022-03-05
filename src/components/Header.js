@@ -22,11 +22,12 @@ export default Header;
 
 const styles = StyleSheet.create({
   subTitle: {
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: '700',
     marginLeft: 20,
-    marginTop: 20,
-    letterSpacing: 1
+    marginTop: 2,
+    letterSpacing: 1,
+    color: colors.description,
   },
   userText: {
     fontSize: 24,

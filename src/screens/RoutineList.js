@@ -44,7 +44,7 @@ const Routine = ({navigation, route}) => {
     <SafeAreaView style={styles.mainContainer}>
       <View style={styles.container}>
         <View>
-          <Text style={styles.header}>Routine Name</Text>
+          <Text style={styles.header}>{routineType}</Text>
         </View>
         <FlatList
           data={routines}
@@ -56,7 +56,7 @@ const Routine = ({navigation, route}) => {
           <NativeButton
             textName="Start Routine"
             onClick={() => startRoutine()}
-            buttonWidth={'60%'}
+            buttonWidth={'65%'}
           />
         </View>
       </View>
@@ -81,21 +81,22 @@ const styles = StyleSheet.create({
     marginTop: hp('20%'),
   },
   mainContainer: {
-    backgroundColor: colors.app_Tint,
+    backgroundColor: 'rgba(245, 126, 122, 0.95)',
     flexDirection: 'column',
     alignItems: 'flex-end',
   },
   flatListContainer: {
     marginHorizontal: 15,
     marginTop: 60,
+    marginBottom: 10
   },
 
   buttonContainer: {
     position: 'absolute',
-    // backgroundColor: 'rgba(240, 240, 240, 0.8)',
+    //backgroundColor: 'rgba(240, 240, 240, 0.5)',
     borderColor: colors.borderColor,
     flex: 1,
-    padding: 20,
+    paddingBottom: 30,
     width: '100%',
     marginTop: hp('69%'),
     justifyContent: 'center',

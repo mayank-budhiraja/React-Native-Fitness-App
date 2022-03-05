@@ -33,11 +33,7 @@ const RoutineCard = ({
         }>
         <FastImage
           source={image}
-          style={[
-            styles.imageContainer,
-            styles.shadowContainer,
-            {width: wp('24%'), height: hp('12%')},
-          ]}
+          style={[styles.imageContainer, {width: wp('24%'), height: hp('12%')}]}
           resizeMode="stretch"
         />
         <View style={styles.textContainer}>
@@ -61,11 +57,11 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     borderRadius: 20,
-    backgroundColor: colors.borderLight
   },
   cardContainer: {
     borderRadius: 10,
     flexDirection: 'row',
+    backgroundColor: 'rgba(240, 240, 240, 0.5)',
   },
   headContainer: {
     fontWeight: '700',
@@ -84,7 +80,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     //borderWidth: 2,
-    alignContent: 'center'
+    justifyContent: 'center',
   },
   shadowContainer: {
     borderRadius: 20,

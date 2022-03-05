@@ -41,7 +41,10 @@ const App = () => {
   return (
     <>
       {Platform.OS === 'android' ? (
-        <StatusBar backgroundColor={colors.solidWhite} barStyle='dark-content' />
+        <StatusBar
+          backgroundColor={colors.solidWhite}
+          barStyle="dark-content"
+        />
       ) : null}
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
@@ -129,29 +132,7 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="md-calendar-outline"
-                size={iconSize}
-                color={
-                  tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
-                }
-                style={{top: 10}}
-              />
-            );
-          },
-        }}
-      />
-      <Tab.Screen
-        name={screenNames.ANALYSIS}
-        component={Analysis}
-        options={{
-          tabBarLabel: '',
-          tabBarOptions: {
-            activeTintColor: colors.app_Tint,
-          },
-          tabBarIcon: (tabInfo) => {
-            return (
-              <Icon
-                name="stats-chart-outline"
+                name="list-outline"
                 size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
@@ -173,7 +154,7 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="options-outline"
+                name="md-settings-sharp"
                 size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary

@@ -63,25 +63,30 @@ const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.mainContainer}>
       <ScrollView style={styles.scrollView}>
-      <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
-        <Header userName={'User'} subTitle={'Personal Fitness'} />
-        <MainCard
-          image={require('../assets/images/Home/legs.png')}
-          headerText={'Full Body Workout'}
-          subHeaderText={'Intermediate'}
-          timeText={'20 mins'}
-        />
-      </View>
-      <View style={{backgroundColor: colors.solidWhite, marginTop: 10, marginBottom: 20}}>
-        <Text style={styles.routinesHeader}>Workout Routines</Text>
-        <FlatList
-          data={home.feedData}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id}
-          style={styles.flatListContainer}
-          horizontal
-        />
-      </View>
+        <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
+          <Header userName={'User'} subTitle={'Personal Fitness'} />
+          <MainCard
+            image={require('../assets/images/Home/legs.png')}
+            headerText={'Full Body Workout'}
+            subHeaderText={'Intermediate'}
+            timeText={'20 mins'}
+          />
+        </View>
+        <View
+          style={{
+            backgroundColor: colors.solidWhite,
+            marginTop: 1,
+            marginBottom: 20,
+          }}>
+          <Text style={styles.routinesHeader}>Workout Routines</Text>
+          <FlatList
+            data={home.feedData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            style={styles.flatListContainer}
+            horizontal
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -90,7 +95,7 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
   routinesHeader: {
     color: colors.description,
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '700',
     marginTop: 20,
     marginLeft: 20,
