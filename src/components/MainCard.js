@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import {
   widthPercentageToDP as wp,
@@ -7,6 +7,7 @@ import {
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
 import LottieView from 'lottie-react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const MainCard = ({image, headerText, subHeaderText, timeText}) => {
   return (
@@ -19,6 +20,7 @@ const MainCard = ({image, headerText, subHeaderText, timeText}) => {
               fontWeight: '700',
               fontSize: 14,
               color: colors.app_color_secondary,
+              marginLeft: 5,
             }}>
             {subHeaderText}
           </Text>
@@ -44,8 +46,18 @@ const MainCard = ({image, headerText, subHeaderText, timeText}) => {
 export default MainCard;
 
 const styles = StyleSheet.create({
+  planContainer: {
+    fontSize: 14,
+    fontWeight: '700',
+    flexDirection: 'row',
+  },
+  linearGradient: {
+    borderRadius: 20,
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+  },
   timeContainer: {
-    marginTop: 110,
+    marginTop: 109,
     fontSize: 20,
     fontWeight: '300',
   },
@@ -73,7 +85,7 @@ const styles = StyleSheet.create({
     width: wp('50%'),
     position: 'absolute',
     bottom: 1,
-    right: -20
+    right: -20,
   },
   cardContainer: {
     flexDirection: 'row',

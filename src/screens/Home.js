@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {
   Text,
   View,
@@ -13,17 +13,11 @@ import {useFocusEffect} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
-import SubHeader from '../components/SubHeader';
-import subCategories from '../assets/data/subCategories';
-import defaultUser from '../assets/defaults/user.png';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
-import FastImage from 'react-native-fast-image';
-import Icon from 'react-native-vector-icons/Ionicons';
-import {color} from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 import MainCard from '../components/MainCard';
 
 const Home = ({navigation}) => {
