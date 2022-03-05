@@ -13,6 +13,5 @@ Home Screen
 
 RoutineList Screen
 
-6. Improve colours
 7. Add image on the background
-8. Add detailing to exercises
+

@@ -8,7 +8,7 @@ import {
   Platform,
   Keyboard,
   TouchableWithoutFeedback,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {
@@ -48,8 +48,7 @@ const UserContainer = ({navigation}) => {
     <SafeAreaView style={styles.mainContainer}>
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'position'}
-        style={{flex:1}}
-        >
+        style={{flex: 1}}>
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View style={styles.container}>
             <View>
@@ -101,7 +100,7 @@ const styles = StyleSheet.create({
     marginTop: 300,
   },
   mainContainer: {
-    flex:1, 
+    flex: 1,
     backgroundColor: colors.app_Tint,
     flexDirection: 'column',
     alignItems: 'flex-end',
