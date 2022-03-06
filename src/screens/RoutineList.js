@@ -54,7 +54,7 @@ const Routine = ({navigation, route}) => {
         />
         <View style={styles.buttonContainer}>
           <NativeButton
-            textName="Start Routine"
+            textName="START"
             onClick={() => startRoutine()}
             buttonWidth={'65%'}
           />
@@ -67,7 +67,8 @@ const Routine = ({navigation, route}) => {
 const styles = StyleSheet.create({
   header: {
     fontSize: 30,
-    fontWeight: '700',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
     color: colors.app_color_primary,
     top: 40,
     left: 30,

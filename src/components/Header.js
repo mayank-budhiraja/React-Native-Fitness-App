@@ -8,7 +8,7 @@ const Header = () => {
       <View
         style={{
           flexDirection: 'row',
-          marginHorizontal: 1,
+          marginHorizontal: 0,
           marginBottom: 20,
           justifyContent: 'center',
         }}>
@@ -23,16 +23,16 @@ export default Header;
 const styles = StyleSheet.create({
   subTitle: {
     fontSize: 18,
-    fontWeight: '700',
     marginLeft: 20,
     marginTop: 2,
-    letterSpacing: 1,
+    letterSpacing: 0.7,
     color: colors.description,
+    fontFamily: 'Raleway-Bold',
   },
   userText: {
     fontSize: 24,
-    fontWeight: '700',
+    fontFamily: 'Raleway-ExtraBold',
     color: colors.app_color_primary,
-    letterSpacing: 1
+    letterSpacing: 0.5
   },
 });

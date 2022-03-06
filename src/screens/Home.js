@@ -90,10 +90,10 @@ const styles = StyleSheet.create({
   routinesHeader: {
     color: colors.description,
     fontSize: 18,
-    fontWeight: '700',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
     marginTop: 20,
     marginLeft: 20,
-    letterSpacing: 1,
   },
   homeCard: {
     marginHorizontal: 20,

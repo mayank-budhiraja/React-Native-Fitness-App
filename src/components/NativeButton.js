@@ -33,6 +33,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     color: 'white',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
   },
   cardContainer: {
     flexDirection: 'row',

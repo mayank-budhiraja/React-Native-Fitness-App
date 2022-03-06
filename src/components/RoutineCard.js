@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(240, 240, 240, 0.5)',
   },
   headContainer: {
-    fontWeight: '700',
+    fontFamily: 'Raleway-Bold',
     fontSize: 20,
     color: colors.app_color_primary,
     marginLeft: 20,

@@ -1,7 +1,7 @@
 ## Final
 
-Settings Screen
-8. Add Sound
+Home
+1. Improve Start button
 
 Global
 - Icon

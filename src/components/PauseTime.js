@@ -22,7 +22,7 @@ export default PauseTime;
 
 const styles = StyleSheet.create({
   radioContainer: {
-    marginLeft: 50,
+    marginLeft: 18,
   },
   textContainer: {
     top: 5,
@@ -33,5 +33,6 @@ const styles = StyleSheet.create({
     top: 20,
     marginLeft: 10,
     flexDirection: 'row',
+    flex: 1
   },
 });

@@ -8,38 +8,43 @@ import {
 import colors from '../constants/colors';
 import LottieView from 'lottie-react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import {TouchableOpacity} from 'react-native-gesture-handler';
+import SoundPlayer from 'react-native-sound-player';
 
 const MainCard = ({image, headerText, subHeaderText, timeText}) => {
   return (
-    <View style={styles.cardContainer}>
-      <View style={styles.leftContainer}>
-        <Text style={styles.textContainer}>{headerText}</Text>
-        <View style={styles.levelContainer}>
-          <Text
-            style={{
-              fontWeight: '700',
-              fontSize: 14,
-              color: colors.app_color_secondary,
-              marginLeft: 5,
-            }}>
-            {subHeaderText}
-          </Text>
+    <TouchableOpacity onPress={() => {}}>
+      <View style={styles.cardContainer}>
+        <View style={styles.leftContainer}>
+          <Text style={styles.textContainer}>{headerText}</Text>
+          <View style={styles.levelContainer}>
+            <Text
+              style={{
+                fontFamily: 'Raleway-Bold',
+                letterSpacing: 0.7,
+                fontSize: 14,
+                color: colors.app_color_secondary,
+                marginLeft: 1,
+              }}>
+              {subHeaderText}
+            </Text>
+          </View>
+          <Text style={styles.timeContainer}>{timeText}</Text>
         </View>
-        <Text style={styles.timeContainer}>{timeText}</Text>
+        <View style={styles.rightColumn}>
+          <View style={styles.mainContainer}>
+            <FastImage source={image} style={styles.imageContainer} />
+          </View>
+          <View style={styles.buttonContainer}>
+            <LottieView
+              source={require('../assets/animations/lottieStart.json')}
+              autoPlay
+              loop
+            />
+          </View>
+        </View>
       </View>
-      <View style={styles.rightColumn}>
-        <View style={styles.mainContainer}>
-          <FastImage source={image} style={styles.imageContainer} />
-        </View>
-        <View style={styles.buttonContainer}>
-          <LottieView
-            source={require('../assets/animations/lottieStart.json')}
-            autoPlay
-            loop
-          />
-        </View>
-      </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -57,9 +62,11 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   timeContainer: {
-    marginTop: 109,
+    marginTop: 90,
     fontSize: 20,
-    fontWeight: '300',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
+    color: colors.app_color_primary,
   },
   levelContainer: {
     flexDirection: 'row',
@@ -67,8 +74,8 @@ const styles = StyleSheet.create({
   },
   leftContainer: {
     flexDirection: 'column',
-    top: 50,
-    marginHorizontal: 20,
+    top: 20,
+    marginRight: 60,
   },
   startContainer: {
     color: colors.solidWhite,
@@ -85,7 +92,7 @@ const styles = StyleSheet.create({
     width: wp('50%'),
     position: 'absolute',
     bottom: 1,
-    right: -20,
+    right: -15,
   },
   cardContainer: {
     flexDirection: 'row',
@@ -99,14 +106,15 @@ const styles = StyleSheet.create({
   imageContainer: {
     bottom: 40,
     height: hp('30%'),
-    width: wp('35%'),
+    width: wp('30%'),
   },
   mainContainer: {
     justifyContent: 'center',
   },
   textContainer: {
-    fontSize: 20,
+    fontSize: 24,
     color: colors.app_color_primary,
-    fontWeight: '700',
+    fontFamily: 'Raleway-ExtraBold',
+    width: wp('35%'),
   },
 });

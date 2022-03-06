@@ -54,8 +54,10 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 24,
-    fontWeight: '700',
     color: colors.app_color_primary,
+    fontFamily: 'Raleway-ExtraBold',
+    letterSpacing: 0.7,
+    marginVertical: 15
   },
 });
 export default ExerciseLibrary;
