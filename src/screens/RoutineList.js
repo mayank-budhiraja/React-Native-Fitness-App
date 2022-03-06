@@ -1,12 +1,10 @@
 import React from 'react';
 import {
   SafeAreaView,
-  Button,
   Text,
   FlatList,
   StyleSheet,
   View,
-  Platform,
 } from 'react-native';
 import routines from '../assets/data/routines';
 import RoutineCard from '../components/RoutineCard';
@@ -89,7 +87,7 @@ const styles = StyleSheet.create({
   flatListContainer: {
     marginHorizontal: 15,
     marginTop: 60,
-    marginBottom: 10
+    marginBottom: 10,
   },
 
   buttonContainer: {

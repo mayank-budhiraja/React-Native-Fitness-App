@@ -7,13 +7,25 @@ import {
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
 import LottieView from 'lottie-react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import SoundPlayer from 'react-native-sound-player';
+import routines from '../assets/data/routines';
+import screenNames from '../constants/navigation';
 
-const MainCard = ({image, headerText, subHeaderText, timeText}) => {
+const MainCard = ({
+  routineType,
+  image,
+  headerText,
+  subHeaderText,
+  timeText,
+  navigation,
+}) => {
   return (
-    <TouchableOpacity onPress={() => {}}>
+    <TouchableOpacity
+      onPress={() => {
+        navigation.navigate(screenNames.ROUTINE, {
+          routineType: routineType,
+        });
+      }}>
       <View style={styles.cardContainer}>
         <View style={styles.leftContainer}>
           <Text style={styles.textContainer}>{headerText}</Text>

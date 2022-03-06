@@ -64,6 +64,8 @@ const Home = ({navigation}) => {
             headerText={'Full Body Workout'}
             subHeaderText={'Intermediate'}
             timeText={'20 mins'}
+            routineType={'Power Planches'}
+            navigation={navigation}
           />
         </View>
         <View
