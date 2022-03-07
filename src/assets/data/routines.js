@@ -96,7 +96,7 @@ const routines = [
         image: require('../images/stradles-swings/stradles_rev.gif'),
       },
     ],
-    'Iron Legs': [
+    'Legs of Iron': [
       {
         id: '1',
         routineName: 'Airbone Squats',

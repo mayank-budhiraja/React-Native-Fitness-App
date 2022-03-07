@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
   },
   soundContainer: {
     top: 30,
-    marginLeft: 10,
   },
   container: {
     flex: 1,
@@ -66,7 +65,8 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 40,
-    fontWeight: '600',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 1,
     color: colors.app_color_primary,
   },
 });

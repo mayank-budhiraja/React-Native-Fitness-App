@@ -1,22 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
   SafeAreaView,
   View,
-  Text,
-  FlatList,
   StyleSheet,
-  Button,
   Alert,
   BackHandler,
 } from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
 import ExerciseCard from '../components/ExerciseCard';
 import BreakPause from './BreakPause';
-import BeginExercise from './BeginExercise';
+import SoundPlayer from 'react-native-sound-player'
 import screenNames from '../constants/navigation';
 import NativeButton from '../components/NativeButton';
-import {TouchableHighlight} from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/Ionicons';
 import ExerciseHeader from '../components/ExerciseHeader';
 import CompleteExercise from './CompleteExercise';
 import {useSelector} from 'react-redux';

@@ -9,7 +9,7 @@ const ExerciseHeader = ({exerciseGroup, quit, goBack}) => {
     <>
       <View style={styles.container}>
         <TouchableHighlight onPress={quit}>
-          <Icon name="close-circle-outline" size={50} color={colors.app_Tint} />
+          <Icon name="md-close-outline" size={50} color={colors.app_Tint} />
         </TouchableHighlight>
       </View>
     </>

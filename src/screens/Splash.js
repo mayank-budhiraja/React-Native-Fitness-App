@@ -7,18 +7,19 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
-    setTimeout(() => checkFirstLogin(), 600);
+    setTimeout(() => checkFirstLogin(), 1000);
   }, []);
 
   checkFirstLogin = async () => {
     try {
-      const firstLaunch = await AsyncStorage.getItem('firstLaunch');
+      /* const firstLaunch = await AsyncStorage.getItem('firstLaunch');
       if (!firstLaunch) {
         await AsyncStorage.setItem('firstLaunch', 'false');
         navigation.navigate(screenNames.USER_CONTAINER);
       } else {
         navigation.navigate(screenNames.HOME);
-      }
+      } */
+      navigation.navigate(screenNames.HOME);
     } catch (e) {
       console.log('async error', e);
     }

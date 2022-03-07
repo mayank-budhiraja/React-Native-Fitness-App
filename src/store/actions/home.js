@@ -12,10 +12,12 @@ const getFeedData = (data) => {
 
 const setUserData = (data) => {
   return async (dispatch) => {
+    
     dispatch({
       type: actions.SET_USER_DATA,
       payload: data,
     });
+    console.log('done')
   };
 };
 

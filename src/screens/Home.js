@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {
   Text,
   View,
@@ -6,22 +6,19 @@ import {
   StyleSheet,
   BackHandler,
   Alert,
+  ScrollView,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useFocusEffect} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import Card from '../components/Card';
 import Header from '../components/Header';
-import SubHeader from '../components/SubHeader';
-import subCategories from '../assets/data/subCategories';
-import defaultUser from '../assets/defaults/user.png';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
-import Icon from 'react-native-vector-icons/Ionicons';
-import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+import MainCard from '../components/MainCard';
 
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
@@ -59,47 +56,60 @@ const Home = ({navigation}) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <View opacity={0.2}>
-        <Icon
-          name="cloudy-night"
-          size={250}
-          color={'#F5CBB4'}
-          style={styles.mainImage}
-        />
-      </View>
-      <View style={{marginBottom: 30}}>
-        <Header
-          userImage={defaultUser}
-          userName={home.userData.userName || 'User'}
-        />
-      </View>
-
-      <View style={{marginTop: -20}}>
-        <SubHeader data={subCategories} />
-      </View>
-
-      {/* <Text style={{fontSize: 20, marginHorizontal: 20, fontWeight: '700'}}> Practice </Text> */}
-
-      <FlatList
-        data={home.feedData}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-        style={styles.flatListContainer}
-        numColumns={2}
-      />
-
-      <View style={styles.container}></View>
+      <ScrollView style={styles.scrollView}>
+        <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
+          <Header userName={'User'} subTitle={'Personal Fitness'} />
+          <MainCard
+            image={require('../assets/images/Home/legs.png')}
+            headerText={'Full Body Workout'}
+            subHeaderText={'Intermediate'}
+            timeText={'20 mins'}
+            routineType={'Power Planches'}
+            navigation={navigation}
+          />
+        </View>
+        <View
+          style={{
+            backgroundColor: colors.solidWhite,
+            marginTop: 1,
+            marginBottom: 20,
+          }}>
+          <Text style={styles.routinesHeader}>Workout Routines</Text>
+          <FlatList
+            data={home.feedData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            style={styles.flatListContainer}
+            horizontal
+          />
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+  routinesHeader: {
+    color: colors.description,
+    fontSize: 18,
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
+    marginTop: 20,
+    marginLeft: 20,
+  },
+  homeCard: {
+    marginHorizontal: 20,
+    borderWidth: 2,
+    marginTop: 50,
+  },
   mainImage: {
     position: 'absolute',
   },
-  flatListContainer: {},
+  flatListContainer: {
+    marginTop: 20,
+  },
   mainContainer: {
-    backgroundColor: colors.app_Tint,
+    backgroundColor: colors.homeBG,
     flex: 1,
   },
   container: {

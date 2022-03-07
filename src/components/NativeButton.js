@@ -7,7 +7,7 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const NativeButton = ({textName, onClick, buttonWidth, bgColor}) => {
+const NativeButton = ({textName, onClick, buttonWidth, buttonHeight, bgColor}) => {
   return (
     
       <TouchableHighlight
@@ -15,7 +15,7 @@ const NativeButton = ({textName, onClick, buttonWidth, bgColor}) => {
           styles.cardContainer,
           {
             width: wp(buttonWidth),
-            height: hp('7%'),
+            height: hp(buttonHeight) || hp('7%'),
             backgroundColor: bgColor || colors.app_Tint,
             borderColor: bgColor || colors.app_Tint,
           },
@@ -33,6 +33,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     color: 'white',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
   },
   cardContainer: {
     flexDirection: 'row',

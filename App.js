@@ -20,18 +20,17 @@ import RoutinePlaylist from './src/screens/RoutinePlaylist';
 import CompleteExercise from './src/screens/CompleteExercise';
 
 import screenNames from './src/constants/navigation';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import colors from './src/constants/colors';
 import Splash from './src/screens/Splash';
 
 import UserContainer from './src/screens/UserContainer';
-import ListExercise from './src/screens/ListExercise';
+import ListExercise from './src/screens/ExerciseLibrary';
 
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import Analysis from './src/screens/Analysis';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -41,7 +40,10 @@ const App = () => {
   return (
     <>
       {Platform.OS === 'android' ? (
-        <StatusBar backgroundColor={colors.app_Tint} />
+        <StatusBar
+          backgroundColor={colors.solidWhite}
+          barStyle="dark-content"
+        />
       ) : null}
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
@@ -92,6 +94,8 @@ const TabNav = () => {
         style: {
           height: hp('7%'),
           backgroundColor: colors.secondary_container,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
         },
       }}>
       <Tab.Screen
@@ -105,7 +109,7 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="home"
+                name="home-filled"
                 size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
@@ -127,29 +131,7 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="md-calendar-outline"
-                size={iconSize}
-                color={
-                  tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
-                }
-                style={{top: 10}}
-              />
-            );
-          },
-        }}
-      />
-      <Tab.Screen
-        name={screenNames.ANALYSIS}
-        component={Analysis}
-        options={{
-          tabBarLabel: '',
-          tabBarOptions: {
-            activeTintColor: colors.app_Tint,
-          },
-          tabBarIcon: (tabInfo) => {
-            return (
-              <Icon
-                name="stats-chart-outline"
+                name="format-list-bulleted"
                 size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
@@ -171,7 +153,7 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="options-outline"
+                name="settings"
                 size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
