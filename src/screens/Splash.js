@@ -1,9 +1,14 @@
 import React, {useEffect} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {StyleSheet, StatusBar, Image} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import colors from '../constants/colors';
 import screenNames from '../constants/navigation';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import en from '../utils/en.json';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
@@ -26,12 +31,21 @@ const Splash = ({navigation}) => {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.headText}>Fit App</Text>
+      <StatusBar backgroundColor={colors.app_Tint} barStyle="light-content" />
+      <Image
+        source={require('../assets/defaults/icon.png')}
+        style={styles.image}
+      />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+  image: {
+    width: wp('50%'),
+    height: hp('30%'),
+    marginBottom: 200,
+  },
   container: {
     flex: 1,
     backgroundColor: colors.app_Tint,
@@ -39,10 +53,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headText: {
-    fontWeight: '700',
-    fontSize: 30,
+    fontSize: 35,
+    fontFamily: 'Raleway-ExtraBold',
     color: colors.solidWhite,
-    bottom: 100,
+    letterSpacing: 0.5,
   },
 });
 

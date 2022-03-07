@@ -44,7 +44,7 @@ const BreakPause = ({currentIndex}) => {
               strokeWidth={15}
               size={300}
               onUpdate={(remainingTime) => {
-                if (remainingTime == 1) {
+                if (remainingTime == 1 && selector.soundInfo) {
                   try {
                     SoundPlayer.playSoundFile('bell_ring', 'mp3');
                   } catch (e) {

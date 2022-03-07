@@ -5,6 +5,7 @@ import {
   FlatList,
   StyleSheet,
   View,
+  StatusBar,
 } from 'react-native';
 import routines from '../assets/data/routines';
 import RoutineCard from '../components/RoutineCard';
@@ -40,6 +41,10 @@ const Routine = ({navigation, route}) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
+      <StatusBar
+        backgroundColor={'rgba(245, 126, 122, 0.95)'}
+        barStyle="light-content"
+      />
       <View style={styles.container}>
         <View>
           <Text style={styles.header}>{routineType}</Text>

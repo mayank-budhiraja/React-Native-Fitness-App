@@ -1,20 +1,14 @@
 import React, {useState} from 'react';
-import {
-  SafeAreaView,
-  View,
-  StyleSheet,
-  Alert,
-  BackHandler,
-} from 'react-native';
+import {SafeAreaView, View, StyleSheet, Alert, BackHandler, StatusBar} from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
 import ExerciseCard from '../components/ExerciseCard';
 import BreakPause from './BreakPause';
-import SoundPlayer from 'react-native-sound-player'
 import screenNames from '../constants/navigation';
 import NativeButton from '../components/NativeButton';
 import ExerciseHeader from '../components/ExerciseHeader';
 import CompleteExercise from './CompleteExercise';
 import {useSelector} from 'react-redux';
+import colors from '../constants/colors';
 
 const RoutinePlaylist = ({navigation, route}) => {
   const {data} = route.params; // to-do state management
@@ -66,14 +60,14 @@ const RoutinePlaylist = ({navigation, route}) => {
   };
 
   const quitWorkout = () => {
-    Alert.alert('Hold on!', 'Are you sure you want to quit?', [
+    Alert.alert('Exit Routine!', 'Are you sure you want to exit routine?', [
       {
         text: 'Cancel',
         onPress: () => console.log('Cancel Pressed'),
         style: 'cancel',
       },
       {
-        text: 'OK',
+        text: 'YES',
         onPress: () =>
           navigation.reset({
             routes: [{name: screenNames.HOME}],
@@ -86,6 +80,10 @@ const RoutinePlaylist = ({navigation, route}) => {
   renderComponent = () => {
     return (
       <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
+        <StatusBar
+          backgroundColor={colors.solidWhite}
+          barStyle="dark-content"
+        />
         {!delayExercise && currentIndex > 0 ? (
           <ExerciseHeader
             goBack={() => navigation.goBack()}

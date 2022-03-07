@@ -1,9 +1,13 @@
 ## Final
 
-Home
-1. Improve Start button
-
 Global
-- Icon
-- Screenshots
-- Splash Screen Logo
+- Icon - Done
+- Screenshots - AppLaunchPad
+- Splash Screen Logo - Rohit
+- Content Writing - ?
+
+Test Responsiveness
+SEO
+Ad Campaign
+Promotion
+Increase Downloads
