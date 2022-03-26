@@ -33,7 +33,7 @@ const Splash = ({navigation}) => {
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor={colors.app_Tint} barStyle="light-content" />
       <Image
-        source={require('../assets/defaults/icon.png')}
+        source={require('../assets/defaults/logo.png')}
         style={styles.image}
       />
     </SafeAreaView>
@@ -42,8 +42,8 @@ const Splash = ({navigation}) => {
 
 const styles = StyleSheet.create({
   image: {
-    width: wp('50%'),
-    height: hp('30%'),
+    width: wp('80%'),
+    height: hp('40%'),
     marginBottom: 200,
   },
   container: {
