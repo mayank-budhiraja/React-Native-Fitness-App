@@ -1,10 +1,8 @@
 ## Final
 
 Global
-- Icon - Done
-- Screenshots - AppLaunchPad
-- Splash Screen Logo - Rohit
-- Content Writing - ?
+- Icon
+- Logo
 
 Test Responsiveness
 SEO
