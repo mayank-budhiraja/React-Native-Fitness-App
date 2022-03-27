@@ -6,6 +6,7 @@ import {
   StyleSheet,
   View,
   StatusBar,
+  Platform,
 } from 'react-native';
 import routines from '../assets/data/routines';
 import RoutineCard from '../components/RoutineCard';
@@ -92,17 +93,18 @@ const styles = StyleSheet.create({
   flatListContainer: {
     marginHorizontal: 15,
     marginTop: 60,
-    marginBottom: 10,
+    marginBottom: Platform.OS === 'ios' ? 120 : 80,
+    flex: 1,
   },
 
   buttonContainer: {
     position: 'absolute',
-    //backgroundColor: 'rgba(240, 240, 240, 0.5)',
+    //backgroundColor: 'rgba(240, 240, 240, 0.8)',
     borderColor: colors.borderColor,
     flex: 1,
     paddingBottom: 30,
     width: '100%',
-    marginTop: hp('69%'),
+    marginTop: Platform.OS === 'android' ? hp('71%') : hp('67%'),
     justifyContent: 'center',
     flexDirection: 'row',
   },

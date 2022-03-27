@@ -92,7 +92,7 @@ const TabNav = () => {
     <Tab.Navigator
       tabBarOptions={{
         style: {
-          height: hp('7%'),
+          height: Platform.OS === 'android' ? hp('7%') : hp('8.2%'),
           backgroundColor: colors.secondary_container,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,

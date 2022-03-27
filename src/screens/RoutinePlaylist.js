@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import {SafeAreaView, View, StyleSheet, Alert, BackHandler, StatusBar} from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  StyleSheet,
+  Alert,
+  BackHandler,
+  StatusBar,
+} from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
 import ExerciseCard from '../components/ExerciseCard';
 import BreakPause from './BreakPause';
@@ -59,6 +66,10 @@ const RoutinePlaylist = ({navigation, route}) => {
     );
   };
 
+  toggleBreak = () => {
+    setDelay(!delayExercise);
+  };
+
   const quitWorkout = () => {
     Alert.alert('Exit Routine!', 'Are you sure you want to exit routine?', [
       {
@@ -93,7 +104,7 @@ const RoutinePlaylist = ({navigation, route}) => {
         ) : null}
         <View>
           {delayExercise || currentIndex == 0 ? (
-            <BreakPause currentIndex={currentIndex} />
+            <BreakPause currentIndex={currentIndex} toggleButton={toggleBreak}/>
           ) : (
             <ExerciseCard
               exImage={image}

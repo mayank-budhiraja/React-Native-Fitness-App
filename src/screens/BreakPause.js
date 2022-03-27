@@ -1,10 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import FastImage from 'react-native-fast-image';
-import screenNames from '../constants/navigation';
 import colors from '../constants/colors';
-import Icon from 'react-native-vector-icons/Ionicons';
+import NativeButton from '../components/NativeButton';
 import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';
 import {
   widthPercentageToDP as wp,
@@ -14,9 +13,9 @@ import {
 import SoundPlayer from 'react-native-sound-player';
 import {useSelector} from 'react-redux';
 
-const BreakPause = ({currentIndex}) => {
+const BreakPause = ({currentIndex, toggleButton}) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
-
+  
   const selector = useSelector((state) => state.settings);
 
   return (
@@ -60,6 +59,13 @@ const BreakPause = ({currentIndex}) => {
           <View
             style={{flexDirection: 'column', alignItems: 'center', top: 60}}>
             <Text style={styles.textContainer}>Take a Break</Text>
+            <View style={styles.buttonContainer}>
+              <NativeButton
+                textName="SKIP"
+                onClick={() => toggleButton()}
+                buttonWidth={'30%'}
+              />
+            </View>
           </View>
         </View>
       )}
@@ -70,6 +76,9 @@ const BreakPause = ({currentIndex}) => {
 export default BreakPause;
 
 const styles = StyleSheet.create({
+  buttonContainer: {
+    marginTop: 80,
+  },
   info: {
     flexDirection: 'column',
     alignItems: 'center',

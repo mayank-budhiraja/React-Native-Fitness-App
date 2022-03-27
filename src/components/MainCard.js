@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Platform} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import {
   widthPercentageToDP as wp,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   timeContainer: {
-    marginTop: 90,
+    marginTop: Platform.OS === 'android' ? hp('18%') : hp('20%'),
     fontSize: 20,
     fontFamily: 'Raleway-Bold',
     letterSpacing: 0.7,
@@ -85,8 +85,8 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   leftContainer: {
+    marginTop: Platform.OS === 'android' ? hp('2%') : hp('3%'),
     flexDirection: 'column',
-    top: 20,
     marginRight: 60,
   },
   startContainer: {
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     width: wp('50%'),
     position: 'absolute',
     bottom: 1,
-    right: -15,
+    right: -30,
   },
   cardContainer: {
     flexDirection: 'row',

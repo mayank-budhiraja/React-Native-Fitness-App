@@ -61,8 +61,7 @@ const Home = ({navigation}) => {
   return (
     <SafeAreaView style={styles.mainContainer}>
       <StatusBar backgroundColor={colors.solidWhite} barStyle="dark-content" />
-      <ScrollView style={styles.scrollView}>
-        <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
+        <View style={{backgroundColor: colors.solidWhite}}>
           <Header userName={en.appName} mainCardHeader={en.mainCardHeader} />
           <MainCard
             image={require('../assets/images/Home/legs.png')}
@@ -88,7 +87,6 @@ const Home = ({navigation}) => {
             horizontal
           />
         </View>
-      </ScrollView>
     </SafeAreaView>
   );
 };

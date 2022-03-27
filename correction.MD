@@ -1,18 +1,15 @@
 ## Final
 
 Today
-- Test Responsiveness
-- Fix Icon
-- Fix Flatlist Bottom Spacing
+- Fix Flatlist Bottom Spacing - Done
+- Add Skip Option on Pause/Break Time Screen - Done
 - Align and Aesthetics
-    - Home Screen
-    - Settigs Screen
-- Add Skip Option on Pause/Break Time Screen
+    - Home Screen - Done
+    - Settings Screen
+- Test Responsiveness
+
 
 SEO
 
-Ad Campaign
-
-Promotion
-
-Increase Downloads
+Promotion through Ads
+    - Search Ads
