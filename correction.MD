@@ -1,9 +1,15 @@
 ## Final
 
-Home
-1. Improve Start button
+Today
+- Fix Flatlist Bottom Spacing - Done
+- Add Skip Option on Pause/Break Time Screen - Done
+- Align and Aesthetics
+    - Home Screen - Done
+    - Settings Screen
+- Test Responsiveness
 
-Global
-- Icon
-- Screenshots
-- Splash Screen Logo
+
+SEO
+
+Promotion through Ads
+    - Search Ads

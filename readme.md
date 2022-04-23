@@ -5,6 +5,17 @@ A fitness app MVP created using react-native which can be scaled easily.
     - yarn install
     - yarn run ios/android
 
+## Release
+    - Update android/build.gradle 
+        compileSdkVersion = 29 -> 30
+        targetSdkVersion = 29 -> 30
+
+    - Increase both the values by 1 in android/app/android
+        versionCode 1
+        versionName "1.0"
+
+    - yarn android-release
+
 ## Motivation
 I wanted to help fitness industry to come up with great apps whether it is related to physical or mental. Anyone can use the repo and scale up to the required needs. 
 

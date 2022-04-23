@@ -12,7 +12,7 @@ const Sound = ({soundInfo, toggleSound}) => {
           onValueChange={() => toggleSound(!soundInfo)}
           thumbColor={colors.app_color_secondary}
           value={soundInfo}
-          trackColor={{true: colors.subcategory_button, false: 'grey'}}
+          trackColor={{true: colors.subcategory_button}}
         />
       </View>
     </View>
@@ -32,9 +32,9 @@ const styles = StyleSheet.create({
   },
   itemContainer: {
     top: 40,
-    marginLeft: 10,
+    marginHorizontal: 24,
     flexDirection: 'row',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
   },
   switcthContainer: {
     color: colors.subcategory_button,

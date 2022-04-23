@@ -6,6 +6,7 @@ import library from '../store/actions/library';
 import routines from '../assets/data/routines';
 import RoutineCard from '../components/RoutineCard';
 import colors from '../constants/colors';
+import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 const ExerciseLibrary = ({navigation}) => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const ExerciseLibrary = ({navigation}) => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: colors.homeBG}}>
+    <SafeAreaView style={{ paddingBottom: 40, backgroundColor: colors.homeBG}}>
       <View style={styles.headerContainer}>
         <Text style={styles.header}>Exercise Library</Text>
       </View>
@@ -46,7 +47,6 @@ const styles = StyleSheet.create({
   flatListContainer: {
     marginHorizontal: 15,
     marginTop: 10,
-    marginBottom: 10,
   },
   headerContainer: {
     flexDirection: 'row',

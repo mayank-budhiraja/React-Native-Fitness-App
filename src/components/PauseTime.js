@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     top: 20,
     marginLeft: 10,
     flexDirection: 'row',
+    justifyContent: 'space-around',
     flex: 1
   },
 });

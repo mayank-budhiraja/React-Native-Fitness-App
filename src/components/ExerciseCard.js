@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     color: colors.app_color_secondary,
     fontSize: 20,
     marginTop: 10,
-  fontFamily: 'Raleway-Medium',
+    fontFamily: 'Raleway-Medium',
   },
   repsContainer: {
     color: colors.description,
