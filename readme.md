@@ -1,5 +1,5 @@
 # Calisthenics Workout App
-A fitness app MVP created using react-native which can be scaled easily. 
+MVP for a fitness app created using react-native which can be scaled and extended as per the product needs. 
 
 ## Run
     - yarn install

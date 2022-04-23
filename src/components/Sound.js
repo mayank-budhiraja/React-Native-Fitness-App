@@ -12,7 +12,7 @@ const Sound = ({soundInfo, toggleSound}) => {
           onValueChange={() => toggleSound(!soundInfo)}
           thumbColor={colors.app_color_secondary}
           value={soundInfo}
-          trackColor={{true: colors.subcategory_button}}
+          trackColor={{true: colors.subcategory_button, false: colors.heading}}
         />
       </View>
     </View>
