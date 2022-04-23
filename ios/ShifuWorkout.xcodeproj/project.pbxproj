@@ -8,34 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ShifuWorkoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ShifuWorkoutTests.m */; };
+		08FED40E8526EC26A9D0304E /* libPods-ShifuWorkout-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2308FA6F905582A802E705 /* libPods-ShifuWorkout-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		25745267CF164F2E90733C10 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A23A40DEB54A298EA4BBC2 /* Feather.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ShifuWorkoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ShifuWorkoutTests.m */; };
-		5E74989C5DDA3234057493E4 /* libPods-ShifuWorkout-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C9EC0B7AB57EE50CC41289 /* libPods-ShifuWorkout-tvOSTests.a */; };
-		6DEE14E79960657D18C887B4 /* libPods-ShifuWorkout-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB19897193B37C8F0214339 /* libPods-ShifuWorkout-tvOS.a */; };
-		77A41BA1019CF8D4C6036339 /* libPods-ShifuWorkout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1246FC9F45159242103AC /* libPods-ShifuWorkout.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		F6F80B427664B4C07F3D984E /* libPods-ShifuWorkout-ShifuWorkoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44778D92009B46538E4CFC2B /* libPods-ShifuWorkout-ShifuWorkoutTests.a */; };
-		7E3FF47F4751410285CA5104 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 447F0BDEFD204D119F55DE4A /* AntDesign.ttf */; };
-		AB14F12BD4834D8AB61FB7FD /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1769FEB3BC34356908A2BC0 /* Entypo.ttf */; };
-		99439F28483F4B2780D70CC7 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A4FBAF53664D398D67A0A8 /* EvilIcons.ttf */; };
-		25745267CF164F2E90733C10 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A23A40DEB54A298EA4BBC2 /* Feather.ttf */; };
-		7B8BAE6709384F18A8756CFF /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B5AE06B874AD0A53B6270 /* FontAwesome.ttf */; };
-		FE9D72B1C9B143489B89C27D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A870E78C849858AF7AC16 /* FontAwesome5_Brands.ttf */; };
-		FE4C1667F33345588F386321 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD6687FF1B468CA092CC53 /* FontAwesome5_Regular.ttf */; };
-		FD0272C15E864582A3B4A921 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 501D4BCDDA1F47AEBD3BAA1C /* FontAwesome5_Solid.ttf */; };
-		95A3FE4A11BC4E10940AC6D1 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 903925BBB58F4BE1BA33613E /* Fontisto.ttf */; };
-		78E67A41A4A1486AAC3C3847 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A0B9DB037F4D7684AAC762 /* Foundation.ttf */; };
-		CCF020BBD73948C99114E893 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5AED839D4A7C8DF3A718 /* Ionicons.ttf */; };
-		9903CEFA7D494C5FBE5D1409 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E17CF0A8EEB1477A8A9EB5B7 /* MaterialCommunityIcons.ttf */; };
+		5243B65C27EFF2F4005823F2 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B64A27EFF2F3005823F2 /* Raleway-Medium.ttf */; };
+		5243B65D27EFF2F4005823F2 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B64B27EFF2F3005823F2 /* Raleway-SemiBold.ttf */; };
+		5243B65E27EFF2F4005823F2 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B64C27EFF2F3005823F2 /* Raleway-Italic.ttf */; };
+		5243B65F27EFF2F4005823F2 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B64D27EFF2F3005823F2 /* Raleway-ExtraBold.ttf */; };
+		5243B66027EFF2F4005823F2 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B64E27EFF2F3005823F2 /* Raleway-ExtraLightItalic.ttf */; };
+		5243B66127EFF2F4005823F2 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B64F27EFF2F3005823F2 /* Raleway-LightItalic.ttf */; };
+		5243B66227EFF2F4005823F2 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65027EFF2F3005823F2 /* Raleway-ExtraLight.ttf */; };
+		5243B66327EFF2F4005823F2 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65127EFF2F3005823F2 /* Raleway-Black.ttf */; };
+		5243B66427EFF2F4005823F2 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65227EFF2F3005823F2 /* Raleway-BoldItalic.ttf */; };
+		5243B66527EFF2F4005823F2 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65327EFF2F3005823F2 /* Raleway-BlackItalic.ttf */; };
+		5243B66627EFF2F4005823F2 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65427EFF2F3005823F2 /* Raleway-MediumItalic.ttf */; };
+		5243B66727EFF2F4005823F2 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65527EFF2F3005823F2 /* Raleway-ThinItalic.ttf */; };
+		5243B66827EFF2F4005823F2 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65627EFF2F4005823F2 /* Raleway-Regular.ttf */; };
+		5243B66927EFF2F4005823F2 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65727EFF2F4005823F2 /* Raleway-ExtraBoldItalic.ttf */; };
+		5243B66A27EFF2F4005823F2 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65827EFF2F4005823F2 /* Raleway-Light.ttf */; };
+		5243B66B27EFF2F4005823F2 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65927EFF2F4005823F2 /* Raleway-Bold.ttf */; };
+		5243B66C27EFF2F4005823F2 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65A27EFF2F4005823F2 /* Raleway-SemiBoldItalic.ttf */; };
+		5243B66D27EFF2F4005823F2 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5243B65B27EFF2F4005823F2 /* Raleway-Thin.ttf */; };
 		54B4017D171F4E7FB97C14A7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 980765541E28426BB1AF1103 /* MaterialIcons.ttf */; };
-		A55DDFF536324487841971E0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A7C3F4333A43F292121EE2 /* Octicons.ttf */; };
 		6973A871BF9F4DEBB9155CAC /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F07267DCEC6403C9E21A0C8 /* SimpleLineIcons.ttf */; };
+		6A0965FBD0CBDAF3340623DF /* Pods_ShifuWorkout_ShifuWorkoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEE9D7A00854D15B9F5EA12 /* Pods_ShifuWorkout_ShifuWorkoutTests.framework */; };
+		788ACB48861B14FE7775F195 /* Pods_ShifuWorkout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD4E9792E8076E8B047757 /* Pods_ShifuWorkout.framework */; };
+		78E67A41A4A1486AAC3C3847 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46A0B9DB037F4D7684AAC762 /* Foundation.ttf */; };
+		7B8BAE6709384F18A8756CFF /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B5AE06B874AD0A53B6270 /* FontAwesome.ttf */; };
+		7E3FF47F4751410285CA5104 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 447F0BDEFD204D119F55DE4A /* AntDesign.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		95A3FE4A11BC4E10940AC6D1 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 903925BBB58F4BE1BA33613E /* Fontisto.ttf */; };
+		9903CEFA7D494C5FBE5D1409 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E17CF0A8EEB1477A8A9EB5B7 /* MaterialCommunityIcons.ttf */; };
+		99439F28483F4B2780D70CC7 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A4FBAF53664D398D67A0A8 /* EvilIcons.ttf */; };
+		9FB7FBB0646D9074F97601A0 /* libPods-ShifuWorkout-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0425180665E0735FB0B101F3 /* libPods-ShifuWorkout-tvOS.a */; };
+		A55DDFF536324487841971E0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A7C3F4333A43F292121EE2 /* Octicons.ttf */; };
+		AB14F12BD4834D8AB61FB7FD /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1769FEB3BC34356908A2BC0 /* Entypo.ttf */; };
+		CCF020BBD73948C99114E893 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E5AED839D4A7C8DF3A718 /* Ionicons.ttf */; };
 		EC25B05577574A49AAB44C9B /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A36420A599644D81AAAE2661 /* Zocial.ttf */; };
+		FD0272C15E864582A3B4A921 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 501D4BCDDA1F47AEBD3BAA1C /* FontAwesome5_Solid.ttf */; };
+		FE4C1667F33345588F386321 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD6687FF1B468CA092CC53 /* FontAwesome5_Regular.ttf */; };
+		FE9D72B1C9B143489B89C27D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A8A870E78C849858AF7AC16 /* FontAwesome5_Brands.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,45 +78,63 @@
 		00E356EE1AD99517003FC87E /* ShifuWorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShifuWorkoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ShifuWorkoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShifuWorkoutTests.m; sourceTree = "<group>"; };
-		04C9EC0B7AB57EE50CC41289 /* libPods-ShifuWorkout-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShifuWorkout-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0425180665E0735FB0B101F3 /* libPods-ShifuWorkout-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShifuWorkout-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8C1465F5D27CC3756A440B /* Pods-ShifuWorkout-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOS/Pods-ShifuWorkout-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ShifuWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShifuWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ShifuWorkout/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ShifuWorkout/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ShifuWorkout/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ShifuWorkout/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ShifuWorkout/main.m; sourceTree = "<group>"; };
-		175595723F978152E9E392C8 /* Pods-ShifuWorkout-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOS/Pods-ShifuWorkout-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		1F07267DCEC6403C9E21A0C8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		2A80EBCCDF3F47553BFC05C8 /* Pods-ShifuWorkout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ShifuWorkout-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShifuWorkout-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ShifuWorkout-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShifuWorkout-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E6DDEA26C07D14BB6F1BDD3 /* Pods-ShifuWorkout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout.debug.xcconfig"; sourceTree = "<group>"; };
-		3F9087756370916A30D11CBE /* Pods-ShifuWorkout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout.release.xcconfig"; sourceTree = "<group>"; };
-		44778D92009B46538E4CFC2B /* libPods-ShifuWorkout-ShifuWorkoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShifuWorkout-ShifuWorkoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		755E0DE843A49EC86BD4249F /* Pods-ShifuWorkout-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOSTests/Pods-ShifuWorkout-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		430C6BF34AF8BCB472FB685D /* Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		447F0BDEFD204D119F55DE4A /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		46A0B9DB037F4D7684AAC762 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		47F414CC94F717A7EF2A8F86 /* Pods-ShifuWorkout-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOS/Pods-ShifuWorkout-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4A8A870E78C849858AF7AC16 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		501D4BCDDA1F47AEBD3BAA1C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		5243B64A27EFF2F3005823F2 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "../src/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		5243B64B27EFF2F3005823F2 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		5243B64C27EFF2F3005823F2 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Italic.ttf"; path = "../src/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		5243B64D27EFF2F3005823F2 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBold.ttf"; path = "../src/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5243B64E27EFF2F3005823F2 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		5243B64F27EFF2F3005823F2 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-LightItalic.ttf"; path = "../src/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		5243B65027EFF2F3005823F2 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLight.ttf"; path = "../src/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5243B65127EFF2F3005823F2 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Black.ttf"; path = "../src/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
+		5243B65227EFF2F3005823F2 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BoldItalic.ttf"; path = "../src/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5243B65327EFF2F3005823F2 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BlackItalic.ttf"; path = "../src/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5243B65427EFF2F3005823F2 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-MediumItalic.ttf"; path = "../src/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5243B65527EFF2F3005823F2 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ThinItalic.ttf"; path = "../src/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5243B65627EFF2F4005823F2 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		5243B65727EFF2F4005823F2 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		5243B65827EFF2F4005823F2 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "../src/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		5243B65927EFF2F4005823F2 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		5243B65A27EFF2F4005823F2 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		5243B65B27EFF2F4005823F2 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "../src/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		58FD4E9792E8076E8B047757 /* Pods_ShifuWorkout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShifuWorkout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C270ED8CE86E572CAAA5A7 /* Pods-ShifuWorkout-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOSTests/Pods-ShifuWorkout-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81A4FBAF53664D398D67A0A8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ShifuWorkout/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8504C9A38B203B8D17403C93 /* Pods-ShifuWorkout-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOSTests/Pods-ShifuWorkout-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		8533EE7E31DCBD8E7D61AB3F /* Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B0E1246FC9F45159242103AC /* libPods-ShifuWorkout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShifuWorkout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C86233FA53B550B8CC5D6528 /* Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig"; sourceTree = "<group>"; };
-		CFB19897193B37C8F0214339 /* libPods-ShifuWorkout-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShifuWorkout-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E32490993D09983C6E6A9DD6 /* Pods-ShifuWorkout-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOS/Pods-ShifuWorkout-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1B5AE06B874AD0A53B6270 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		8F0E5AED839D4A7C8DF3A718 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		903925BBB58F4BE1BA33613E /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		980765541E28426BB1AF1103 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		9DEE9D7A00854D15B9F5EA12 /* Pods_ShifuWorkout_ShifuWorkoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShifuWorkout_ShifuWorkoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36420A599644D81AAAE2661 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		A4A7C3F4333A43F292121EE2 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		A9037EEE32EC41E057348B4F /* Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACCD6687FF1B468CA092CC53 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		D0A23A40DEB54A298EA4BBC2 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		DC0146BCDD8FAA2546A584A9 /* Pods-ShifuWorkout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout.debug.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout.debug.xcconfig"; sourceTree = "<group>"; };
+		DF2308FA6F905582A802E705 /* libPods-ShifuWorkout-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShifuWorkout-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1769FEB3BC34356908A2BC0 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		E17CF0A8EEB1477A8A9EB5B7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		E50F010EAF6AC03A5A0A4118 /* Pods-ShifuWorkout-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShifuWorkout-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ShifuWorkout-tvOSTests/Pods-ShifuWorkout-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		447F0BDEFD204D119F55DE4A /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E1769FEB3BC34356908A2BC0 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		81A4FBAF53664D398D67A0A8 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D0A23A40DEB54A298EA4BBC2 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8D1B5AE06B874AD0A53B6270 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4A8A870E78C849858AF7AC16 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ACCD6687FF1B468CA092CC53 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		501D4BCDDA1F47AEBD3BAA1C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		903925BBB58F4BE1BA33613E /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		46A0B9DB037F4D7684AAC762 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8F0E5AED839D4A7C8DF3A718 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E17CF0A8EEB1477A8A9EB5B7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		980765541E28426BB1AF1103 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A4A7C3F4333A43F292121EE2 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1F07267DCEC6403C9E21A0C8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A36420A599644D81AAAE2661 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F80B427664B4C07F3D984E /* libPods-ShifuWorkout-ShifuWorkoutTests.a in Frameworks */,
+				6A0965FBD0CBDAF3340623DF /* Pods_ShifuWorkout_ShifuWorkoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77A41BA1019CF8D4C6036339 /* libPods-ShifuWorkout.a in Frameworks */,
+				788ACB48861B14FE7775F195 /* Pods_ShifuWorkout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DEE14E79960657D18C887B4 /* libPods-ShifuWorkout-tvOS.a in Frameworks */,
+				9FB7FBB0646D9074F97601A0 /* libPods-ShifuWorkout-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E74989C5DDA3234057493E4 /* libPods-ShifuWorkout-tvOSTests.a in Frameworks */,
+				08FED40E8526EC26A9D0304E /* libPods-ShifuWorkout-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,67 +209,35 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				B0E1246FC9F45159242103AC /* libPods-ShifuWorkout.a */,
-				44778D92009B46538E4CFC2B /* libPods-ShifuWorkout-ShifuWorkoutTests.a */,
-				CFB19897193B37C8F0214339 /* libPods-ShifuWorkout-tvOS.a */,
-				04C9EC0B7AB57EE50CC41289 /* libPods-ShifuWorkout-tvOSTests.a */,
+				58FD4E9792E8076E8B047757 /* Pods_ShifuWorkout.framework */,
+				9DEE9D7A00854D15B9F5EA12 /* Pods_ShifuWorkout_ShifuWorkoutTests.framework */,
+				0425180665E0735FB0B101F3 /* libPods-ShifuWorkout-tvOS.a */,
+				DF2308FA6F905582A802E705 /* libPods-ShifuWorkout-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3BBA929B2C535A077A6F5DBF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3E6DDEA26C07D14BB6F1BDD3 /* Pods-ShifuWorkout.debug.xcconfig */,
-				3F9087756370916A30D11CBE /* Pods-ShifuWorkout.release.xcconfig */,
-				8533EE7E31DCBD8E7D61AB3F /* Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig */,
-				C86233FA53B550B8CC5D6528 /* Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig */,
-				E32490993D09983C6E6A9DD6 /* Pods-ShifuWorkout-tvOS.debug.xcconfig */,
-				175595723F978152E9E392C8 /* Pods-ShifuWorkout-tvOS.release.xcconfig */,
-				755E0DE843A49EC86BD4249F /* Pods-ShifuWorkout-tvOSTests.debug.xcconfig */,
-				8504C9A38B203B8D17403C93 /* Pods-ShifuWorkout-tvOSTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
-		83CBB9F61A601CBA00E9B192 = {
-			isa = PBXGroup;
-			children = (
-				13B07FAE1A68108700A75B9A /* ShifuWorkout */,
-				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ShifuWorkoutTests */,
-				83CBBA001A601CBA00E9B192 /* Products */,
-				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				3BBA929B2C535A077A6F5DBF /* Pods */,
-				4CFA57A55EF54067A54049DD /* Resources */,
-			);
-			indentWidth = 2;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		83CBBA001A601CBA00E9B192 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13B07F961A680F5B00A75B9A /* ShifuWorkout.app */,
-				00E356EE1AD99517003FC87E /* ShifuWorkoutTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* ShifuWorkout-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* ShifuWorkout-tvOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4CFA57A55EF54067A54049DD /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
+				5243B65127EFF2F3005823F2 /* Raleway-Black.ttf */,
+				5243B65327EFF2F3005823F2 /* Raleway-BlackItalic.ttf */,
+				5243B65927EFF2F4005823F2 /* Raleway-Bold.ttf */,
+				5243B65227EFF2F3005823F2 /* Raleway-BoldItalic.ttf */,
+				5243B64D27EFF2F3005823F2 /* Raleway-ExtraBold.ttf */,
+				5243B65727EFF2F4005823F2 /* Raleway-ExtraBoldItalic.ttf */,
+				5243B65027EFF2F3005823F2 /* Raleway-ExtraLight.ttf */,
+				5243B64E27EFF2F3005823F2 /* Raleway-ExtraLightItalic.ttf */,
+				5243B64C27EFF2F3005823F2 /* Raleway-Italic.ttf */,
+				5243B65827EFF2F4005823F2 /* Raleway-Light.ttf */,
+				5243B64F27EFF2F3005823F2 /* Raleway-LightItalic.ttf */,
+				5243B64A27EFF2F3005823F2 /* Raleway-Medium.ttf */,
+				5243B65427EFF2F3005823F2 /* Raleway-MediumItalic.ttf */,
+				5243B65627EFF2F4005823F2 /* Raleway-Regular.ttf */,
+				5243B64B27EFF2F3005823F2 /* Raleway-SemiBold.ttf */,
+				5243B65A27EFF2F4005823F2 /* Raleway-SemiBoldItalic.ttf */,
+				5243B65B27EFF2F4005823F2 /* Raleway-Thin.ttf */,
+				5243B65527EFF2F3005823F2 /* Raleway-ThinItalic.ttf */,
 				447F0BDEFD204D119F55DE4A /* AntDesign.ttf */,
 				E1769FEB3BC34356908A2BC0 /* Entypo.ttf */,
 				81A4FBAF53664D398D67A0A8 /* EvilIcons.ttf */,
@@ -253,7 +257,55 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* ShifuWorkout */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* ShifuWorkoutTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				4CFA57A55EF54067A54049DD /* Resources */,
+				ACD74DF6F6CD8DF7C0227D27 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* ShifuWorkout.app */,
+				00E356EE1AD99517003FC87E /* ShifuWorkoutTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* ShifuWorkout-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* ShifuWorkout-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACD74DF6F6CD8DF7C0227D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC0146BCDD8FAA2546A584A9 /* Pods-ShifuWorkout.debug.xcconfig */,
+				2A80EBCCDF3F47553BFC05C8 /* Pods-ShifuWorkout.release.xcconfig */,
+				A9037EEE32EC41E057348B4F /* Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig */,
+				430C6BF34AF8BCB472FB685D /* Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig */,
+				47F414CC94F717A7EF2A8F86 /* Pods-ShifuWorkout-tvOS.debug.xcconfig */,
+				0F8C1465F5D27CC3756A440B /* Pods-ShifuWorkout-tvOS.release.xcconfig */,
+				69C270ED8CE86E572CAAA5A7 /* Pods-ShifuWorkout-tvOSTests.debug.xcconfig */,
+				E50F010EAF6AC03A5A0A4118 /* Pods-ShifuWorkout-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -262,11 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ShifuWorkoutTests" */;
 			buildPhases = (
-				7A02A709660AF75B531CF406 /* [CP] Check Pods Manifest.lock */,
+				9414BE7DE36374DCAC13869E /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C6A292CF3AB0EC02F1FC3CD9 /* [CP] Copy Pods Resources */,
+				6BF45423754C7AD965ED1149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,13 +334,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ShifuWorkout" */;
 			buildPhases = (
-				5CF1D839229B5B00BBCF5615 /* [CP] Check Pods Manifest.lock */,
+				9BCBC6594109C0664E339338 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				BF7497C49C46BD95DAED3EEC /* [CP] Copy Pods Resources */,
+				57428A4DE51080E239483F6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,7 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ShifuWorkout-tvOS" */;
 			buildPhases = (
-				7FBD4016A380FDC33ACE7653 /* [CP] Check Pods Manifest.lock */,
+				09E3C1502009045CB1272DA3 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -323,7 +375,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ShifuWorkout-tvOSTests" */;
 			buildPhases = (
-				98E3F76317D7015E41E4519B /* [CP] Check Pods Manifest.lock */,
+				5352C09406927F849EC6DE5C /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -397,24 +449,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5243B66A27EFF2F4005823F2 /* Raleway-Light.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				5243B65E27EFF2F4005823F2 /* Raleway-Italic.ttf in Resources */,
+				5243B66227EFF2F4005823F2 /* Raleway-ExtraLight.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5243B66C27EFF2F4005823F2 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				7E3FF47F4751410285CA5104 /* AntDesign.ttf in Resources */,
 				AB14F12BD4834D8AB61FB7FD /* Entypo.ttf in Resources */,
+				5243B66427EFF2F4005823F2 /* Raleway-BoldItalic.ttf in Resources */,
 				99439F28483F4B2780D70CC7 /* EvilIcons.ttf in Resources */,
+				5243B66827EFF2F4005823F2 /* Raleway-Regular.ttf in Resources */,
 				25745267CF164F2E90733C10 /* Feather.ttf in Resources */,
 				7B8BAE6709384F18A8756CFF /* FontAwesome.ttf in Resources */,
 				FE9D72B1C9B143489B89C27D /* FontAwesome5_Brands.ttf in Resources */,
+				5243B66B27EFF2F4005823F2 /* Raleway-Bold.ttf in Resources */,
+				5243B66027EFF2F4005823F2 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				FE4C1667F33345588F386321 /* FontAwesome5_Regular.ttf in Resources */,
+				5243B66127EFF2F4005823F2 /* Raleway-LightItalic.ttf in Resources */,
+				5243B65F27EFF2F4005823F2 /* Raleway-ExtraBold.ttf in Resources */,
+				5243B65D27EFF2F4005823F2 /* Raleway-SemiBold.ttf in Resources */,
+				5243B66527EFF2F4005823F2 /* Raleway-BlackItalic.ttf in Resources */,
+				5243B66D27EFF2F4005823F2 /* Raleway-Thin.ttf in Resources */,
 				FD0272C15E864582A3B4A921 /* FontAwesome5_Solid.ttf in Resources */,
+				5243B65C27EFF2F4005823F2 /* Raleway-Medium.ttf in Resources */,
+				5243B66927EFF2F4005823F2 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 				95A3FE4A11BC4E10940AC6D1 /* Fontisto.ttf in Resources */,
 				78E67A41A4A1486AAC3C3847 /* Foundation.ttf in Resources */,
 				CCF020BBD73948C99114E893 /* Ionicons.ttf in Resources */,
+				5243B66627EFF2F4005823F2 /* Raleway-MediumItalic.ttf in Resources */,
 				9903CEFA7D494C5FBE5D1409 /* MaterialCommunityIcons.ttf in Resources */,
 				54B4017D171F4E7FB97C14A7 /* MaterialIcons.ttf in Resources */,
 				A55DDFF536324487841971E0 /* Octicons.ttf in Resources */,
 				6973A871BF9F4DEBB9155CAC /* SimpleLineIcons.ttf in Resources */,
+				5243B66327EFF2F4005823F2 /* Raleway-Black.ttf in Resources */,
 				EC25B05577574A49AAB44C9B /* Zocial.ttf in Resources */,
+				5243B66727EFF2F4005823F2 /* Raleway-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,65 +520,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		5CF1D839229B5B00BBCF5615 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShifuWorkout-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A02A709660AF75B531CF406 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShifuWorkout-ShifuWorkoutTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7FBD4016A380FDC33ACE7653 /* [CP] Check Pods Manifest.lock */ = {
+		09E3C1502009045CB1272DA3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -530,7 +542,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98E3F76317D7015E41E4519B /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		5352C09406927F849EC6DE5C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -552,104 +578,236 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF7497C49C46BD95DAED3EEC /* [CP] Copy Pods Resources */ = {
+		57428A4DE51080E239483F6D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout-resources.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCAsyncStorage/RNCAsyncStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCMaskedView/RNCMaskedView.framework",
+				"${BUILT_PRODUCTS_DIR}/RNFastImage/RNFastImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNGestureHandler/RNGestureHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/RNReanimated/RNReanimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
+				"${BUILT_PRODUCTS_DIR}/RNScreens/RNScreens.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSound/RNSound.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSoundPlayer/RNSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-react-native/lottie_react_native.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-blur/react_native_blur.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BVLinearGradient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCAsyncStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCMaskedView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFastImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNGestureHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNReanimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNScreens.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSound.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNVectorIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lottie_react_native.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_blur.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_safe_area_context.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout/Pods-ShifuWorkout-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6A292CF3AB0EC02F1FC3CD9 /* [CP] Copy Pods Resources */ = {
+		6BF45423754C7AD965ED1149 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests-resources.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCAsyncStorage/RNCAsyncStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCMaskedView/RNCMaskedView.framework",
+				"${BUILT_PRODUCTS_DIR}/RNFastImage/RNFastImage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNGestureHandler/RNGestureHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/RNReanimated/RNReanimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
+				"${BUILT_PRODUCTS_DIR}/RNScreens/RNScreens.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSound/RNSound.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSoundPlayer/RNSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-react-native/lottie_react_native.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-blur/react_native_blur.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BVLinearGradient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCAsyncStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCMaskedView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNFastImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNGestureHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNReanimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNScreens.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSound.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNVectorIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lottie_react_native.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_blur.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_safe_area_context.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShifuWorkout-ShifuWorkoutTests/Pods-ShifuWorkout-ShifuWorkoutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9414BE7DE36374DCAC13869E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShifuWorkout-ShifuWorkoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCBC6594109C0664E339338 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShifuWorkout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -745,7 +903,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8533EE7E31DCBD8E7D61AB3F /* Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig */;
+			baseConfigurationReference = A9037EEE32EC41E057348B4F /* Pods-ShifuWorkout-ShifuWorkoutTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -768,7 +926,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C86233FA53B550B8CC5D6528 /* Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig */;
+			baseConfigurationReference = 430C6BF34AF8BCB472FB685D /* Pods-ShifuWorkout-ShifuWorkoutTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -788,7 +946,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E6DDEA26C07D14BB6F1BDD3 /* Pods-ShifuWorkout.debug.xcconfig */;
+			baseConfigurationReference = DC0146BCDD8FAA2546A584A9 /* Pods-ShifuWorkout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -811,7 +969,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F9087756370916A30D11CBE /* Pods-ShifuWorkout.release.xcconfig */;
+			baseConfigurationReference = 2A80EBCCDF3F47553BFC05C8 /* Pods-ShifuWorkout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -832,7 +990,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E32490993D09983C6E6A9DD6 /* Pods-ShifuWorkout-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 47F414CC94F717A7EF2A8F86 /* Pods-ShifuWorkout-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -860,7 +1018,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 175595723F978152E9E392C8 /* Pods-ShifuWorkout-tvOS.release.xcconfig */;
+			baseConfigurationReference = 0F8C1465F5D27CC3756A440B /* Pods-ShifuWorkout-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -888,7 +1046,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 755E0DE843A49EC86BD4249F /* Pods-ShifuWorkout-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 69C270ED8CE86E572CAAA5A7 /* Pods-ShifuWorkout-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -915,7 +1073,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8504C9A38B203B8D17403C93 /* Pods-ShifuWorkout-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = E50F010EAF6AC03A5A0A4118 /* Pods-ShifuWorkout-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

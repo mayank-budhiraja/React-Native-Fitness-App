@@ -32,7 +32,7 @@ const homeData = [
     image: require('../images/Home/back.png'),
     color: '#F6F6F6',
   },
-  {
+  /*{
     id: '3',
     routineDifficulty: 'beginner',
     routineData: {
@@ -42,7 +42,7 @@ const homeData = [
     },
     image: require('../images/Home/legs.png'),
     color: '#fce2cc',
-  },
+  },*/
   {
     id: '4',
     routineDifficulty: 'advance',

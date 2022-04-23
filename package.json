@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "eslint .",
     "clean": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache",
-    "clean-gradle": "cd android && ./gradlew clean && cd .."
+    "clean-gradle": "cd android && ./gradlew clean && cd ..",
+    "android-release": "cd android && ./gradlew bundleRelease && cd .."
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.16",

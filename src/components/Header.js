@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import colors from '../constants/colors';
 
-const Header = () => {
+const Header = ({userName, mainCardHeader}) => {
   return (
     <>
       <View
@@ -12,9 +12,9 @@ const Header = () => {
           marginBottom: 20,
           justifyContent: 'center',
         }}>
-        <Text style={styles.userText}>Shifu Training</Text>
+        <Text style={styles.userText}>{userName}</Text>
       </View>
-      <Text style={styles.subTitle}>Personal Fitness Plan</Text>
+      <Text style={styles.subTitle}>{mainCardHeader}</Text>
     </>
   );
 };
@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: 'Raleway-ExtraBold',
     color: colors.app_color_primary,
-    letterSpacing: 0.5
+    letterSpacing: 0.5,
   },
 });

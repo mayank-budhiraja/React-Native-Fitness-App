@@ -7,6 +7,7 @@ import {
   BackHandler,
   Alert,
   ScrollView,
+  StatusBar,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useFocusEffect} from '@react-navigation/native';
@@ -19,6 +20,7 @@ import {
 } from 'react-native-responsive-screen';
 import colors from '../constants/colors';
 import MainCard from '../components/MainCard';
+import en from '../utils/en.json';
 
 const Home = ({navigation}) => {
   const home = useSelector((state) => state.home);
@@ -33,9 +35,9 @@ const Home = ({navigation}) => {
   );
 
   const backAction = () => {
-    Alert.alert('Hold on!', 'Are you sure you want to go back?', [
+    Alert.alert('Exit App', 'Are you sure you want to exit?', [
       {
-        text: 'Cancel',
+        text: 'NO',
         onPress: () => null,
         style: 'cancel',
       },
@@ -45,26 +47,28 @@ const Home = ({navigation}) => {
     return true;
   };
 
-  renderItem = ({item}) => (
-    <Card
-      image={item.image}
-      navigation={navigation}
-      routineData={item.routineData}
-      cardColor={item.color}
-    />
-  );
+  const renderItem = ({item}) => {
+    return (
+      <Card
+        image={item.image}
+        navigation={navigation}
+        routineData={item.routineData}
+        cardColor={item.color}
+      />
+    );
+  };
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <ScrollView style={styles.scrollView}>
-        <View style={{backgroundColor: colors.solidWhite, paddingBottom: 30}}>
-          <Header userName={'User'} subTitle={'Personal Fitness'} />
+      <StatusBar backgroundColor={colors.solidWhite} barStyle="dark-content" />
+        <View style={{backgroundColor: colors.solidWhite}}>
+          <Header userName={en.appName} mainCardHeader={en.mainCardHeader} />
           <MainCard
             image={require('../assets/images/Home/legs.png')}
-            headerText={'Full Body Workout'}
+            headerText={'Legs of Iron'}
             subHeaderText={'Intermediate'}
             timeText={'20 mins'}
-            routineType={'Power Planches'}
+            routineType={'Legs of Iron'}
             navigation={navigation}
           />
         </View>
@@ -83,7 +87,6 @@ const Home = ({navigation}) => {
             horizontal
           />
         </View>
-      </ScrollView>
     </SafeAreaView>
   );
 };

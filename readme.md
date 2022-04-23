@@ -1,11 +1,24 @@
 # Calisthenics Workout App
-A fitness app MVP created using react-native which can be scaled easily. 
+MVP for a fitness app created using react-native which can be scaled and extended as per the product needs. 
+
+<img src="demo/calisthenics-app.gif" height="400" />
 
 <img src="demo/calisthenics-app.gif" height="400" />
 
 ## Run
     - yarn install
     - yarn run ios/android
+
+## Release
+    - Update android/build.gradle 
+        compileSdkVersion = 29 -> 30
+        targetSdkVersion = 29 -> 30
+
+    - Increase both the values by 1 in android/app/android
+        versionCode 1
+        versionName "1.0"
+
+    - yarn android-release
 
 ## Motivation
 I wanted to help fitness industry to come up with great apps whether it is related to physical or mental. Anyone can use the repo and scale up to the required needs. 
