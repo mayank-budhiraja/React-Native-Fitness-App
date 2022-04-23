@@ -1,12 +1,10 @@
 import React from 'react';
 import {
   SafeAreaView,
-  Button,
   Text,
   FlatList,
   StyleSheet,
   View,
-  Platform,
 } from 'react-native';
 import routines from '../assets/data/routines';
 import RoutineCard from '../components/RoutineCard';
@@ -44,7 +42,7 @@ const Routine = ({navigation, route}) => {
     <SafeAreaView style={styles.mainContainer}>
       <View style={styles.container}>
         <View>
-          <Text style={styles.header}>Routine Name</Text>
+          <Text style={styles.header}>{routineType}</Text>
         </View>
         <FlatList
           data={routines}
@@ -54,9 +52,9 @@ const Routine = ({navigation, route}) => {
         />
         <View style={styles.buttonContainer}>
           <NativeButton
-            textName="Start Routine"
+            textName="START"
             onClick={() => startRoutine()}
-            buttonWidth={'60%'}
+            buttonWidth={'65%'}
           />
         </View>
       </View>
@@ -65,34 +63,43 @@ const Routine = ({navigation, route}) => {
 };
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginBottom: Platform.OS === 'android' ? hp('3%') : hp('12%'),
-  },
   header: {
     fontSize: 30,
-    fontWeight: '700',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
     color: colors.app_color_primary,
     top: 40,
     left: 30,
   },
   container: {
     backgroundColor: colors.solidWhite,
-    height: hp('65%'),
+    height: hp('80%'),
     width: wp('100%'),
     borderTopRightRadius: 80,
     borderTopLeftRadius: 80,
-    marginTop: hp('35%'),
+    marginTop: hp('20%'),
   },
   mainContainer: {
-    backgroundColor: colors.app_Tint,
+    backgroundColor: 'rgba(245, 126, 122, 0.95)',
     flexDirection: 'column',
     alignItems: 'flex-end',
   },
   flatListContainer: {
     marginHorizontal: 15,
     marginTop: 60,
+    marginBottom: 10,
+  },
+
+  buttonContainer: {
+    position: 'absolute',
+    //backgroundColor: 'rgba(240, 240, 240, 0.5)',
+    borderColor: colors.borderColor,
+    flex: 1,
+    paddingBottom: 30,
+    width: '100%',
+    marginTop: hp('69%'),
+    justifyContent: 'center',
+    flexDirection: 'row',
   },
 });
 

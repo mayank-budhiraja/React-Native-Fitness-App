@@ -11,22 +11,20 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-import Begin from '../assets/images/Home/chest.png';
-import { useSelector } from 'react-redux';
+import SoundPlayer from 'react-native-sound-player';
+import {useSelector} from 'react-redux';
 
 const BreakPause = ({currentIndex}) => {
   const [isPlaying, setIsPlaying] = React.useState(true);
 
-  const selector = useSelector( state => state.settings)
+  const selector = useSelector((state) => state.settings);
 
   return (
     <SafeAreaView>
       {currentIndex === 0 ? (
         <View style={styles.container}>
           <View style={styles.imageContainer}>
-            <FastImage
-              style={{width: wp('80%'), height: hp('40%')}}
-            />
+            <FastImage style={{width: wp('80%'), height: hp('40%')}} />
           </View>
           <View style={styles.info}>
             <Text style={styles.textContainer}>Let's Begin</Text>
@@ -45,13 +43,22 @@ const BreakPause = ({currentIndex}) => {
               colorsTime={[10, 6, 3, 0]}
               strokeWidth={15}
               size={300}
-              onComplete={() => ({shouldRepeat: true, delay: 2})}>
+              onUpdate={(remainingTime) => {
+                if (remainingTime == 1) {
+                  try {
+                    SoundPlayer.playSoundFile('bell_ring', 'mp3');
+                  } catch (e) {
+                    console.log(`cannot play the sound file`, e);
+                  }
+                }
+              }}>
               {({remainingTime, color}) => (
                 <Text style={{color, fontSize: 80}}>{remainingTime}</Text>
               )}
             </CountdownCircleTimer>
           </View>
-          <View style={{flexDirection: 'column', alignItems: 'center', top: 60}}>
+          <View
+            style={{flexDirection: 'column', alignItems: 'center', top: 60}}>
             <Text style={styles.textContainer}>Take a Break</Text>
           </View>
         </View>
@@ -83,6 +90,8 @@ const styles = StyleSheet.create({
   textContainer: {
     color: colors.heading,
     fontSize: 32,
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -90,5 +99,6 @@ const styles = StyleSheet.create({
     top: 20,
     color: colors.description,
     fontSize: 20,
+    fontFamily: 'Raleway-Bold',
   },
 });

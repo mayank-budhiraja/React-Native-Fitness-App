@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
   },
   headText: {
     fontSize: 20,
-    fontWeight: '500',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.7,
     color: colors.app_color_primary,
   },
   container: {

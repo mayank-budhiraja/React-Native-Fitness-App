@@ -1,7 +1,6 @@
 import actions from '../constants';
 import homeData from '../../assets/data/homeData';
 import subCategories from '../../assets/data/subCategories';
-import { act } from 'react-test-renderer';
 
 const INITIAL_STATE = {
   feedData: homeData,

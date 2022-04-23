@@ -8,7 +8,7 @@ const homeData = [
       routine_time: '40',
     },
     image: require('../images/Home/rings-1.png'),
-    color: '#e6f4fa',
+    color: '#EEF7FE',
   },
   {
     id: '1',
@@ -19,7 +19,7 @@ const homeData = [
       routine_time: '20',
     },
     image: require('../images/Home/chest.png'),
-    color: '#f7ebe1',
+    color: '#FFF5E8',
   },
   {
     id: '2',
@@ -30,18 +30,18 @@ const homeData = [
       routine_time: '30',
     },
     image: require('../images/Home/back.png'),
-    color: '#e3e5e6',
+    color: '#F6F6F6',
   },
   {
     id: '3',
     routineDifficulty: 'beginner',
     routineData: {
-      routine_name: 'Iron Legs',
+      routine_name: 'Legs of Iron',
       routine_level: 'Beginner',
       routine_time: '20',
     },
     image: require('../images/Home/legs.png'),
-    color: '#f7ebe1',
+    color: '#fce2cc',
   },
   {
     id: '4',
@@ -52,7 +52,7 @@ const homeData = [
       routine_time: '40',
     },
     image: require('../images/Home/cardio.png'),
-    color: '#e6f4fa',
+    color: '#d5edf7',
   },
 ];
 

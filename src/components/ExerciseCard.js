@@ -55,13 +55,13 @@ const styles = StyleSheet.create({
     fontSize: 28,
     alignItems: 'center',
     justifyContent: 'center',
-    fontWeight: '700'
+    fontFamily: 'Raleway-Bold',
   },
   paraContainer: {
     color: colors.app_color_secondary,
     fontSize: 20,
     marginTop: 10,
-    fontWeight: '500'
+  fontFamily: 'Raleway-Medium',
   },
   repsContainer: {
     color: colors.description,

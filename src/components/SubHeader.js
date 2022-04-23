@@ -10,28 +10,49 @@ const SubHeader = () => {
   const dispatch = useDispatch();
 
   renderItem = ({item}) => {
-    const selected = item.selected && home.selectID 
+    const selected = item.selected && home.selectID;
     return (
       <View
-        style={
-          selected != 0
-            ? styles.selectedContainer
-            : styles.itemContainer
-        }>
+        style={selected != 0 ? styles.selectedContainer : styles.itemContainer}>
         <TouchableOpacity
           onPress={() =>
             dispatch(homeActions.setHomeData(item.id, item.routineDifficulty))
           }>
-          <Text style={[ selected != 0 ? {color: colors.subcat_button_text} : {color: colors.app_color_primary, fontWeight: '900'}, styles.subcategoryText]}>{item.title}</Text>
+          <Text
+            style={[
+              selected != 0
+                ? {color: colors.app_Tint}
+                : {color: colors.app_color_primary, fontWeight: '900'},
+              styles.subcategoryText,
+            ]}>
+            {item.title}
+          </Text>
         </TouchableOpacity>
       </View>
     );
   };
 
   return (
-    <View style={{marginHorizontal: 10}}>
-      <Text style={styles.textContainer}> Categories </Text>
-      <View style={styles.container}>
+    <View style={{marginHorizontal: 15}}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          marginBottom: 30,
+        }}>
+        <Text style={styles.textContainer}> Categories </Text>
+        <Text
+          style={{
+            fontSize: 24,
+            fontWeight: '700',
+            color: 'white',
+            right: 10,
+          }}>
+          All
+        </Text>
+      </View>
+
+      {/* <View style={styles.container}>
         <TouchableOpacity
           onPress={() => dispatch(homeActions.resetCategoryData())}
           style={[
@@ -40,8 +61,17 @@ const SubHeader = () => {
               : styles.itemContainer,
             styles.resetButton,
           ]}>
-          <Text style={[ home.selectID == 0 ? styles.containerText : {color: colors.app_color_primary, fontWeight: '600'}]}>All</Text>
+          <Text
+            style={[
+              home.selectID == 0
+                ? styles.containerText
+                : {color: colors.app_color_primary, fontWeight: '600'},
+            ]}>
+            All
+          </Text>
         </TouchableOpacity>
+      </View>
+      {/* <View style={styles.container}>
         <FlatList
           data={home.subData}
           renderItem={renderItem}
@@ -49,7 +79,7 @@ const SubHeader = () => {
           style={styles.flatListContainer}
           horizontal={true}
         />
-      </View>
+      </View>*/}
     </View>
   );
 };
@@ -61,31 +91,39 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   containerText: {
-    color: 'white',
+    color: colors.app_Tint,
     fontWeight: '600',
   },
   selectedContainer: {
     borderWidth: 1,
     backgroundColor: colors.subcategory_button,
-    borderColor: colors.subcategory_button,
-    borderRadius: 15,
-    marginRight: 10,
-    padding: 10,
+    borderColor: colors.app_Tint,
+    borderRadius: 20,
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+    marginLeft: 5,
+  },
+  itemContainer: {
+    borderRadius: 20,
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+    marginLeft: 5,
+    backgroundColor: '#fff5ed',
   },
   container: {
     flexDirection: 'row',
   },
   resetButton: {
-    margin: 15,
+    paddingHorizontal: 30,
+    fontSize: 20,
+    color: colors.app_color_primary,
   },
-  flatListContainer: {
-    margin: 15,
-  },
+  flatListContainer: {},
   textContainer: {
-    fontSize: 18,
-    fontWeight: '600',
-    marginLeft: 10,
-    color: colors.app_color_primary
+    fontSize: 24,
+    fontWeight: '700',
+    marginLeft: 0,
+    color: colors.solidWhite,
   },
   itemContainer: {
     borderWidth: 1.5,

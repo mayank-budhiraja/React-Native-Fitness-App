@@ -20,20 +20,30 @@ import RoutinePlaylist from './src/screens/RoutinePlaylist';
 import CompleteExercise from './src/screens/CompleteExercise';
 
 import screenNames from './src/constants/navigation';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import colors from './src/constants/colors';
 import Splash from './src/screens/Splash';
 
 import UserContainer from './src/screens/UserContainer';
+import ListExercise from './src/screens/ExerciseLibrary';
+
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+const iconSize = 30;
 
 const App = () => {
   return (
     <>
       {Platform.OS === 'android' ? (
-        <StatusBar backgroundColor={colors.app_Tint} />
+        <StatusBar
+          backgroundColor={colors.solidWhite}
+          barStyle="dark-content"
+        />
       ) : null}
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
@@ -58,7 +68,11 @@ const HomeStack = () => {
         name={screenNames.USER_CONTAINER}
         component={UserContainer}
       />
-      <Stack.Screen name={screenNames.HOME} component={TabNav} />
+      <Stack.Screen
+        name={screenNames.HOME}
+        component={TabNav}
+        options={Platform.OS === 'ios' ? {gestureEnabled: false} : {}}
+      />
       <Stack.Screen name={screenNames.ROUTINE} component={Routine} />
       <Stack.Screen name={screenNames.EXERCISE} component={Exercise} />
       <Stack.Screen
@@ -75,7 +89,15 @@ const HomeStack = () => {
 
 const TabNav = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      tabBarOptions={{
+        style: {
+          height: hp('7%'),
+          backgroundColor: colors.secondary_container,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
+        },
+      }}>
       <Tab.Screen
         name={screenNames.HOME}
         component={Home}
@@ -87,8 +109,30 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="home"
-                size={36}
+                name="home-filled"
+                size={iconSize}
+                color={
+                  tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
+                }
+                style={{top: 10}}
+              />
+            );
+          },
+        }}
+      />
+      <Tab.Screen
+        name={screenNames.LIST_EXERCISE}
+        component={ListExercise}
+        options={{
+          tabBarLabel: '',
+          tabBarOptions: {
+            activeTintColor: colors.app_Tint,
+          },
+          tabBarIcon: (tabInfo) => {
+            return (
+              <Icon
+                name="format-list-bulleted"
+                size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
                 }
@@ -109,8 +153,8 @@ const TabNav = () => {
           tabBarIcon: (tabInfo) => {
             return (
               <Icon
-                name="settings-sharp"
-                size={36}
+                name="settings"
+                size={iconSize}
                 color={
                   tabInfo.focused ? colors.app_Tint : colors.app_color_secondary
                 }

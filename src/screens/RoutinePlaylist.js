@@ -1,24 +1,20 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
   SafeAreaView,
   View,
-  Text,
-  FlatList,
   StyleSheet,
-  Button,
   Alert,
+  BackHandler,
 } from 'react-native';
-
+import {useFocusEffect} from '@react-navigation/native';
 import ExerciseCard from '../components/ExerciseCard';
 import BreakPause from './BreakPause';
-import BeginExercise from './BeginExercise';
+import SoundPlayer from 'react-native-sound-player'
 import screenNames from '../constants/navigation';
 import NativeButton from '../components/NativeButton';
-import {TouchableHighlight} from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/Ionicons';
 import ExerciseHeader from '../components/ExerciseHeader';
 import CompleteExercise from './CompleteExercise';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 
 const RoutinePlaylist = ({navigation, route}) => {
   const {data} = route.params; // to-do state management
@@ -31,9 +27,16 @@ const RoutinePlaylist = ({navigation, route}) => {
 
   const [completeEx, setComplete] = useState(false);
 
-  const settingSelector = useSelector( state => state.settings)
+  const settingSelector = useSelector((state) => state.settings);
 
-  useEffect(() => {}, [currentIndex, delayExercise]);
+  useFocusEffect(
+    React.useCallback(() => {
+      BackHandler.addEventListener('hardwareBackPress', quitWorkout);
+
+      return () =>
+        BackHandler.removeEventListener('hardwareBackPress', quitWorkout);
+    }, [currentIndex, delayExercise]),
+  );
 
   onClickNext = () => {
     if (currentIndex < data.length) {
@@ -56,10 +59,13 @@ const RoutinePlaylist = ({navigation, route}) => {
   };
 
   manageBreak = () => {
-    setTimeout(() => setDelay(!!delayExercise), settingSelector.breakTime * 1000);
+    setTimeout(
+      () => setDelay(!!delayExercise),
+      settingSelector.breakTime * 1000,
+    );
   };
 
-  quitWorkout = () => {
+  const quitWorkout = () => {
     Alert.alert('Hold on!', 'Are you sure you want to quit?', [
       {
         text: 'Cancel',
@@ -74,6 +80,7 @@ const RoutinePlaylist = ({navigation, route}) => {
           }),
       },
     ]);
+    return true;
   };
 
   renderComponent = () => {
@@ -123,7 +130,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    bottom: 30
+    bottom: 30,
   },
 });
 

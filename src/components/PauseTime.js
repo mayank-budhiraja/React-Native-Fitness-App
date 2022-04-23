@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import RadioGroup from 'react-native-radio-buttons-group';
+import RadioGroup from '../utils/RadioButton';
 import colors from '../constants/colors';
 
 const PauseTime = ({onClick, buttonsData}) => {
@@ -22,16 +22,17 @@ export default PauseTime;
 
 const styles = StyleSheet.create({
   radioContainer: {
-    marginLeft: 50,
+    marginLeft: 18,
   },
   textContainer: {
     top: 5,
     fontSize: 18,
-    color: colors.app_color_primary
+    color: colors.app_color_primary,
   },
   itemContainer: {
     top: 20,
     marginLeft: 10,
     flexDirection: 'row',
+    flex: 1
   },
 });
