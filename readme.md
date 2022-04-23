@@ -3,8 +3,6 @@ MVP for a fitness app created using react-native which can be scaled and extende
 
 <img src="demo/calisthenics-app.gif" height="400" />
 
-<img src="demo/calisthenics-app.gif" height="400" />
-
 ## Run
     - yarn install
     - yarn run ios/android
